@@ -1,33 +1,16 @@
 /* eslint-disable no-template-curly-in-string */
 module.exports = {
   plugins: [
-    [
-      '@semantic-release/commit-analyzer',
-      {
-        preset: 'eslint',
-      },
-    ],
-    [
-      '@semantic-release/release-notes-generator',
-      {
-        preset: 'eslint',
-      },
-    ],
-    '@semantic-release/github',
+    '@semantic-release/commit-analyzer',
+    '@semantic-release/release-notes-generator',
     [
       '@semantic-release/changelog',
       {
-        changelogFile: 'CHANGELOG.md',
+        changelogFile: 'docs/CHANGELOG.md',
       },
     ],
-    [
-      '@semantic-release/git',
-      {
-        assets: ['CHANGELOG.md'],
-        message:
-          '${nextRelease.version} CHANGELOG [skip ci]\n\n${nextRelease.notes}',
-      },
-    ],
+    ['@semantic-release/github', { assets: [{ path: 'docs/CHANGELOG.md' }] }],
+    '@semantic-release/git',
   ],
   branches: ['main'],
 }
