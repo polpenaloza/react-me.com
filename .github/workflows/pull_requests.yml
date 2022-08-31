@@ -45,6 +45,9 @@ jobs:
       - name: Setup Node.js
         uses: ./.github/actions/node
 
+      - name: Install dependencies
+        run: yarn
+
       - name: Lint Code
         run: yarn lint
         env:
@@ -70,6 +73,9 @@ jobs:
 
       - name: Setup Node.js
         uses: ./.github/actions/node
+
+      - name: Install dependencies
+        run: yarn
 
       - name: Build
         run: yarn build
