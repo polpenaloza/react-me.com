@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Cancel Previous Run
-        uses: styfle/cancel-workflow-action@0.10.0
+        uses: styfle/cancel-workflow-action@0.11.0
 
       - name: Checkout RCP Frontend Repository
         uses: actions/checkout@v3
@@ -45,9 +45,6 @@ jobs:
       - name: Setup Node.js
         uses: ./.github/actions/node
 
-      - name: Install dependencies
-        run: yarn
-
       - name: Lint Code
         run: yarn lint
         env:
@@ -73,9 +70,6 @@ jobs:
 
       - name: Setup Node.js
         uses: ./.github/actions/node
-
-      - name: Install dependencies
-        run: yarn
 
       - name: Build
         run: yarn build
