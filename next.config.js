@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  exportTrailingSlash: true,
+  trailingSlash: true,
   // exportPathMap: function () {
   //   return {
   //     '/': { pages: '/' },
