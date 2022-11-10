@@ -35,7 +35,6 @@
     "@semantic-release/github": "^8.0.6",
     "@semantic-release/release-notes-generator": "^10.0.3",
     "@tailwindcss/forms": "^0.5.3",
-    "@tailwindcss/line-clamp": "^0.4.2",
     "@tanstack/react-query-devtools": "^4.14.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -65,7 +64,7 @@
     ]
   },
   "name": "react-me.com",
-  "private": true,
+  "private": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/polpenaloza/react-me.com.git"
