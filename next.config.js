@@ -6,15 +6,15 @@ const nextConfig = {
   devIndicators: {
     buildActivityPosition: 'bottom-right',
   },
-  exportPathMap: async function (defaultPathMap) {
-    return {
-      '/': { page: '/' },
-      '/binary-clock': { page: '/binary-clock' },
-      '/details': { page: '/details' },
-      '/dashboard': { page: '/dashboard' },
-      ...defaultPathMap,
-    }
+  i18n: {
+    locales: ['en-US', 'es-ES'],
+    defaultLocale: 'en-US',
   },
+  // exportPathMap: async function (defaultPathMap) {
+  //   return {
+  //     ...defaultPathMap,
+  //   }
+  // },
 }
 
 module.exports = nextConfig
