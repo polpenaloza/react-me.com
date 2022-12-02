@@ -1,10 +1,10 @@
 import {
-  mdiMonitor,
-  mdiGithub,
   mdiAbacus,
   mdiAlarm,
-  mdiRoad,
+  mdiGithub,
   mdiLock,
+  mdiMonitor,
+  mdiRoad,
 } from '@mdi/js'
 
 import { MenuAsideItem } from '../interfaces'
