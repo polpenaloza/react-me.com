@@ -1,4 +1,5 @@
 module.exports = {
+  root: true,
   env: {
     browser: true,
     es2021: true,
@@ -23,8 +24,7 @@ module.exports = {
       },
     ],
     'react/react-in-jsx-scope': 'off',
-    'no-debugger': 2,
-    'no-duplicate-imports': 'error',
+    'no-debugger': 'error',
     'no-duplicate-imports': 'error',
     'no-empty-function': 'error',
     'no-irregular-whitespace': 'error',
@@ -34,6 +34,7 @@ module.exports = {
     'react/jsx-key': 'off',
     'simple-import-sort/exports': 'error',
     'simple-import-sort/imports': 'error',
+    'prettier/prettier': ['error'],
     camelcase: 'error',
   },
   settings: {
