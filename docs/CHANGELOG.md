@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/polpenaloza/react-me.com/compare/v1.3.4...v1.4.0) (2023-01-13)
+
+
+### Features
+
+* **add:** birds ([#78](https://github.com/polpenaloza/react-me.com/issues/78)) ([498cff6](https://github.com/polpenaloza/react-me.com/commit/498cff6a1caf2b59959b3c7cadc962fb05349fd7))
+
 ## [1.3.4](https://github.com/polpenaloza/react-me.com/compare/v1.3.3...v1.3.4) (2023-01-13)
 
 
