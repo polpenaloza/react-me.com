@@ -18,10 +18,12 @@ export const BaseButton = ({
     <div
       className={classNames([
         /** @default */
-        { ['bg-gray-200 dark:bg-gray-700']: variant === 'default' },
-        { ['hover:bg-gray-300 dark:hover:bg-gray-700']: variant === 'default' },
+        { ['bg-slate-200 dark:bg-slate-700']: variant === 'default' },
         {
-          ['focus:ring-gray-300 dark:focus:ring-gray-700']:
+          ['hover:bg-slate-300 dark:hover:bg-slate-700']: variant === 'default',
+        },
+        {
+          ['focus:ring-slate-300 dark:focus:ring-slate-700']:
             variant === 'default',
         },
         /** @primary */

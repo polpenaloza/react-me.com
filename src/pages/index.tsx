@@ -40,31 +40,25 @@ const Home = () => {
                 xlinkHref='#gentle-wave'
                 x='48'
                 y='0'
-                fill={
-                  darkMode ? 'rgba(255,255,255,0.7)' : 'rgba(59,130,246,0.7)'
-                }
+                className={darkMode ? 'fill-primary-200' : 'fill-secondary-200'}
               />
               <use
                 xlinkHref='#gentle-wave'
                 x='48'
                 y='3'
-                fill={
-                  darkMode ? 'rgba(255,255,255,0.5)' : 'rgba(59,130,246,0.5)'
-                }
+                className={darkMode ? 'fill-primary-400' : 'fill-secondary-400'}
               />
               <use
                 xlinkHref='#gentle-wave'
                 x='48'
                 y='5'
-                fill={
-                  darkMode ? 'rgba(255,255,255,0.3)' : 'rgba(59,130,246,0.3)'
-                }
+                className={darkMode ? 'fill-primary-300' : 'fill-secondary-300'}
               />
               <use
                 xlinkHref='#gentle-wave'
                 x='48'
                 y='7'
-                fill={darkMode ? '#fff' : 'rgb(59,130,246)'}
+                className={darkMode ? 'fill-slate-200' : 'fill-slate-600'}
               />
             </g>
           </svg>

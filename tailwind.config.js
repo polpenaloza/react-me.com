@@ -8,14 +8,14 @@ module.exports = {
   mode: 'jit',
   darkMode: 'class',
   theme: {
-    asideScrollbars: {
-      light: 'light',
-      gray: 'gray',
-    },
     extend: {
       colors: {
         primary: colors.purple,
         secondary: colors.pink,
+      },
+      transitionProperty: {
+        position: 'right, left, top, bottom, margin, padding',
+        textColor: 'color',
       },
       keyframes: (theme) => ({
         'fade-out': {
@@ -28,7 +28,7 @@ module.exports = {
         },
         blink: {
           '0%, 100%': { color: 'transparent' },
-          '50%': { color: theme('colors.accent.500') },
+          '50%': { color: theme('colors.primary.500') },
         },
         bounce: {
           '0%, 100%': {

@@ -53,14 +53,14 @@ export default function LayoutAuthenticated({ children, title }: Props) {
         <div
           className={classNames([
             'flex grow flex-col',
-            'h-screen w-screen transition-shadow',
-            'bg-white dark:bg-slate-800',
+            'h-screen w-screen transition-position',
+            'bg-slate-200 dark:bg-slate-800',
             'text-slate-800 dark:text-slate-200',
           ])}
         >
           <div className='flex h-14 items-center justify-between p-2'>
             <div>
-              <div className='flex items-center px-2 font-mono font-bold text-gray-700 dark:text-gray-200'>
+              <div className='flex items-center px-2 font-mono font-bold'>
                 <a
                   href='https://github.com/polpenaloza/react-me.com'
                   target='_blank'

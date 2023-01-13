@@ -7,5 +7,5 @@
 @import 'waves.css';
 
 body {
-  @apply bg-black text-gray-100;
+  @apply bg-black text-slate-100;
 }
