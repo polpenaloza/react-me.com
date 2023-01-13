@@ -3,6 +3,10 @@ name: Verify PR Title
 on:
   pull_request:
     types: [opened, edited, synchronize, reopened]
+    branches:
+      - main
+      - beta
+      - v1
 
 env:
   SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
@@ -14,7 +18,7 @@ jobs:
       - name: Cancel Previous Run
         uses: styfle/cancel-workflow-action@0.11.0
 
-      - name: Checkout RCP Frontend Repository
+      - name: Checkout
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
@@ -24,6 +28,6 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Slack Error Notification
-        uses: ./.github/actions/slack-error
-        if: failure()
+      # - name: Slack Error Notification
+      #   uses: ./.github/actions/slack-error
+      #   if: failure()
