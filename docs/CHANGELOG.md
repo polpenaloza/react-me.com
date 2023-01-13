@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/polpenaloza/react-me.com/compare/v1.3.3...v1.3.4) (2023-01-13)
+
+
+### Bug Fixes
+
+* **app:** stage 0 ([#75](https://github.com/polpenaloza/react-me.com/issues/75)) ([6edacff](https://github.com/polpenaloza/react-me.com/commit/6edacff88b5d3d02c7250bd0b0424e59af0ede6f))
+
 ## [1.3.3](https://github.com/polpenaloza/react-me.com/compare/v1.3.2...v1.3.3) (2022-11-16)
 
 
