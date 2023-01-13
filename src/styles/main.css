@@ -5,6 +5,13 @@
 @import 'binary.css';
 @import 'tea.css';
 @import 'waves.css';
+@import 'birds.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 body {
   @apply bg-black text-slate-100;

@@ -1,3 +1,4 @@
+import classNames from 'classnames'
 import dynamic from 'next/dynamic'
 import { useTranslation } from 'react-i18next'
 
@@ -20,6 +21,29 @@ const Home = () => {
     <LayoutAuthenticated>
       <div className='flex h-full flex-col items-center justify-between'>
         <div className='p-3 text-3xl font-bold'>{t('welcome')}</div>
+        <div
+          className={classNames([
+            'flex items-center justify-center',
+            'z-1 relative h-full min-h-max w-full overflow-hidden',
+            'bg-cover p-2 bg-blend-lighten',
+          ])}
+        >
+          <div className='bird-container bird-container--one'>
+            <div className='bird bird--one'></div>
+          </div>
+
+          <div className='bird-container bird-container--two'>
+            <div className='bird bird--two'></div>
+          </div>
+
+          <div className='bird-container bird-container--three'>
+            <div className='bird bird--three'></div>
+          </div>
+
+          <div className='bird-container bird-container--four'>
+            <div className='bird bird--four'></div>
+          </div>
+        </div>
         <div className=''>
           <svg
             className='min-h[100px] max-h[250px] mb-[0px] h-[40vh] w-full'
