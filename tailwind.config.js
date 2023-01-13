@@ -1,39 +1,21 @@
 const colors = require('tailwindcss/colors')
-const plugin = require('tailwindcss/plugin')
 
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
-    './layouts/**/*.{js,ts,jsx,tsx}',
-    './core/**/*.{js,ts,jsx,tsx}',
+    './src/components/**/*.{js,ts,jsx,tsx}',
+    './src/pages/**/*.{js,ts,jsx,tsx}',
   ],
-  darkMode: 'class', // or 'media' or 'class'
+  mode: 'jit',
+  darkMode: 'class',
   theme: {
-    asideScrollbars: {
-      light: 'light',
-      gray: 'gray',
-    },
     extend: {
-      zIndex: {
-        '-1': '-1',
-      },
-      flexGrow: {
-        5: '5',
-      },
-      maxHeight: {
-        'screen-menu': 'calc(100vh - 3.5rem)',
-        modal: 'calc(100vh - 160px)',
+      colors: {
+        primary: colors.purple,
+        secondary: colors.pink,
       },
       transitionProperty: {
         position: 'right, left, top, bottom, margin, padding',
         textColor: 'color',
-      },
-      colors: {
-        black: colors.black,
-        white: colors.white,
-        gray: colors.gray,
-        accent: colors.green,
       },
       keyframes: (theme) => ({
         'fade-out': {
@@ -46,7 +28,7 @@ module.exports = {
         },
         blink: {
           '0%, 100%': { color: 'transparent' },
-          '50%': { color: theme('colors.accent.500') },
+          '50%': { color: theme('colors.primary.500') },
         },
         bounce: {
           '0%, 100%': {
@@ -65,39 +47,17 @@ module.exports = {
         blink: 'blink 1s step-end infinite',
         bounce: 'bounce 1s infinite',
       },
+      zIndex: {
+        '-1': '-1',
+      },
     },
   },
   plugins: [
+    require('tailwind-scrollbar'),
+    require('prettier-plugin-tailwindcss'),
     require('@tailwindcss/forms'),
-    plugin(function ({ matchUtilities, theme }) {
-      matchUtilities(
-        {
-          'aside-scrollbars': (value) => {
-            const track = value === 'light' ? '100' : '900'
-            const thumb = value === 'light' ? '300' : '600'
-            const color = value === 'light' ? 'gray' : value
-
-            return {
-              scrollbarWidth: 'thin',
-              scrollbarColor: `${theme(`colors.${color}.${thumb}`)} ${theme(
-                `colors.${color}.${track}`
-              )}`,
-              '&::-webkit-scrollbar': {
-                width: '8px',
-                height: '8px',
-              },
-              '&::-webkit-scrollbar-track': {
-                backgroundColor: theme(`colors.${color}.${track}`),
-              },
-              '&::-webkit-scrollbar-thumb': {
-                borderRadius: '0.25rem',
-                backgroundColor: theme(`colors.${color}.${thumb}`),
-              },
-            }
-          },
-        },
-        { values: theme('asideScrollbars') }
-      )
-    }),
   ],
+  variants: {
+    scrollbar: ['dark'],
+  },
 }

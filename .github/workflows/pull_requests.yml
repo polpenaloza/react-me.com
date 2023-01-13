@@ -12,15 +12,17 @@ on:
 
 env:
   SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+  DATABASE_URL: ${{ secrets.DATABASE_URL }}
 
 jobs:
-  Setup:
+  setup:
     runs-on: ubuntu-latest
+    name: Setup in progress
     steps:
       - name: Cancel Previous Run
         uses: styfle/cancel-workflow-action@0.11.0
 
-      - name: Checkout RCP Frontend Repository
+      - name: Checkout
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
@@ -32,17 +34,17 @@ jobs:
       #   uses: ./.github/actions/slack-error
       #   if: failure()
 
-  Lint:
+  lint:
     runs-on: ubuntu-latest
-    needs: Setup
+    needs: setup
+    name: Lint the code
     steps:
       - name: Checkout
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          persist-credentials: false
 
-      - name: Setup Node.js
+      - name: Restoring Node.js
         uses: ./.github/actions/node
 
       - name: Lint Code
@@ -58,17 +60,17 @@ jobs:
       #   uses: ./.github/actions/slack-success
       #   if: success()
 
-  Build:
+  build:
     runs-on: ubuntu-latest
-    needs: Setup
+    needs: setup
+    name: Building.. compiling..
     steps:
       - name: Checkout
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          persist-credentials: false
 
-      - name: Setup Node.js
+      - name: Restoring Node.js
         uses: ./.github/actions/node
 
       - name: Build

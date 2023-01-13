@@ -5,9 +5,9 @@ description: "Setup a NodeJS environment and restore node modules cache"
 
 inputs:
   node-version:
-    description: "Node version to use, default to (14.x)"
+    description: "Node version to use, default to (18.x)"
     required: true
-    default: 14.17.4
+    default: 18.12.0
 outputs:
   cache-hit:
     description: "Forward actions/cache cache-hit output"
