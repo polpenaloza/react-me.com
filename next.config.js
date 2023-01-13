@@ -16,21 +16,21 @@ const nextConfig = getConfig({
   devIndicators: {
     buildActivityPosition: 'bottom-left',
   },
-  reactStrictMode: true,
-  productionBrowserSourceMaps: true,
-  swcMinify: true,
-  trailingSlash: true,
-  publicRuntimeConfig: {
-    NODE_ENV: env.NODE_ENV,
-  },
-  devIndicators: {
-    buildActivityPosition: 'bottom-right',
-  },
   exportPathMap: async function (defaultPathMap) {
     return {
       ...defaultPathMap,
     }
   },
+  images: {
+    unoptimized: process.env.NEXT_PUBLIC_UNOPTIMIZE_IMAGE === false,
+  },
+  productionBrowserSourceMaps: true,
+  publicRuntimeConfig: {
+    NODE_ENV: env.NODE_ENV,
+  },
+  reactStrictMode: true,
+  swcMinify: true,
+  trailingSlash: true,
 })
 
 module.exports = nextConfig
