@@ -58,21 +58,35 @@ export default function LayoutAuthenticated({ children, title }: Props) {
             'text-slate-800 dark:text-slate-200',
           ])}
         >
-          <div className='flex h-14 flex-row-reverse items-center p-2'>
-            <Button
-              variant='outline'
-              aria-label='translate'
-              onClick={() => changeLanguage()}
-            >
-              <TranslateIcon />
-            </Button>
-            <Button
-              variant='outline'
-              onClick={() => setDarkMode()}
-              aria-label='theme'
-            >
-              <ThemeIcon />
-            </Button>
+          <div className='flex h-14 items-center justify-between p-2'>
+            <div>
+              <div className='flex items-center px-2 font-mono font-bold text-gray-700 dark:text-gray-200'>
+                <a
+                  href='https://github.com/polpenaloza/react-me.com'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  dev@polpenaloza: ~/$
+                </a>
+                <span className='animate-blink font-mono font-bold'>|</span>
+              </div>
+            </div>
+            <div className='flex'>
+              <Button
+                variant='outline'
+                aria-label='translate'
+                onClick={() => changeLanguage()}
+              >
+                <TranslateIcon />
+              </Button>
+              <Button
+                variant='outline'
+                onClick={() => setDarkMode()}
+                aria-label='theme'
+              >
+                <ThemeIcon />
+              </Button>
+            </div>
           </div>
           {children}
           <FooterBar />
