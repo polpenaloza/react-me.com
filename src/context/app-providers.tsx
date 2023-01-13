@@ -6,7 +6,7 @@ import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { ReactNode, useState } from 'react'
 import { I18nextProvider, useTranslation } from 'react-i18next'
 
-import { ErrorBoundary } from '../components/ErrorBoundary'
+import { ErrorBoundary } from '~/components/ErrorBoundary'
 
 type AppProvidersProps = {
   children: ReactNode

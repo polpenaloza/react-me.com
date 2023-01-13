@@ -1,15 +1,14 @@
 import classNames from 'classnames'
 import dynamic from 'next/dynamic'
 import { useTranslation } from 'react-i18next'
+import ReactRotatingText from 'react-rotating-text'
 
-import {
-  iAppPersistState,
-  useAppPersistStore,
-} from '../core/store/persistState'
+import { iAppPersistState, useAppPersistStore } from '~/core/store/persistState'
 
 const LayoutAuthenticated = dynamic(
-  () => import('../components/Layout/Authenticated')
+  () => import('~/components/Layout/Authenticated')
 )
+const NavBar = dynamic(() => import('~/components/NavBar'))
 
 const Home = () => {
   const darkMode = useAppPersistStore(
@@ -19,8 +18,16 @@ const Home = () => {
 
   return (
     <LayoutAuthenticated>
+      <div className='h-14'>
+        <NavBar />
+      </div>
       <div className='flex h-full flex-col items-center justify-between'>
-        <div className='p-3 text-3xl font-bold'>{t('welcome')}</div>
+        <ReactRotatingText
+          className='animate__animated animate__fadeIn  p-3 text-3xl font-bold'
+          color={darkMode ? 'purple' : 'deeppink'}
+          pause={3000}
+          items={[t('welcome'), t('howAreYou'), t('slang')]}
+        />
         <div
           className={classNames([
             'flex items-center justify-center',
@@ -44,7 +51,7 @@ const Home = () => {
             <div className='bird bird--four'></div>
           </div>
         </div>
-        <div className=''>
+        <div className='relative'>
           <svg
             className='min-h[100px] max-h[250px] mb-[0px] h-[40vh] w-full'
             xmlns='http://www.w3.org/2000/svg'
