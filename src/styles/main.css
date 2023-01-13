@@ -1,0 +1,11 @@
+@import 'tailwind/_base.css';
+@import 'tailwind/_components.css';
+@import 'tailwind/_utilities.css';
+
+@import 'binary.css';
+@import 'tea.css';
+@import 'waves.css';
+
+body {
+  @apply bg-black text-gray-100;
+}

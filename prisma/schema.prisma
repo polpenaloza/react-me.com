@@ -1,0 +1,31 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["fullTextSearch", "fullTextIndex"]
+}
+
+datasource db {
+  provider          = "mysql"
+  url               = env("DATABASE_URL")
+  relationMode      = "prisma"
+  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+}
+
+model Movie {
+  id          Int      @id @default(autoincrement())
+  createdAt   DateTime @default(now())
+  movieId     String   @unique
+  name        String
+  slug        String
+  imageUrl    String
+  bannerUrl   String
+  description String
+  genere      String
+  cast        Json
+
+  @@unique([movieId, name])
+  @@index([movieId, name])
+  @@fulltext([name, slug, genere])
+}
