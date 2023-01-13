@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/polpenaloza/react-me.com/compare/v1.4.0...v1.5.0) (2023-01-13)
+
+
+### Features
+
+* **bday:** salute ([#80](https://github.com/polpenaloza/react-me.com/issues/80)) ([0c772c0](https://github.com/polpenaloza/react-me.com/commit/0c772c0649b2a7a8d5110fad27dd0214d78bdbfc))
+
 # [1.4.0](https://github.com/polpenaloza/react-me.com/compare/v1.3.4...v1.4.0) (2023-01-13)
 
 
