@@ -4,7 +4,7 @@
 
 ### Dependencies
 
-- [node](https://nodejs.org/en/download/) v14.x
+- [node](https://nodejs.org/en/download/) v18.x
 - [yarn](https://classic.yarnpkg.com/en/docs/install/) v1.x
 
 ### Pre-Requisites
