@@ -1,4 +1,5 @@
 import '~/styles/main.css'
+import 'animate.css'
 
 import type { AppProps, AppType } from 'next/app'
 import { useRouter } from 'next/router'
