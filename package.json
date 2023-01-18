@@ -33,7 +33,7 @@
     "react-i18next": "^12.1.4",
     "react-rotating-text": "^1.4.1",
     "sugar": "^2.0.6",
-    "superjson": "^1.12.1",
+    "superjson": "^1.12.2",
     "zod": "^3.20.2",
     "zustand": "^4.3.1"
   },
