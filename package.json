@@ -69,7 +69,7 @@
     "prettier": "^2.8.4",
     "prettier-plugin-tailwindcss": "^0.2.4",
     "semantic-release": "^20.1.1",
-    "tailwind-scrollbar": "^2.1.0",
+    "tailwind-scrollbar": "^3.0.0",
     "tailwindcss": "^3.2.7",
     "tslib": "^2.5.0"
   },
