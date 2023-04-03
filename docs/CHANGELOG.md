@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/polpenaloza/react-me.com/compare/v1.5.0...v1.5.1) (2023-04-03)
+
+
+### Bug Fixes
+
+* **deps:** update ([#97](https://github.com/polpenaloza/react-me.com/issues/97)) ([1c113bc](https://github.com/polpenaloza/react-me.com/commit/1c113bcd53670792b0527845b08d39d9a543f9a8))
+
 # [1.5.0](https://github.com/polpenaloza/react-me.com/compare/v1.4.0...v1.5.0) (2023-01-13)
 
 
