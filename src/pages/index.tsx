@@ -26,14 +26,7 @@ const Home = () => {
           className='animate__animated animate__fadeIn  p-3 text-3xl font-bold'
           color={darkMode ? 'purple' : 'deeppink'}
           pause={3000}
-          items={[
-            t('happyBirthday'),
-            t('happyBirthday5'),
-            t('happyBirthday2'),
-            t('happyBirthday3'),
-            t('happyBirthday4'),
-            t('happyBirthday6'),
-          ]}
+          items={[t('welcome'), t('howAreYou'), t('slang')]}
         />
         <div
           className={classNames([
