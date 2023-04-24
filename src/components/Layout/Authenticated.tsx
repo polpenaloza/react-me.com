@@ -35,13 +35,11 @@ export default function LayoutAuthenticated({ children, title }: Props) {
         twitter='@polpenaloza'
         image='https://twitter.com/polpenaloza/photo'
       />
-      <div className={classNames([{ ['dark']: darkMode }])}>
+      <div data-theme={darkMode ? 'night' : 'light'}>
         <div
           className={classNames([
             'flex grow flex-col',
             'h-screen w-screen transition-position',
-            'bg-slate-200 dark:bg-slate-800',
-            'text-slate-800 dark:text-slate-200',
           ])}
         >
           {children}
