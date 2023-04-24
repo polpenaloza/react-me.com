@@ -1,3 +1,11 @@
+# [1.7.0](https://github.com/polpenaloza/react-me.com/compare/v1.6.0...v1.7.0) (2023-04-24)
+
+
+### Features
+
+* **add:** web3 part 2 ([9681229](https://github.com/polpenaloza/react-me.com/commit/968122966fddfe03566864e6dbda9517a617896f))
+* **add:** web3 part 2 ([#113](https://github.com/polpenaloza/react-me.com/issues/113)) ([d24ba4f](https://github.com/polpenaloza/react-me.com/commit/d24ba4f3a5ca7d439384194a17674c68f3e051bd))
+
 # [1.6.0](https://github.com/polpenaloza/react-me.com/compare/v1.5.1...v1.6.0) (2023-04-24)
 
 
