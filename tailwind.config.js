@@ -6,7 +6,10 @@ module.exports = {
     './src/pages/**/*.{js,ts,jsx,tsx}',
   ],
   mode: 'jit',
-  darkMode: 'class',
+  daisyui: {
+    themes: ['light', 'dark', 'night'],
+  },
+
   theme: {
     extend: {
       colors: {
@@ -56,6 +59,7 @@ module.exports = {
     require('tailwind-scrollbar'),
     require('prettier-plugin-tailwindcss'),
     require('@tailwindcss/forms'),
+    require('daisyui'),
   ],
   variants: {
     scrollbar: ['dark'],

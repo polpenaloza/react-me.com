@@ -18,7 +18,7 @@ export const BaseIcon = ({
   return (
     <div
       className={classNames([
-        'text-slate-900 transition-colors dark:text-slate-100',
+        'transition-colors',
         { [`w-${size}`]: size },
         { [`h-${size}`]: size },
         className,

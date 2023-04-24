@@ -1,4 +1,5 @@
 import dynamic from 'next/dynamic'
+import Link from 'next/link'
 import { useTranslation } from 'react-i18next'
 
 import { iAppPersistState, useAppPersistStore } from '~/core/store/persistState'
@@ -23,8 +24,39 @@ export const NavBar = () => {
   }
 
   return (
-    <div className='flex items-center justify-between p-2'>
-      <div>
+    <div className='navbar bg-base-100'>
+      <div className='navbar-start'>
+        <div className='dropdown'>
+          <label tabIndex={0} className='btn-ghost btn-circle btn'>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              className='h-5 w-5'
+              fill='none'
+              viewBox='0 0 24 24'
+              stroke='currentColor'
+            >
+              <path
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                strokeWidth='2'
+                d='M4 6h16M4 12h16M4 18h7'
+              />
+            </svg>
+          </label>
+          <ul
+            tabIndex={0}
+            className='dropdown-content menu rounded-box menu-compact mt-3 w-52 bg-base-100 p-2 shadow'
+          >
+            <li>
+              <Link href='/'>Homepage</Link>
+            </li>
+            <li>
+              <Link href='/web3'>Web3</Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className='navbar-center'>
         <div className='flex items-center px-2 font-mono font-bold'>
           <a
             href='https://github.com/polpenaloza/react-me.com'
@@ -36,7 +68,7 @@ export const NavBar = () => {
           <span className='animate-blink font-mono font-bold'>|</span>
         </div>
       </div>
-      <div className='flex items-center justify-center'>
+      <div className='navbar-end'>
         <div className='px-4 uppercase'>{i18n.language}</div>
         <Button
           aria-label='translate'
