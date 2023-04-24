@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/polpenaloza/react-me.com/compare/v1.5.1...v1.6.0) (2023-04-24)
+
+
+### Features
+
+* **add:** web3 ([603d874](https://github.com/polpenaloza/react-me.com/commit/603d8747431003e14e61f098253ce677421ed7ef))
+
 ## [1.5.1](https://github.com/polpenaloza/react-me.com/compare/v1.5.0...v1.5.1) (2023-04-03)
 
 
