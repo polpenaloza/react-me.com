@@ -51,7 +51,7 @@ const Home = () => {
             <div className='bird bird--four'></div>
           </div>
         </div>
-        <div className='relative'>
+        <div className='relative w-full'>
           <svg
             className='min-h[100px] max-h[250px] mb-[0px] h-[40vh] w-full'
             xmlns='http://www.w3.org/2000/svg'

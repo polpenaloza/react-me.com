@@ -5,6 +5,42 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { ReactNode, useState } from 'react'
 import { I18nextProvider, useTranslation } from 'react-i18next'
+import { configureChains, createClient, WagmiConfig } from 'wagmi'
+import { localhost, mainnet } from 'wagmi/chains'
+import { MetaMaskConnector } from 'wagmi/connectors/metaMask'
+import { publicProvider } from 'wagmi/providers/public'
+
+const { provider, webSocketProvider } = configureChains(
+  [
+    {
+      ...localhost,
+      ...{
+        nativeCurrency: {
+          decimals: 18,
+          name: 'Ether',
+          symbol: 'ETH',
+        },
+        id: 31337,
+        chainId: 31337,
+      },
+    },
+    mainnet,
+  ],
+  [publicProvider()]
+)
+
+const connector = new MetaMaskConnector({
+  options: {
+    shimDisconnect: false,
+  },
+})
+
+const client = createClient({
+  autoConnect: true,
+  connectors: [connector],
+  provider,
+  webSocketProvider,
+})
 
 import { ErrorBoundary } from '~/components/ErrorBoundary'
 
@@ -40,7 +76,9 @@ export function AppProviders({ children }: AppProvidersProps) {
     <QueryClientProvider client={queryClient}>
       <ReactQueryDevtools initialIsOpen={false} position='bottom-right' />
       <ErrorBoundary>
-        <I18nextProvider i18n={i18n}>{children}</I18nextProvider>
+        <WagmiConfig client={client}>
+          <I18nextProvider i18n={i18n}>{children}</I18nextProvider>
+        </WagmiConfig>
       </ErrorBoundary>
     </QueryClientProvider>
   )

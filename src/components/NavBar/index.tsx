@@ -37,7 +37,7 @@ export const NavBar = () => {
         </div>
       </div>
       <div className='flex items-center justify-center'>
-        <div className='px-4'>{i18n.language}</div>
+        <div className='px-4 uppercase'>{i18n.language}</div>
         <Button
           aria-label='translate'
           variant='outline'
