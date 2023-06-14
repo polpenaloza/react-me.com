@@ -4,11 +4,7 @@ on:
   pull_request:
     branches:
       - main
-      - development
-      - feat/*
-      - release/*
-      - testing
-      - production
+      - '!dependabot/**'
 
 env:
   SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
