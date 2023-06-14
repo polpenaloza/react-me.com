@@ -28,4 +28,4 @@ runs:
           node-modules-${{ runner.os }}-yarn-
     - shell: bash
       if: steps.yarn-cache.outputs.cache-hit != 'true'
-      run: yarn install --frozen-lockfile --silent
+      run: yarn install
