@@ -2,7 +2,6 @@
 @import 'tailwind/_components.css';
 @import 'tailwind/_utilities.css';
 
-@import 'binary.css';
 @import 'tea.css';
 @import 'waves.css';
 @import 'birds.scss';
