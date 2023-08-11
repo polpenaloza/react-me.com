@@ -15,7 +15,7 @@ const nextConfig = getConfig({
     buildActivityPosition: 'bottom-left',
   },
   images: {
-    unoptimized: process.env.NEXT_PUBLIC_UNOPTIMIZE_IMAGE === false,
+    unoptimized: process.env.NEXT_PUBLIC_UNOPTIMIZE_IMAGE === 'false',
   },
   productionBrowserSourceMaps: true,
   publicRuntimeConfig: {
@@ -24,6 +24,10 @@ const nextConfig = getConfig({
   reactStrictMode: true,
   swcMinify: true,
   trailingSlash: true,
+  output:
+    process.env.NEXT_PUBLIC_UNOPTIMIZE_IMAGE === 'false'
+      ? 'export'
+      : 'standalone',
 })
 
 module.exports = nextConfig
