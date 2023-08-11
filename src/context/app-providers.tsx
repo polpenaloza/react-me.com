@@ -1,3 +1,4 @@
+'use client'
 // import translation catalog
 import './i18next.config'
 

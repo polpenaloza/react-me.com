@@ -1,5 +1,3 @@
-const { env } = require('./src/server/env')
-
 /**
  * Don't be scared of the generics here.
  * All they do is to give us autocompletion when using this.
@@ -26,7 +24,7 @@ const nextConfig = getConfig({
   },
   productionBrowserSourceMaps: true,
   publicRuntimeConfig: {
-    NODE_ENV: env.NODE_ENV,
+    NODE_ENV: process.env.NODE_ENV,
   },
   reactStrictMode: true,
   swcMinify: true,

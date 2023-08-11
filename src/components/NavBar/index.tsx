@@ -27,7 +27,7 @@ export const NavBar = () => {
     <div className='navbar bg-base-100'>
       <div className='navbar-start'>
         <div className='dropdown'>
-          <label tabIndex={0} className='btn-ghost btn-circle btn'>
+          <label tabIndex={0} className='btn btn-circle btn-ghost'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className='h-5 w-5'
@@ -45,7 +45,7 @@ export const NavBar = () => {
           </label>
           <ul
             tabIndex={0}
-            className='dropdown-content menu rounded-box mt-3 w-52 bg-base-100 p-2 shadow'
+            className='menu dropdown-content rounded-box mt-3 w-52 bg-base-100 p-2 shadow'
           >
             <li>
               <Link href='/'>Homepage</Link>

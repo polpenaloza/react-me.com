@@ -1,18 +1,18 @@
+'use client'
 import classNames from 'classnames'
 import dynamic from 'next/dynamic'
 import React, { ReactNode, useEffect, useState } from 'react'
 
-import { SEO } from '~/components/Seo'
 import { iAppPersistState, useAppPersistStore } from '~/core/store/persistState'
+import { trpc } from '~/utils/trpc'
 
 const FooterBar = dynamic(() => import('~/components/Footer/FooterBar'))
 
 type Props = {
   children: ReactNode
-  title?: string
 }
 
-export default function LayoutAuthenticated({ children, title }: Props) {
+function LayoutAuthenticated({ children }: Props) {
   const darkMode = useAppPersistStore(
     (state: iAppPersistState) => state.darkMode
   )
@@ -28,13 +28,6 @@ export default function LayoutAuthenticated({ children, title }: Props) {
 
   return (
     <>
-      <SEO
-        description='polpenaloza.com'
-        title={title || 'Home'}
-        siteTitle='react-me'
-        twitter='@polpenaloza'
-        image='https://twitter.com/polpenaloza/photo'
-      />
       <div data-theme={darkMode ? 'night' : 'light'}>
         <div
           className={classNames([
@@ -49,3 +42,5 @@ export default function LayoutAuthenticated({ children, title }: Props) {
     </>
   )
 }
+
+export default trpc.withTRPC(LayoutAuthenticated)
