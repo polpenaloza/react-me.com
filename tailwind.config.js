@@ -2,8 +2,9 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   content: [
-    './src/components/**/*.{js,ts,jsx,tsx}',
-    './src/pages/**/*.{js,ts,jsx,tsx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   daisyui: {
     themes: ['light', 'dark', 'night'],
@@ -54,12 +55,7 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require('tailwind-scrollbar'),
-    require('prettier-plugin-tailwindcss'),
-    require('@tailwindcss/forms'),
-    require('daisyui'),
-  ],
+  plugins: [require('tailwind-scrollbar'), require('daisyui')],
   variants: {
     scrollbar: ['dark'],
   },

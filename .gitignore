@@ -1,28 +1,31 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
-.pnp
-.pnp.js
+
+node_modules
+.pnp.*
 .npm
 package-lock.json
-.yarn
 
 # testing
 /coverage
 /state.json
 /test-results
 
-# next.js
+# builds
 .next/
+dist/
 out/
 build/
+.parcel-cache/
 
 # IDEs and editors
 .c9/
 .classpath
 .project
 .settings/
+.vscode
 *.launch
 *.sublime-workspace
 /.idea
@@ -41,10 +44,15 @@ Thumbs.db
 .eslintcache
 /typings
 
-# debug
-npm-debug.log*
+# yarn
+.yarn/cache/*
+.yarn/global/*
+.yarn/install-state.gz
 yarn-debug.log*
 yarn-error.log*
+
+# debug
+npm-debug.log*
 .pnpm-debug.log*
 testem.log
 
@@ -61,3 +69,6 @@ testem.log
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# turbo
+.turbo

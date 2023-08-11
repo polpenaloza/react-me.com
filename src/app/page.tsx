@@ -1,3 +1,5 @@
+'use client'
+
 import classNames from 'classnames'
 import dynamic from 'next/dynamic'
 import { useTranslation } from 'react-i18next'
@@ -5,9 +7,6 @@ import ReactRotatingText from 'react-rotating-text'
 
 import { iAppPersistState, useAppPersistStore } from '~/core/store/persistState'
 
-const LayoutAuthenticated = dynamic(
-  () => import('~/components/Layout/Authenticated')
-)
 const NavBar = dynamic(() => import('~/components/NavBar'))
 
 const Home = () => {
@@ -17,7 +16,7 @@ const Home = () => {
   const { t } = useTranslation()
 
   return (
-    <LayoutAuthenticated>
+    <>
       <div className='h-14'>
         <NavBar />
       </div>
@@ -95,7 +94,7 @@ const Home = () => {
           </svg>
         </div>
       </div>
-    </LayoutAuthenticated>
+    </>
   )
 }
 
