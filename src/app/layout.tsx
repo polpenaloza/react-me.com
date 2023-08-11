@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 import { Metadata, ResolvingMetadata } from 'next'
 import { ReactNode } from 'react'
 
-import LayoutAuthenticated from '~/components/Layout/Authenticated'
+import { LayoutAuthenticated } from '~/components/Layout/Authenticated'
 import { AppProviders } from '~/context/app-providers'
 
 const HOSTING_URL =

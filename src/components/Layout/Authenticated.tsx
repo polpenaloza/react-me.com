@@ -4,7 +4,6 @@ import dynamic from 'next/dynamic'
 import React, { ReactNode, useEffect, useState } from 'react'
 
 import { iAppPersistState, useAppPersistStore } from '~/core/store/persistState'
-import { trpc } from '~/utils/trpc'
 
 const FooterBar = dynamic(() => import('~/components/Footer/FooterBar'))
 
@@ -12,7 +11,7 @@ type Props = {
   children: ReactNode
 }
 
-function LayoutAuthenticated({ children }: Props) {
+export function LayoutAuthenticated({ children }: Props) {
   const darkMode = useAppPersistStore(
     (state: iAppPersistState) => state.darkMode
   )
@@ -42,5 +41,3 @@ function LayoutAuthenticated({ children }: Props) {
     </>
   )
 }
-
-export default trpc.withTRPC(LayoutAuthenticated)
