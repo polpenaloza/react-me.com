@@ -1,4 +1,5 @@
-// import translation catalog
+'use client'
+
 import './i18next.config'
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
