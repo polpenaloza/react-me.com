@@ -14,11 +14,6 @@ const nextConfig = getConfig({
   devIndicators: {
     buildActivityPosition: 'bottom-left',
   },
-  exportPathMap: async function (defaultPathMap) {
-    return {
-      ...defaultPathMap,
-    }
-  },
   images: {
     unoptimized: process.env.NEXT_PUBLIC_UNOPTIMIZE_IMAGE === false,
   },
