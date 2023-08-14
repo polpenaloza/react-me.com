@@ -644,9 +644,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/eslintrc@npm:^2.1.1":
-  version: 2.1.1
-  resolution: "@eslint/eslintrc@npm:2.1.1"
+"@eslint/eslintrc@npm:^2.1.2":
+  version: 2.1.2
+  resolution: "@eslint/eslintrc@npm:2.1.2"
   dependencies:
     ajv: ^6.12.4
     debug: ^4.3.2
@@ -657,14 +657,14 @@ __metadata:
     js-yaml: ^4.1.0
     minimatch: ^3.1.2
     strip-json-comments: ^3.1.1
-  checksum: bf909ea183d27238c257a82d4ffdec38ca94b906b4b8dfae02ecbe7ecc9e5a8182ef5e469c808bb8cb4fea4750f43ac4ca7c4b4a167b6cd7e3aaacd386b2bd25
+  checksum: bc742a1e3b361f06fedb4afb6bf32cbd27171292ef7924f61c62f2aed73048367bcc7ac68f98c06d4245cd3fabc43270f844e3c1699936d4734b3ac5398814a7
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:^8.46.0":
-  version: 8.46.0
-  resolution: "@eslint/js@npm:8.46.0"
-  checksum: 7aed479832302882faf5bec37e9d068f270f84c19b3fb529646a7c1b031e73a312f730569c78806492bc09cfce3d7651dfab4ce09a56cbb06bc6469449e56377
+"@eslint/js@npm:^8.47.0":
+  version: 8.47.0
+  resolution: "@eslint/js@npm:8.47.0"
+  checksum: 0ef57fe27b6d4c305b33f3b2d2fee1ab397a619006f1d6f4ce5ee4746b8f03d11a4e098805a7d78601ca534cf72917d37f0ac19896c992a32e26299ecb9f9de1
   languageName: node
   linkType: hard
 
@@ -1269,6 +1269,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@prisma/engines@npm:5.1.1":
+  version: 5.1.1
+  resolution: "@prisma/engines@npm:5.1.1"
+  checksum: 561c85def110279eb7c764e7c1ea1f8f54d9a2948ed5e5db9b11321c2bef362d178b756e39e7e022ee27cb2be5ac8d9b835967ce341ad8f6a1e8502f988140ee
+  languageName: node
+  linkType: hard
+
 "@rushstack/eslint-patch@npm:^1.1.3":
   version: 1.3.1
   resolution: "@rushstack/eslint-patch@npm:1.3.1"
@@ -1620,10 +1627,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.4.9":
-  version: 20.4.9
-  resolution: "@types/node@npm:20.4.9"
-  checksum: 504e3da96274f3865c1251830f4750bb0a8f6ef6f8648902cd3bba33370c5f219235471bfbf55cce726b25c8eacfcc8e2aad0ec3b13e27ea6708b00d4a9a46c8
+"@types/node@npm:^20.5.0":
+  version: 20.5.0
+  resolution: "@types/node@npm:20.5.0"
+  checksum: 659bc5fc93b5c02bd88ca4bfae4f6b9dc307d45884d1dd9d69df85819a9943cdc00cd3c87eec3048866df6a67f52297f74d170e47a44f61edb3e8f770d94e85e
   languageName: node
   linkType: hard
 
@@ -2120,6 +2127,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"autoprefixer@npm:^10.4.15":
+  version: 10.4.15
+  resolution: "autoprefixer@npm:10.4.15"
+  dependencies:
+    browserslist: ^4.21.10
+    caniuse-lite: ^1.0.30001520
+    fraction.js: ^4.2.0
+    normalize-range: ^0.1.2
+    picocolors: ^1.0.0
+    postcss-value-parser: ^4.2.0
+  peerDependencies:
+    postcss: ^8.1.0
+  bin:
+    autoprefixer: bin/autoprefixer
+  checksum: d490b14fb098c043e109fc13cd23628f146af99a493d35b9df3a26f8ec0b4dd8937c5601cdbaeb465b98ea31d3ea05aa7184711d4d93dfb52358d073dcb67032
+  languageName: node
+  linkType: hard
+
 "available-typed-arrays@npm:^1.0.5":
   version: 1.0.5
   resolution: "available-typed-arrays@npm:1.0.5"
@@ -2400,6 +2425,13 @@ __metadata:
   version: 1.0.30001519
   resolution: "caniuse-lite@npm:1.0.30001519"
   checksum: 66085133ede05d947e30b62fed2cbae18e5767afda8b0de38840883e1cfe5846bf1568ddbafd31647544e59112355abedaf9c867ac34541bfc20d69e7a19d94c
+  languageName: node
+  linkType: hard
+
+"caniuse-lite@npm:^1.0.30001520":
+  version: 1.0.30001520
+  resolution: "caniuse-lite@npm:1.0.30001520"
+  checksum: 59991ad8f36cf282f81abbcc6074c3097c21914cdd54bd2b3f73ac9462f57fc74e90371cd22bcdff4d085d09da42a07dcea384cb81e4ac260496e1bd79e1fe7c
   languageName: node
   linkType: hard
 
@@ -3588,21 +3620,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-visitor-keys@npm:^3.3.0, eslint-visitor-keys@npm:^3.4.1, eslint-visitor-keys@npm:^3.4.2":
+"eslint-visitor-keys@npm:^3.3.0, eslint-visitor-keys@npm:^3.4.1":
   version: 3.4.2
   resolution: "eslint-visitor-keys@npm:3.4.2"
   checksum: 9e0e7e4aaea705c097ae37c97410e5f167d4d2193be2edcb1f0760762ede3df01545e4820ae314f42dcec687745f2c6dcaf6d83575c4a2a241eb0c8517d724f2
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.46.0":
-  version: 8.46.0
-  resolution: "eslint@npm:8.46.0"
+"eslint-visitor-keys@npm:^3.4.3":
+  version: 3.4.3
+  resolution: "eslint-visitor-keys@npm:3.4.3"
+  checksum: 36e9ef87fca698b6fd7ca5ca35d7b2b6eeaaf106572e2f7fd31c12d3bfdaccdb587bba6d3621067e5aece31c8c3a348b93922ab8f7b2cbc6aaab5e1d89040c60
+  languageName: node
+  linkType: hard
+
+"eslint@npm:^8.47.0":
+  version: 8.47.0
+  resolution: "eslint@npm:8.47.0"
   dependencies:
     "@eslint-community/eslint-utils": ^4.2.0
     "@eslint-community/regexpp": ^4.6.1
-    "@eslint/eslintrc": ^2.1.1
-    "@eslint/js": ^8.46.0
+    "@eslint/eslintrc": ^2.1.2
+    "@eslint/js": ^8.47.0
     "@humanwhocodes/config-array": ^0.11.10
     "@humanwhocodes/module-importer": ^1.0.1
     "@nodelib/fs.walk": ^1.2.8
@@ -3613,7 +3652,7 @@ __metadata:
     doctrine: ^3.0.0
     escape-string-regexp: ^4.0.0
     eslint-scope: ^7.2.2
-    eslint-visitor-keys: ^3.4.2
+    eslint-visitor-keys: ^3.4.3
     espree: ^9.6.1
     esquery: ^1.4.2
     esutils: ^2.0.2
@@ -3638,7 +3677,7 @@ __metadata:
     text-table: ^0.2.0
   bin:
     eslint: bin/eslint.js
-  checksum: 7a7d36b1a3bbc12e08fbb5bc36fd482a7a5a1797e62e762499dd45601b9e45aaa53a129f31ce0b4444551a9639b8b681ad535f379893dd1e3ae37b31dccd82aa
+  checksum: 1988617f703eadc5c7540468d54dc8e5171cf2bb9483f6172799cd1ff54a9a5e4470f003784e8cef92687eaa14de37172732787040e67817581a20bcb9c15970
   languageName: node
   linkType: hard
 
@@ -7518,9 +7557,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-tailwindcss@npm:^0.5.1":
-  version: 0.5.1
-  resolution: "prettier-plugin-tailwindcss@npm:0.5.1"
+"prettier-plugin-tailwindcss@npm:^0.5.2":
+  version: 0.5.2
+  resolution: "prettier-plugin-tailwindcss@npm:0.5.2"
   peerDependencies:
     "@ianvs/prettier-plugin-sort-imports": "*"
     "@prettier/plugin-pug": "*"
@@ -7567,7 +7606,7 @@ __metadata:
       optional: true
     prettier-plugin-twig-melody:
       optional: true
-  checksum: 154fa3644e6c58b7fcc8c6092f162b9c3e973fd8245c14bb0c396b5d0052f982e8a57e4a5ef71b7308f1cae40b022f7943500fe1e0e33e315f1eb249cbcd7a97
+  checksum: 2ad02b96e31dfccb2a2717aa5fb6b2e43313d40a86e227464a0051b8fc7db18cfdb17a50a6739da2392fa56f4679356adc4a24ad36a8f47d0170ea3fad4dd442
   languageName: node
   linkType: hard
 
@@ -7577,6 +7616,17 @@ __metadata:
   bin:
     prettier: bin/prettier.cjs
   checksum: e1f3f16c7fe0495de3faa182597871f74927d787cce3c52095a66ff5d7eacc05173371d5f58bf12141a0a1b6bfe739a338531d6cf18b92c7256c1319f2c84e73
+  languageName: node
+  linkType: hard
+
+"prisma@npm:^5.1.1":
+  version: 5.1.1
+  resolution: "prisma@npm:5.1.1"
+  dependencies:
+    "@prisma/engines": 5.1.1
+  bin:
+    prisma: build/index.js
+  checksum: ab0879fdff3a5e3f50956e18308bd996708519824802b2528c80d1639bbb4d8dd499ef17670db27986695811a9e28b2c9d5ab0753031441ee12878b30bace8b7
   languageName: node
   linkType: hard
 
@@ -7739,9 +7789,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-i18next@npm:^13.1.1":
-  version: 13.1.1
-  resolution: "react-i18next@npm:13.1.1"
+"react-i18next@npm:^13.1.2":
+  version: 13.1.2
+  resolution: "react-i18next@npm:13.1.2"
   dependencies:
     "@babel/runtime": ^7.22.5
     html-parse-stringify: ^3.0.1
@@ -7753,7 +7803,7 @@ __metadata:
       optional: true
     react-native:
       optional: true
-  checksum: 3ad3c655fb47a7098ed108874364617940109018e5b4d42a6cd93a2e9fe9a17eef1adc78b77d5e26e62fe8ce073a20428eadf870bbbff11b4d632bd6831fd5b3
+  checksum: 105a17fe24a554af2fe8e44fefb279e0a044197aafaa8a46a046f655db2fdf094c68a70e0a6b23ed818c68a622c80f09f6cf2d94373a7ebe55bfcd993168a811
   languageName: node
   linkType: hard
 
@@ -7782,17 +7832,17 @@ __metadata:
     "@trpc/react-query": ^10.37.1
     "@trpc/server": ^10.37.1
     "@types/debug": ^4.1.8
-    "@types/node": ^20.4.9
+    "@types/node": ^20.5.0
     "@types/react": ^18.2.20
     "@types/react-dom": ^18.2.7
     animate.css: ^4.1.1
-    autoprefixer: ^10.4.14
+    autoprefixer: ^10.4.15
     classnames: ^2.3.2
     commitlint: ^17.7.1
     conventional-changelog-eslint: ^4.0.0
     daisyui: ^3.5.1
     debug: ^4.3.4
-    eslint: ^8.46.0
+    eslint: ^8.47.0
     eslint-config-next: ^13.4.13
     eslint-config-prettier: ^9.0.0
     eslint-plugin-prettier: ^5.0.0
@@ -7809,10 +7859,11 @@ __metadata:
     postcss-preset-env: ^9.1.1
     precise-commits: ^1.0.2
     prettier: ^3.0.1
-    prettier-plugin-tailwindcss: ^0.5.1
+    prettier-plugin-tailwindcss: ^0.5.2
+    prisma: ^5.1.1
     react: ^18.2.0
     react-dom: ^18.2.0
-    react-i18next: ^13.1.1
+    react-i18next: ^13.1.2
     react-rotating-text: ^1.4.1
     semantic-release: ^21.0.7
     sharp: ^0.32.4
