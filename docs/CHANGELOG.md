@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/polpenaloza/react-me.com/compare/v1.8.0...v1.8.1) (2023-08-31)
+
+
+### Bug Fixes
+
+* **ui:** particles ([#148](https://github.com/polpenaloza/react-me.com/issues/148)) ([1269825](https://github.com/polpenaloza/react-me.com/commit/1269825a8f0c46ea13ccd7fa5c5231b35d8cde61))
+
 # [1.8.0](https://github.com/polpenaloza/react-me.com/compare/v1.7.0...v1.8.0) (2023-08-31)
 
 
