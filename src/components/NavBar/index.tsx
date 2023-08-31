@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic'
 import Link from 'next/link'
 import { useTranslation } from 'react-i18next'
 
+import { RotateText } from '~/components/Rotate'
 import { iAppPersistState, useAppPersistStore } from '~/core/store/persistState'
 
 const Button = dynamic(() => import('~/components/Button/BaseButton'))
@@ -10,7 +11,7 @@ const ThemeIcon = dynamic(() => import('~/components/Icon/ThemeIcon'))
 const TranslateIcon = dynamic(() => import('~/components/Icon/TranslateIcon'))
 
 export const NavBar = () => {
-  const { t, i18n } = useTranslation()
+  const { i18n } = useTranslation()
   const darkMode = useAppPersistStore(
     (state: iAppPersistState) => state.darkMode
   )
@@ -65,15 +66,42 @@ export const NavBar = () => {
           </a>
           <div
             className={classNames([
+              'flex items-center justify-center gap-1 font-light',
               {
-                'text-purple-700': darkMode,
-                'text-pink-300': !darkMode,
+                'text-purple-700': !darkMode,
+                'text-pink-300': darkMode,
               },
             ])}
           >
-            {[t('welcome'), t('howAreYou'), t('slang')].join(' ')}
+            <RotateText
+              phrases={[
+                'git config --global user.name “[firstname lastname]”',
+                'git config --global user.email “[valid-email]”',
+                'git init',
+                'git clone [ssh]',
+                'git branch -d [branch-name]',
+                'git status',
+                'git add -A',
+                'git commit -m “[descriptive message]”',
+                'git checkout [branch-name]',
+                'git push origin [branch-name]',
+                'git pull',
+                'git merge [branch-name]',
+                'git reset --hard [commit]',
+                'git log',
+                'git show [commit]',
+                'git diff [first-branch]...[second-branch]',
+                'git tag [commitID]',
+                'git fetch',
+                'git stash',
+                'git rebase [branch]',
+                'git remote add origin [url]',
+                'git remote -v',
+                'git remote set-url origin [url]',
+              ]}
+            />
+            <div className='animate-blink'>|</div>
           </div>
-          <span className='animate-blink font-mono font-bold'>|</span>
         </div>
       </div>
       <div className='navbar-end'>
