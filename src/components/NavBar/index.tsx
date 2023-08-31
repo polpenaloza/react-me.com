@@ -1,14 +1,12 @@
 import classNames from 'classnames'
-import dynamic from 'next/dynamic'
 import Link from 'next/link'
 import { useTranslation } from 'react-i18next'
 
+import { Button } from '~/components/Button'
+import { ThemeIcon } from '~/components/Icon/ThemeIcon'
+import { TranslateIcon } from '~/components/Icon/TranslateIcon'
 import { RotateText } from '~/components/Rotate'
 import { iAppPersistState, useAppPersistStore } from '~/core/store/persistState'
-
-const Button = dynamic(() => import('~/components/Button/BaseButton'))
-const ThemeIcon = dynamic(() => import('~/components/Icon/ThemeIcon'))
-const TranslateIcon = dynamic(() => import('~/components/Icon/TranslateIcon'))
 
 export const NavBar = () => {
   const { i18n } = useTranslation()

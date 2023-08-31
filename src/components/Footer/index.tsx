@@ -1,9 +1,9 @@
 import { useTranslation } from 'react-i18next'
 
-import BrandIcon from '~/components/Icon/BrandIcon'
-import Github from '~/components/Icon/GithubIcon'
-import LinkedinIcon from '~/components/Icon/LinkedinIcon'
-import TwitterIcon from '~/components/Icon/TwitterIcon'
+import { BrandIcon } from '~/components/Icon/BrandIcon'
+import { GithubIcon } from '~/components/Icon/GithubIcon'
+import { LinkedinIcon } from '~/components/Icon/LinkedinIcon'
+import { TwitterIcon } from '~/components/Icon/TwitterIcon'
 
 export default function Footer() {
   const { t } = useTranslation()
@@ -24,7 +24,7 @@ export default function Footer() {
           rel='noopener noreferrer'
           title='polpenaloza'
         >
-          <Github iconSize={30} />
+          <GithubIcon iconSize={30} />
         </a>
         <a
           target={'_blank'}
