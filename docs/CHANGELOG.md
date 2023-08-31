@@ -1,3 +1,16 @@
+# [1.8.0](https://github.com/polpenaloza/react-me.com/compare/v1.7.0...v1.8.0) (2023-08-31)
+
+
+### Bug Fixes
+
+* **fleek:** build ([#131](https://github.com/polpenaloza/react-me.com/issues/131)) ([b07ffc4](https://github.com/polpenaloza/react-me.com/commit/b07ffc4cfed3f8a3f23d6e3d4ec76e3b5f4cb3e7))
+
+
+### Features
+
+* **particles:** init ([#143](https://github.com/polpenaloza/react-me.com/issues/143)) ([7f55689](https://github.com/polpenaloza/react-me.com/commit/7f5568956584e70032f8e6e84460b9c4f438a32b))
+* **text:** display ([#146](https://github.com/polpenaloza/react-me.com/issues/146)) ([92d51fb](https://github.com/polpenaloza/react-me.com/commit/92d51fbaf2328446c1e707480af927c97135a703))
+
 # [1.7.0](https://github.com/polpenaloza/react-me.com/compare/v1.6.0...v1.7.0) (2023-04-24)
 
 
