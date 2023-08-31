@@ -27,7 +27,6 @@
     "i18next-http-backend": "^2.2.1",
     "immer": "^10.0.2",
     "next": "^13.4.13",
-    "pathseg": "^1.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^13.1.2",
@@ -36,7 +35,6 @@
     "sugar": "^2.0.6",
     "superjson": "^1.13.1",
     "tsparticles": "^2.12.0",
-    "tsparticles-slim": "^2.12.0",
     "zod": "^3.21.4",
     "zustand": "^4.4.1"
   },

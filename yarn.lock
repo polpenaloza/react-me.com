@@ -2524,7 +2524,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"classnames@npm:^2.3.2":
+"classnames@npm:^2.1.2, classnames@npm:^2.3.2":
   version: 2.3.2
   resolution: "classnames@npm:2.3.2"
   checksum: 2c62199789618d95545c872787137262e741f9db13328e216b093eea91c85ef2bfb152c1f9e63027204e2559a006a92eb74147d46c800a9f96297ae1d9f96f4e
@@ -5622,6 +5622,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.toarray@npm:^4.4.0":
+  version: 4.4.0
+  resolution: "lodash.toarray@npm:4.4.0"
+  checksum: 2eebcbe75734223b2526018b1c66f7f5e3e5e21e2caffde1553e3453393a676347f2adb7ecbf08364521c188dbf280bd88053604ea159a95121d44453916c31f
+  languageName: node
+  linkType: hard
+
 "lodash.uniq@npm:^4.5.0":
   version: 4.5.0
   resolution: "lodash.uniq@npm:4.5.0"
@@ -6991,13 +6998,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pathseg@npm:^1.2.1":
-  version: 1.2.1
-  resolution: "pathseg@npm:1.2.1"
-  checksum: c83761317b4789d31162165bd34ebc36b99ef77ebfd971bfbc2e65c3400c72f10cd638224abe818dbd4cc8e72518977c29490963e2d9b3212ba37cbb7b730b16
-  languageName: node
-  linkType: hard
-
 "picocolors@npm:^1.0.0":
   version: 1.0.0
   resolution: "picocolors@npm:1.0.0"
@@ -7691,7 +7691,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.8.1":
+"prop-types@npm:^15.5.10, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -7853,7 +7853,6 @@ __metadata:
     i18next-http-backend: ^2.2.1
     immer: ^10.0.2
     next: ^13.4.13
-    pathseg: ^1.2.1
     postcss: ^8.4.27
     postcss-flexbugs-fixes: ^5.0.2
     postcss-import: ^15.1.0
@@ -7873,21 +7872,23 @@ __metadata:
     tailwind-scrollbar: ^3.0.5
     tailwindcss: ^3.3.3
     tsparticles: ^2.12.0
-    tsparticles-slim: ^2.12.0
     typescript: 5.1.6
     zod: ^3.21.4
     zustand: ^4.4.1
   languageName: unknown
   linkType: soft
 
-"react-particles@npm:^2.12.2":
-  version: 2.12.2
-  resolution: "react-particles@npm:2.12.2"
+"react-rotating-text@npm:^1.4.1":
+  version: 1.4.1
+  resolution: "react-rotating-text@npm:1.4.1"
   dependencies:
-    tsparticles-engine: ^2.12.0
+    classnames: ^2.1.2
+    lodash.toarray: ^4.4.0
+    prop-types: ^15.5.10
   peerDependencies:
-    react: ">=16"
-  checksum: 2dce2d3cf03841d855e3baa13363e4b1c1ecba53268e7b39a345f4e1c2951275b0492ef5db90f70e877d9016bde37fbda7ea65b67047f5092c30061fff0ed72f
+    react: ">= 15"
+    react-dom: ">= 15"
+  checksum: 191bcbd73c577e7450797a1cbaec7e083bf226188f555ecb5e554772a93475cb0caa1e6dae975f9358aab914da9a30c3275230a1d349ede44daa6d924bfaba6a
   languageName: node
   linkType: hard
 
