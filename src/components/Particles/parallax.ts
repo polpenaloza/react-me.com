@@ -82,7 +82,7 @@ export const parallaxOptions = {
         radius: 60,
       },
       grab: {
-        distance: 400,
+        distance: 300,
         links: {
           blink: false,
           consent: false,
@@ -227,7 +227,7 @@ export const parallaxOptions = {
           sync: true,
         },
       },
-      value: '#ffffff',
+      value: '#f9a8d4',
     },
     destroy: {
       bounds: {},
@@ -487,7 +487,7 @@ export const parallaxOptions = {
         minimumValue: 1,
       },
       value: {
-        max: 10,
+        max: 3,
         min: 0.1,
       },
     },

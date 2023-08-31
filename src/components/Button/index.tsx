@@ -10,7 +10,7 @@ export interface BaseProps
   isDarkMode?: boolean
 }
 
-export const BaseButton = ({
+export const Button = ({
   children,
   className = '',
   variant = 'default',
@@ -120,5 +120,3 @@ export const BaseButton = ({
     </div>
   )
 }
-
-export default BaseButton
