@@ -5,7 +5,7 @@ import React, { ReactNode, useEffect, useState } from 'react'
 
 import { iAppPersistState, useAppPersistStore } from '~/core/store/persistState'
 
-const FooterBar = dynamic(() => import('~/components/Footer/FooterBar'))
+const Footer = dynamic(() => import('~/components/Footer'))
 
 type Props = {
   children: ReactNode
@@ -30,12 +30,12 @@ export function LayoutAuthenticated({ children }: Props) {
       <div data-theme={darkMode ? 'night' : 'light'}>
         <div
           className={classNames([
-            'flex grow flex-col',
-            'h-screen w-screen transition-position',
+            'z-1 flex grow flex-col',
+            'h-screen w-screen',
           ])}
         >
           {children}
-          <FooterBar />
+          <Footer />
         </div>
       </div>
     </>

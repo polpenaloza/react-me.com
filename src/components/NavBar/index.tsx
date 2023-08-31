@@ -1,3 +1,4 @@
+import classNames from 'classnames'
 import dynamic from 'next/dynamic'
 import Link from 'next/link'
 import { useTranslation } from 'react-i18next'
@@ -9,7 +10,7 @@ const ThemeIcon = dynamic(() => import('~/components/Icon/ThemeIcon'))
 const TranslateIcon = dynamic(() => import('~/components/Icon/TranslateIcon'))
 
 export const NavBar = () => {
-  const { i18n } = useTranslation()
+  const { t, i18n } = useTranslation()
   const darkMode = useAppPersistStore(
     (state: iAppPersistState) => state.darkMode
   )
@@ -54,7 +55,7 @@ export const NavBar = () => {
         </div>
       </div>
       <div className='navbar-center'>
-        <div className='flex items-center px-2 font-mono font-bold'>
+        <div className='flex items-center gap-1 px-2 font-mono font-bold'>
           <a
             href='https://github.com/polpenaloza/react-me.com'
             target='_blank'
@@ -62,27 +63,41 @@ export const NavBar = () => {
           >
             dev@polpenaloza: ~/$
           </a>
+          <div
+            className={classNames([
+              {
+                'text-purple-700': darkMode,
+                'text-pink-300': !darkMode,
+              },
+            ])}
+          >
+            {[t('welcome'), t('howAreYou'), t('slang')].join(' ')}
+          </div>
           <span className='animate-blink font-mono font-bold'>|</span>
         </div>
       </div>
       <div className='navbar-end'>
-        <div className='px-4 uppercase'>{i18n.language}</div>
-        <Button
-          aria-label='translate'
-          variant='outline'
-          onClick={() => changeLanguage()}
-        >
-          <TranslateIcon />
-        </Button>
-        <Button
-          aria-label='theme'
-          variant='outline'
-          particles
-          isDarkMode={darkMode}
-          onClick={() => setDarkMode()}
-        >
-          <ThemeIcon />
-        </Button>
+        <div className='flex items-center justify-center align-middle'>
+          <div className='mt-1 h-full px-2 py-1 text-xs uppercase'>
+            {i18n.language}
+          </div>
+          <Button
+            aria-label='translate'
+            variant='outline'
+            onClick={() => changeLanguage()}
+          >
+            <TranslateIcon />
+          </Button>
+          <Button
+            aria-label='theme'
+            variant='outline'
+            particles
+            isDarkMode={darkMode}
+            onClick={() => setDarkMode()}
+          >
+            <ThemeIcon />
+          </Button>
+        </div>
       </div>
     </div>
   )

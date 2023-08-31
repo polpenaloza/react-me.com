@@ -1,9 +1,10 @@
-import debug from 'debug'
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import { immer } from 'zustand/middleware/immer'
 
-const logger = debug('persist-store')
+import { logger } from '../logger'
+
+const log = logger('persist-store')
 
 interface iUserState {
   userName: string
@@ -28,8 +29,6 @@ export interface iAppPersistState {
   setUser(state: iUserState): void
 }
 
-logger('init')
-
 export const useAppPersistStore = create<iAppPersistState>()(
   immer(
     persist<iAppPersistState>(
@@ -45,12 +44,12 @@ export const useAppPersistStore = create<iAppPersistState>()(
       {
         name: 'zustand-app-store',
         onRehydrateStorage: () => {
-          logger('hydration starts')
+          log('hydration starts')
           return (state, error) => {
             if (error) {
-              logger('an error happened during hydration', error)
+              log('an error happened during hydration', error)
             } else {
-              logger('hydration finished', { state })
+              log('hydration finished', { state })
             }
           }
         },
