@@ -39,7 +39,7 @@ export function AppProviders({ children }: AppProvidersProps) {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* <ReactQueryDevtools initialIsOpen={false} position='bottom-left' /> */}
+      <ReactQueryDevtools initialIsOpen={false} position='bottom-left' />
       <ErrorBoundary>
         <I18nextProvider i18n={i18n}>{children}</I18nextProvider>
       </ErrorBoundary>
