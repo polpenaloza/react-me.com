@@ -1,11 +1,30 @@
 export const defaultOptions = {
   detectRetina: false,
   fpsLimit: 60,
+  background: {
+    opacity: 1,
+    position: '50% 50%',
+    repeat: 'no-repeat',
+    size: 'cover',
+  },
+  fullScreen: {
+    enable: true,
+    zIndex: 1,
+  },
   interactivity: {
     events: {
+      onClick: {
+        enable: true,
+        mode: 'push',
+      },
       onHover: {
         enable: true,
-        mode: 'bubble',
+        mode: 'repulse',
+        parallax: {
+          enable: false,
+          force: 4,
+          smooth: 10,
+        },
       },
       resize: true,
     },
@@ -16,6 +35,13 @@ export const defaultOptions = {
         opacity: 8,
         size: 6,
         speed: 3,
+      },
+      repulse: {
+        distance: 150,
+        duration: 0.4,
+        factor: 20,
+        speed: 1,
+        maxSpeed: 50,
       },
     },
   },
@@ -72,7 +98,7 @@ export const defaultOptions = {
       value: 1,
     },
     shape: {
-      type: 'circle',
+      type: 'triangle',
     },
     size: {
       animation: {
@@ -84,19 +110,5 @@ export const defaultOptions = {
       random: true,
       value: 1,
     },
-  },
-  polygon: {
-    draw: {
-      enable: true,
-      lineColor: 'rgba(255,255,255,0.2)',
-      lineWidth: 0.3,
-    },
-    move: {
-      radius: 10,
-    },
-    inlineArrangement: 'equidistant',
-    scale: 0.5,
-    type: 'inline',
-    url: '/bird-cells-new.svg',
   },
 }
