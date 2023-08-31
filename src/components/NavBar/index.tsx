@@ -56,7 +56,7 @@ export const NavBar = () => {
         </div>
       </div>
       <div className='navbar-center'>
-        <div className='flex items-center gap-1 px-2 font-mono font-bold'>
+        <div className='flex items-center gap-1 px-2 font-mono text-xs font-bold sm:text-base'>
           <a
             href='https://github.com/polpenaloza/react-me.com'
             target='_blank'

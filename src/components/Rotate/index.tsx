@@ -12,7 +12,9 @@ export function RotateText({ phrases }: { phrases: string[] }) {
 
   return (
     <TextTransition springConfig={presets.wobbly}>
-      {phrases[index % phrases.length]}
+      <div className='w-8 overflow-hidden text-ellipsis whitespace-nowrap text-xs sm:w-full'>
+        {phrases[index % phrases.length]}
+      </div>
     </TextTransition>
   )
 }

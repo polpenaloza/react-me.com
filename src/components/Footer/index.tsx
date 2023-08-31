@@ -10,14 +10,14 @@ export default function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className='footer items-center bg-base-100 p-4 text-base-content'>
+    <footer className='footer items-center justify-center bg-base-100 p-4 text-base-content sm:justify-normal'>
       <div className='grid-flow-col items-center'>
         <BrandIcon iconSize={30} />
         <p>
           {t('copyright')} &copy;{year} - {t('allRights')}
         </p>
       </div>
-      <div className='grid-flow-col gap-4 md:place-self-center md:justify-self-end'>
+      <div className='grid-flow-col gap-4 place-self-center md:place-self-center md:justify-self-end'>
         <a
           target={'_blank'}
           href='https://github.com/polpenaloza'

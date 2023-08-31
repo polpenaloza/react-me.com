@@ -1,14 +1,11 @@
 'use client'
 
 import classNames from 'classnames'
-import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
 
 import { Loader } from '~/components/Loader'
 import { Particles } from '~/components/Particles'
 import { iAppPersistState, useAppPersistStore } from '~/core/store/persistState'
-
-const NavBar = dynamic(() => import('~/components/NavBar'))
 
 const Home = () => {
   const darkMode = useAppPersistStore(
@@ -17,9 +14,6 @@ const Home = () => {
 
   return (
     <Suspense fallback={<Loader />}>
-      <div className='h-14'>
-        <NavBar />
-      </div>
       <section className='flex h-full flex-col items-center justify-between overflow-auto'>
         {!darkMode ? (
           <>
