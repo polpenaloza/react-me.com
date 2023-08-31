@@ -20,7 +20,7 @@ module.exports = {
         position: 'right, left, top, bottom, margin, padding',
         textColor: 'color',
       },
-      keyframes: (theme) => ({
+      keyframes: () => ({
         'fade-out': {
           from: { opacity: 1 },
           to: { opacity: 0 },
@@ -31,7 +31,7 @@ module.exports = {
         },
         blink: {
           '0%, 100%': { color: 'transparent' },
-          '50%': { color: theme('colors.primary.500') },
+          '50%': { color: 'inherit' },
         },
         bounce: {
           '0%, 100%': {
