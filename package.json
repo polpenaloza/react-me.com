@@ -30,10 +30,12 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^13.1.2",
+    "react-particles": "^2.12.2",
     "react-rotating-text": "^1.4.1",
     "sharp": "^0.32.4",
     "sugar": "^2.0.6",
     "superjson": "^1.13.1",
+    "tsparticles": "^2.12.0",
     "zod": "^3.21.4",
     "zustand": "^4.4.1"
   },
