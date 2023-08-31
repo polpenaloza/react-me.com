@@ -7864,6 +7864,7 @@ __metadata:
     react: ^18.2.0
     react-dom: ^18.2.0
     react-i18next: ^13.1.2
+    react-particles: ^2.12.2
     react-rotating-text: ^1.4.1
     semantic-release: ^21.0.7
     sharp: ^0.32.4
@@ -7877,6 +7878,17 @@ __metadata:
     zustand: ^4.4.1
   languageName: unknown
   linkType: soft
+
+"react-particles@npm:^2.12.2":
+  version: 2.12.2
+  resolution: "react-particles@npm:2.12.2"
+  dependencies:
+    tsparticles-engine: ^2.12.0
+  peerDependencies:
+    react: ">=16"
+  checksum: 2dce2d3cf03841d855e3baa13363e4b1c1ecba53268e7b39a345f4e1c2951275b0492ef5db90f70e877d9016bde37fbda7ea65b67047f5092c30061fff0ed72f
+  languageName: node
+  linkType: hard
 
 "react-rotating-text@npm:^1.4.1":
   version: 1.4.1
