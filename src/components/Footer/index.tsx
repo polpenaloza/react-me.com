@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
 
 import BrandIcon from '~/components/Icon/BrandIcon'
+import Github from '~/components/Icon/GithubIcon'
 import LinkedinIcon from '~/components/Icon/LinkedinIcon'
 import TwitterIcon from '~/components/Icon/TwitterIcon'
 
@@ -17,6 +18,14 @@ export default function Footer() {
         </p>
       </div>
       <div className='grid-flow-col gap-4 md:place-self-center md:justify-self-end'>
+        <a
+          target={'_blank'}
+          href='https://github.com/polpenaloza'
+          rel='noopener noreferrer'
+          title='polpenaloza'
+        >
+          <Github iconSize={30} />
+        </a>
         <a
           target={'_blank'}
           href='https://twitter.com/polpenaloza'
