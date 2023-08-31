@@ -3,7 +3,6 @@
 @import 'tailwind/_utilities.css';
 
 @import 'tea.css';
-@import 'waves.css';
 @import 'birds.scss';
 
 *,
@@ -14,20 +13,6 @@
 
 body {
   @apply bg-black text-slate-100;
-}
-
-particle {
-  position: fixed;
-  left: 0;
-  top: 0;
-  border-radius: 50%;
-  pointer-events: none;
-  opacity: 0;
-}
-
-.react-rotating-text-cursor {
-  animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s
-    infinite;
 }
 
 @keyframes blinking-cursor {

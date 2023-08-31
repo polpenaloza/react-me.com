@@ -1,5 +1,9 @@
 import debug from 'debug'
 
-const logger = debug('pol')
+export function logger(name: string) {
+  const coreLog = debug('pol')
+  const mainLog = coreLog.extend(name)
 
-export { logger }
+  mainLog('init')
+  return mainLog
+}

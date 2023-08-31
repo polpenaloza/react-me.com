@@ -1,9 +1,10 @@
-import debug from 'debug'
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import { immer } from 'zustand/middleware/immer'
 
-const logger = debug('store')
+import { logger } from '../logger'
+
+const log = logger('store')
 
 export interface iAppState {
   main: any
@@ -27,9 +28,9 @@ export const useAppStore = create<iAppState>()(
           logger('hydration starts')
           return (state, error) => {
             if (error) {
-              logger('an error happened during hydration', error)
+              log('an error happened during hydration %o', error)
             } else {
-              logger('hydration finished', { state })
+              log('hydration finished %o', state)
             }
           }
         },
