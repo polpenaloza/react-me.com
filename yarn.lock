@@ -4740,12 +4740,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"i18next-http-backend@npm:^2.2.1":
-  version: 2.2.1
-  resolution: "i18next-http-backend@npm:2.2.1"
+"i18next-http-backend@npm:^2.2.2":
+  version: 2.2.2
+  resolution: "i18next-http-backend@npm:2.2.2"
   dependencies:
     cross-fetch: 3.1.6
-  checksum: a3f33b455555587ac1a5db94119bd944dca1ce7b685161d487dd0bd50342f4ed060dd263bf1adacd14cb0c0a58f695befb9a22ea1eb87f19be98ef7bbac91349
+  checksum: b098cf89e685bf8f2487a3cfd2e792d85218620b8311c91cc0782f2af03420e518c5d8e899cd9011af3472837362556d7468ff38c890aaf98d2721419a901434
   languageName: node
   linkType: hard
 
@@ -8101,7 +8101,7 @@ __metadata:
     eslint-plugin-simple-import-sort: ^10.0.0
     husky: ^8.0.3
     i18next: ^23.4.6
-    i18next-http-backend: ^2.2.1
+    i18next-http-backend: ^2.2.2
     immer: ^10.0.2
     next: ^13.4.19
     postcss: ^8.4.29
