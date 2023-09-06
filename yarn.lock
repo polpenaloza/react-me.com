@@ -3041,16 +3041,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:^3.6.4":
-  version: 3.6.4
-  resolution: "daisyui@npm:3.6.4"
+"daisyui@npm:^3.7.0":
+  version: 3.7.0
+  resolution: "daisyui@npm:3.7.0"
   dependencies:
     colord: ^2.9
     css-selector-tokenizer: ^0.8
     postcss: ^8
     postcss-js: ^4
     tailwindcss: ^3
-  checksum: d0830456870c5e420ce42919305b4fa851f79d1ca6d1f3b7ad1e83a07cbe21fc7b20fa77dbb6f5d7971fcd551f7609ee07ca68545db802f8f0d29266e78bd656
+  checksum: 3c433160fe9cdbaf70fb4d2451a6b5c55c1be97544ae6885da0cbf6d02aab4c860473127744c1526f97e48d2938862b81101c4d343c4825e8cfa40a7501c52ad
   languageName: node
   linkType: hard
 
@@ -8091,7 +8091,7 @@ __metadata:
     classnames: ^2.3.2
     commitlint: ^17.7.1
     conventional-changelog-eslint: ^5.0.0
-    daisyui: ^3.6.4
+    daisyui: ^3.7.0
     debug: ^4.3.4
     eslint: ^8.48.0
     eslint-config-next: ^13.4.19
