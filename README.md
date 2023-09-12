@@ -5,16 +5,16 @@
 ### Dependencies
 
 - [node](https://nodejs.org/en/download/) v18.x
-- [yarn](https://classic.yarnpkg.com/en/docs/install/) v1.x
+- [pnpm](https://pnpm.io/) v8.x
 
 ### Pre-Requisites
 
-- install yarn https://classic.yarnpkg.com/en/docs/install/
+- install pnpm https://pnpm.io/installation
 
 ### Command lines
 
 ```sh
-yarn install
+pnpm install
 ```
 
 ## How to run
@@ -28,7 +28,7 @@ yarn install
 To develop on the app
 
 ```
-yarn dev
+pnpm dev
 ```
 
 ### Build
@@ -36,5 +36,13 @@ yarn dev
 To build the app
 
 ```
-yarn build
+pnpm build
+```
+
+### Update Dependencies
+
+To update the package dependencies
+
+```
+pnpm update --interactive
 ```

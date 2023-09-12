@@ -42,7 +42,7 @@ jobs:
         uses: ./.github/actions/node
 
       - name: Lint Code
-        run: yarn lint
+        run: pnpm lint
         env:
           CI: true
 
@@ -67,7 +67,7 @@ jobs:
         uses: ./.github/actions/node
 
       - name: Build
-        run: yarn build
+        run: pnpm build
         env:
           CI: true
 

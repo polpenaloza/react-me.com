@@ -74,7 +74,13 @@ dependencies:
   superjson:
     specifier: ^1.13.1
     version: 1.13.1
+  tslib:
+    specifier: ^2.6.2
+    version: 2.6.2
   tsparticles:
+    specifier: ^2.12.0
+    version: 2.12.0
+  tsparticles-engine:
     specifier: ^2.12.0
     version: 2.12.0
   zod:
