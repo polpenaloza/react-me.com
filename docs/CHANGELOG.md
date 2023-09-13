@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/polpenaloza/react-me.com/compare/v1.8.1...v1.9.0) (2023-09-13)
+
+
+### Features
+
+* **pkg:** manager to pnpm ([#150](https://github.com/polpenaloza/react-me.com/issues/150)) ([c59de84](https://github.com/polpenaloza/react-me.com/commit/c59de84c033902ac46a7280e089d84a44f2ad56f))
+
 ## [1.8.1](https://github.com/polpenaloza/react-me.com/compare/v1.8.0...v1.8.1) (2023-08-31)
 
 
