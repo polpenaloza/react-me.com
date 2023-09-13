@@ -4,8 +4,8 @@
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "composite": false,
-    "declaration": true,
-    "declarationMap": true,
+    "declaration": false,
+    "declarationMap": false,
     "downlevelIteration": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -24,6 +24,7 @@
       "es2015.iterable"
     ],
     "module": "esnext",
+    "moduleDetection": "force",
     "moduleResolution": "node",
     "noEmit": true,
     "noFallthroughCasesInSwitch": true,
@@ -31,19 +32,19 @@
     "noUnusedParameters": false,
     "outDir": "out",
     "paths": {
-      "~/*": ["src/*"]
+      "~/*": ["./src/*"]
     },
-    "preserveWatchOutput": true,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "sourceMap": true,
-    "strict": true,
-    "target": "es5",
     "plugins": [
       {
         "name": "next"
       }
-    ]
+    ],
+    "preserveWatchOutput": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": false,
+    "strict": true,
+    "target": "es5"
   },
   "display": "Next.js",
   "exclude": ["node_modules"],

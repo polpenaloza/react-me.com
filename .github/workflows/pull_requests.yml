@@ -18,7 +18,7 @@ jobs:
         uses: styfle/cancel-workflow-action@0.11.0
 
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -34,7 +34,7 @@ jobs:
     needs: setup
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -42,7 +42,7 @@ jobs:
         uses: ./.github/actions/node
 
       - name: Lint Code
-        run: yarn lint
+        run: pnpm lint
         env:
           CI: true
 
@@ -59,7 +59,7 @@ jobs:
     needs: setup
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -67,7 +67,7 @@ jobs:
         uses: ./.github/actions/node
 
       - name: Build
-        run: yarn build
+        run: pnpm build
         env:
           CI: true
 
