@@ -16,6 +16,7 @@ outputs:
 runs:
   using: "composite"
   steps:
+    - uses: pnpm/action-setup@v2
     - uses: actions/setup-node@v3
       with:
         node-version: ${{ inputs.node-version }}
