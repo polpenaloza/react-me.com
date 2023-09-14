@@ -8,10 +8,6 @@ inputs:
     description: "Node version to use, default to (18.x)"
     required: true
     default: 18.12.0
-outputs:
-  cache-hit:
-    description: "Forward actions/cache cache-hit output"
-    value: ${{ steps.pnpm-cache.outputs.cache-hit }}
 
 runs:
   using: "composite"
@@ -20,13 +16,6 @@ runs:
     - uses: actions/setup-node@v3
       with:
         node-version: ${{ inputs.node-version }}
-    - uses: actions/cache@v3
-      id: pnpm-cache
-      with:
-        path: node_modules
-        key: node-modules-${{ runner.os }}-pnpm-${{ hashFiles('pnpm-lock.yaml') }}
-        restore-keys: |
-          node-modules-${{ runner.os }}-pnpm-
+        cache: "pnpm"
     - shell: bash
-      if: steps.pnpm-cache.outputs.cache-hit != 'true'
       run: pnpm install
