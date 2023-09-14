@@ -15,3 +15,4 @@ node_modules
 out/
 coverage/
 next-env.*
+pnpm-lock.yaml
