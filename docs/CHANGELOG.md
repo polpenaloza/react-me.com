@@ -1,3 +1,11 @@
+## [1.9.1](https://github.com/polpenaloza/react-me.com/compare/v1.9.0...v1.9.1) (2023-09-14)
+
+
+### Bug Fixes
+
+* **gha:** pr action ([#162](https://github.com/polpenaloza/react-me.com/issues/162)) ([b6697f9](https://github.com/polpenaloza/react-me.com/commit/b6697f935a5421b1ea81fafd9c735fccc101fe72))
+* **gha:** title pr regex ([#161](https://github.com/polpenaloza/react-me.com/issues/161)) ([3abc35d](https://github.com/polpenaloza/react-me.com/commit/3abc35dd7995ccb5aee8e6ff75d4bcb73c1ca71e))
+
 # [1.9.0](https://github.com/polpenaloza/react-me.com/compare/v1.8.1...v1.9.0) (2023-09-13)
 
 
