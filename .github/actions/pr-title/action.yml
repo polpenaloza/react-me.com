@@ -16,7 +16,7 @@ runs:
       continue-on-error: false
       with:
         regex: '\w+\(([\w]+(\-)?[\w]+)\)+:(.\w+.)(.\w+)+'
-        allowed_prefixes: "feature,feat,fix,hotfix,chore,perf,refactor,test,update"
+        allowed_prefixes: "build,feature,feat,fix,hotfix,chore,perf,refactor,test,update,upgrade"
         prefix_case_sensitive: true
         max_length: 80
         github_token: ${{ inputs.token }}
