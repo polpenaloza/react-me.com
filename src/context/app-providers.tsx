@@ -24,7 +24,6 @@ export function AppProviders({ children }: AppProvidersProps) {
         defaultOptions: {
           queries: {
             staleTime: 1000 * 20,
-            cacheTime: 5 * 60 * 1000,
             retry: 0,
             retryDelay: (attemptIndex) =>
               Math.min(1000 * 2 ** attemptIndex, 30000),
@@ -41,7 +40,7 @@ export function AppProviders({ children }: AppProvidersProps) {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <ReactQueryDevtools initialIsOpen={false} position='bottom-left' />
+      <ReactQueryDevtools initialIsOpen={false} position='bottom' />
       <ErrorBoundary>
         <ChatProvider>
           <I18nextProvider i18n={i18n}>{children}</I18nextProvider>
