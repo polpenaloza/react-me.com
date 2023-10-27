@@ -48,7 +48,10 @@ export const NavBar = () => {
             className='menu dropdown-content rounded-box mt-3 w-52 bg-base-100 p-2 shadow'
           >
             <li>
-              <Link href='/'>Homepage</Link>
+              <Link href='/'>Home</Link>
+            </li>
+            <li>
+              <Link href='/chat'>Chat</Link>
             </li>
           </ul>
         </div>
