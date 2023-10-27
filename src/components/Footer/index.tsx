@@ -10,7 +10,7 @@ export default function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className='footer items-center justify-center bg-base-100 p-4 text-base-content sm:justify-normal'>
+    <footer className='footer mt-auto items-center justify-center bg-base-100 p-4 text-base-content sm:justify-normal'>
       <div className='grid-flow-col items-center'>
         <BrandIcon iconSize={30} />
         <p>

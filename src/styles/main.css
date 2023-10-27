@@ -13,14 +13,7 @@
 
 body {
   @apply bg-black text-slate-100;
-}
-
-.main-layout {
-  min-height: 100vh;
-  min-height: 100dvh;
-
-  display: flex;
-  flex-direction: column;
+  overscroll-behavior: none;
 }
 
 @keyframes blinking-cursor {
