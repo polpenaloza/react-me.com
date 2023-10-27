@@ -8,7 +8,6 @@ const inter = Inter({ subsets: ['latin'] })
 import { Metadata, ResolvingMetadata } from 'next'
 import { ReactNode } from 'react'
 
-import { Main } from '~/components/Layout/Main'
 import { AppProviders } from '~/context/app-providers'
 
 const HOSTING_URL =
@@ -131,9 +130,7 @@ export default function Layout({ children }: { children: ReactNode }) {
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <AppProviders>
-          <Main>{children}</Main>
-        </AppProviders>
+        <AppProviders>{children}</AppProviders>
       </body>
     </html>
   )

@@ -48,7 +48,10 @@ export const NavBar = () => {
             className='menu dropdown-content rounded-box mt-3 w-52 bg-base-100 p-2 shadow'
           >
             <li>
-              <Link href='/'>Homepage</Link>
+              <Link href='/'>Home</Link>
+            </li>
+            <li>
+              <Link href='/chat'>Chat</Link>
             </li>
           </ul>
         </div>
@@ -56,6 +59,7 @@ export const NavBar = () => {
       <div className='navbar-center'>
         <div className='flex items-center gap-1 px-2 font-mono text-xs font-bold sm:text-base'>
           <a
+            className='hidden sm:block'
             href='https://github.com/polpenaloza/react-me.com'
             target='_blank'
             rel='noreferrer'
@@ -104,7 +108,7 @@ export const NavBar = () => {
       </div>
       <div className='navbar-end'>
         <div className='flex items-center justify-center align-middle'>
-          <div className='mt-1 h-full px-2 py-1 text-xs uppercase'>
+          <div className='mt-1 hidden h-full px-2 py-1 text-xs uppercase sm:block'>
             {i18n.language}
           </div>
           <Button
