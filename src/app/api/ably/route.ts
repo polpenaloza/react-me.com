@@ -28,6 +28,5 @@ export async function POST(req: Request) {
     clientId: clientId,
   })
 
-  console.log(tokenRequestData)
   return NextResponse.json(tokenRequestData)
 }

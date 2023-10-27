@@ -1,7 +1,7 @@
 'use client'
 
 import dynamic from 'next/dynamic'
-import React, { ReactNode, useEffect, useState } from 'react'
+import React, { ReactNode } from 'react'
 
 import { iAppPersistState, useAppPersistStore } from '~/core/store/persistState'
 
