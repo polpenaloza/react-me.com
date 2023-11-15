@@ -42,8 +42,8 @@ dependencies:
     specifier: ^23.6.0
     version: 23.6.0
   i18next-http-backend:
-    specifier: ^2.3.0
-    version: 2.3.0
+    specifier: ^2.4.1
+    version: 2.4.1
   immer:
     specifier: ^10.0.3
     version: 10.0.3
@@ -3769,8 +3769,8 @@ packages:
     hasBin: true
     dev: true
 
-  /i18next-http-backend@2.3.0:
-    resolution: {integrity: sha512-9m34IcWdS3r43cgq/7O5IsDxTvSQ7pePwk2eQIH5q6Em6OjDCsSjboRWg2jqVdeIoCtHwzTN/byDHPStMsKsPQ==}
+  /i18next-http-backend@2.4.1:
+    resolution: {integrity: sha512-CZHzFGDvF8zN7ya1W2lHbgLj2ejPUvPD836+vA3eNXc9eKGUM3MSF6SA2TKBXKBZ2cNG3nxzycCXeM6n/46KWQ==}
     dependencies:
       cross-fetch: 4.0.0
     transitivePeerDependencies:
