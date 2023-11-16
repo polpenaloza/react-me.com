@@ -45,7 +45,7 @@ export const NavBar = () => {
           </label>
           <ul
             tabIndex={0}
-            className='menu dropdown-content rounded-box mt-3 w-52 bg-base-100 p-2 shadow'
+            className='menu dropdown-content mt-3 w-52 rounded-box bg-base-100 p-2 shadow'
           >
             <li>
               <Link href='/'>Home</Link>

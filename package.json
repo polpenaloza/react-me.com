@@ -95,7 +95,7 @@
     "dev": "next dev",
     "export": "next export",
     "format": "prettier --write .",
-    "lint": "next lint",
+    "lint": "next lint --fix",
     "nuke": "pnpm clean:next && pnpm clean:out && pnpm clean:node && rm pnpm-lock.yaml",
     "postinstall": "prisma generate",
     "prepare": "husky install",
