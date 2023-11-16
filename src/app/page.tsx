@@ -1,9 +1,7 @@
 'use client'
 
 import classNames from 'classnames'
-import { Suspense } from 'react'
 
-import { Loader } from '~/components/Loader'
 import { Particles } from '~/components/Particles'
 import { iAppPersistState, useAppPersistStore } from '~/core/store/persistState'
 
@@ -13,7 +11,7 @@ const Home = () => {
   )
 
   return (
-    <Suspense fallback={<Loader />}>
+    <>
       <section className='flex h-full flex-col items-center justify-between overflow-auto'>
         {!darkMode ? (
           <>
@@ -46,7 +44,7 @@ const Home = () => {
       <section>
         <Particles config={darkMode ? 'parallax' : ''} />
       </section>
-    </Suspense>
+    </>
   )
 }
 
