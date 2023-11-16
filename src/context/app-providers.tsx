@@ -9,8 +9,6 @@ import { I18nextProvider, useTranslation } from 'react-i18next'
 
 import { ErrorBoundary } from '~/components/ErrorBoundary'
 
-import { ChatProvider } from './ChatProvider'
-
 type AppProvidersProps = {
   children: ReactNode
 }
@@ -42,9 +40,7 @@ export function AppProviders({ children }: AppProvidersProps) {
     <QueryClientProvider client={queryClient}>
       <ReactQueryDevtools initialIsOpen={false} position='bottom' />
       <ErrorBoundary>
-        <ChatProvider>
-          <I18nextProvider i18n={i18n}>{children}</I18nextProvider>
-        </ChatProvider>
+        <I18nextProvider i18n={i18n}>{children}</I18nextProvider>
       </ErrorBoundary>
     </QueryClientProvider>
   )
