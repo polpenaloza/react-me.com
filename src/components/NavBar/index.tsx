@@ -50,9 +50,6 @@ export const NavBar = () => {
             <li>
               <Link href='/'>Home</Link>
             </li>
-            <li>
-              <Link href='/chat'>Chat</Link>
-            </li>
           </ul>
         </div>
       </div>
