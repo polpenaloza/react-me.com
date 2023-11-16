@@ -1,3 +1,15 @@
+# [1.10.0](https://github.com/polpenaloza/react-me.com/compare/v1.9.1...v1.10.0) (2023-11-16)
+
+
+### Bug Fixes
+
+* **gha:** node version ([#204](https://github.com/polpenaloza/react-me.com/issues/204)) ([5ed00e5](https://github.com/polpenaloza/react-me.com/commit/5ed00e53b41e8260aab851ab2224329b2953a31e))
+
+
+### Features
+
+* **chat:** section added ([#187](https://github.com/polpenaloza/react-me.com/issues/187)) ([60ef9bc](https://github.com/polpenaloza/react-me.com/commit/60ef9bc48cee76e7ecb5d659d1e1f8154411553b))
+
 ## [1.9.1](https://github.com/polpenaloza/react-me.com/compare/v1.9.0...v1.9.1) (2023-09-14)
 
 
