@@ -2,11 +2,11 @@ import classNames from 'classnames'
 import Link from 'next/link'
 import { useTranslation } from 'react-i18next'
 
-import { Button } from 'apps/polpenaloza/src/components/Button'
-import { ThemeIcon } from 'apps/polpenaloza/src/components/Icon/ThemeIcon'
-import { TranslateIcon } from 'apps/polpenaloza/src/components/Icon/TranslateIcon'
-import { RotateText } from 'apps/polpenaloza/src/components/Rotate'
-import { iAppPersistState, useAppPersistStore } from 'apps/polpenaloza/src/core/store/persistState'
+import { Button } from '@/components/Button'
+import { ThemeIcon } from '@/components/Icon/ThemeIcon'
+import { TranslateIcon } from '@/components/Icon/TranslateIcon'
+import { RotateText } from '@/components/Rotate'
+import { iAppPersistState, useAppPersistStore } from '@/core/store/persistState'
 
 export const NavBar = () => {
   const { i18n } = useTranslation()

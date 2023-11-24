@@ -3,12 +3,12 @@
 import dynamic from 'next/dynamic'
 import { ReactNode, Suspense, useState } from 'react'
 
-import { Loader } from 'apps/polpenaloza/src/components/Loader'
-import { useIsMounted } from 'apps/polpenaloza/src/core/hooks/useIsMounted'
-import { iAppPersistState, useAppPersistStore } from 'apps/polpenaloza/src/core/store/persistState'
+import { Loader } from '@/components/Loader'
+import { useIsMounted } from '@/core/hooks/useIsMounted'
+import { iAppPersistState, useAppPersistStore } from '@/core/store/persistState'
 
-const Footer = dynamic(() => import('apps/polpenaloza/src/components/Footer'))
-const NavBar = dynamic(() => import('apps/polpenaloza/src/components/NavBar'))
+const Footer = dynamic(() => import('@/components/Footer'))
+const NavBar = dynamic(() => import('@/components/NavBar'))
 
 type Props = {
   children: ReactNode

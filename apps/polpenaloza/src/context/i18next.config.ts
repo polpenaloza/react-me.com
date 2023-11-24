@@ -1,8 +1,8 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
 
-import englishTranslations from '../../../../public/locales/en/translation.json'
-import spanishTranslations from '../../../../public/locales/es/translation.json'
+import englishTranslations from '../../public/locales/en/translation.json'
+import spanishTranslations from '../../public/locales/es/translation.json'
 
 // eslint-disable-next-line import/no-named-as-default-member
 i18n

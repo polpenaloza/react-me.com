@@ -1,4 +1,4 @@
-import { Loader } from 'apps/polpenaloza/src/components/Loader'
+import { Loader } from '@/components/Loader'
 
 export default function LoadingApp() {
   return <Loader />

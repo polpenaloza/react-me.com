@@ -1,4 +1,4 @@
-import { router } from 'apps/polpenaloza/src/server/trpc'
+import { router } from '@/server/trpc'
 
 import { movie } from './movie'
 import { movies } from './movies'

@@ -1,9 +1,9 @@
 import { useTranslation } from 'react-i18next'
 
-import { BrandIcon } from 'apps/polpenaloza/src/components/Icon/BrandIcon'
-import { GithubIcon } from 'apps/polpenaloza/src/components/Icon/GithubIcon'
-import { LinkedinIcon } from 'apps/polpenaloza/src/components/Icon/LinkedinIcon'
-import { TwitterIcon } from 'apps/polpenaloza/src/components/Icon/TwitterIcon'
+import { BrandIcon } from '@/components/Icon/BrandIcon'
+import { GithubIcon } from '@/components/Icon/GithubIcon'
+import { LinkedinIcon } from '@/components/Icon/LinkedinIcon'
+import { TwitterIcon } from '@/components/Icon/TwitterIcon'
 
 export default function Footer() {
   const { t } = useTranslation()

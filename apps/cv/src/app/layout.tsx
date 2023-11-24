@@ -1,14 +1,9 @@
-import '@/styles/main.css'
-import 'animate.css'
-
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
 import { Metadata, ResolvingMetadata } from 'next'
 import { ReactNode } from 'react'
-
-import { AppProviders } from '@/context/app-providers'
 
 const HOSTING_URL =
   process.env.NEXT_PUBLIC_HOSTING_URL || 'https://polpenaloza.com/'
@@ -129,9 +124,7 @@ export async function generateMetadata(
 export default function Layout({ children }: { children: ReactNode }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
-        <AppProviders>{children}</AppProviders>
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }

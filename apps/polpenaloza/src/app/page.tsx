@@ -2,8 +2,8 @@
 
 import classNames from 'classnames'
 
-import { Particles } from 'apps/polpenaloza/src/components/Particles'
-import { iAppPersistState, useAppPersistStore } from 'apps/polpenaloza/src/core/store/persistState'
+import { Particles } from '@/components/Particles'
+import { iAppPersistState, useAppPersistStore } from '@/core/store/persistState'
 
 const Home = () => {
   const darkMode = useAppPersistStore(

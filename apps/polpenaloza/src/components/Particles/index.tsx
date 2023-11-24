@@ -5,7 +5,7 @@ import ReactParticles from 'react-particles'
 import { loadFull } from 'tsparticles'
 import type { Container, Engine } from 'tsparticles-engine'
 
-import { logger } from 'apps/polpenaloza/src/core/logger'
+import { logger } from '@/core/logger'
 
 import { defaultOptions } from './options'
 import { parallaxOptions } from './parallax'

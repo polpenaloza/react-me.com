@@ -1,7 +1,7 @@
 import { z } from 'zod'
 
-import { prisma } from 'apps/polpenaloza/src/server/primsa'
-import { publicProcedure } from 'apps/polpenaloza/src/server/trpc'
+import { prisma } from '@/server/primsa'
+import { publicProcedure } from '@/server/trpc'
 
 export const moviesAutocomplete = publicProcedure
   .input(
