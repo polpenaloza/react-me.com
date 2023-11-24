@@ -10,8 +10,6 @@ export function logosSource() {
     'usdc-light': '/svg/usdc-icon.svg',
     USDC: '/svg/usdc-icon.svg',
     usdc: '/svg/usdc-icon.svg',
-    FLUID: '/svg/fluid-icon.svg',
-    fluid: '/svg/fluid-icon.svg',
   }
 
   const map = new Map()
