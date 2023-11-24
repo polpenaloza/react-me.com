@@ -1,9 +1,4 @@
 module.exports = {
-  root: true,
-  env: {
-    browser: true,
-    es2021: true,
-  },
   extends: [
     'next',
     'turbo',
@@ -14,16 +9,9 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
   ],
   parser: '@typescript-eslint/parser',
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-  },
   plugins: ['@typescript-eslint', 'simple-import-sort', 'prettier'],
   rules: {
-    // '@next/next/no-html-link-for-pages': 'off',
+    '@next/next/no-html-link-for-pages': 'off',
     '@typescript-eslint/no-unused-vars': [
       2,
       {
@@ -34,34 +22,16 @@ module.exports = {
     ],
     '@typescript-eslint/no-explicit-any': [1, { ignoreRestArgs: true }],
     'newline-after-var': 'error',
-    'no-console': [
-      2,
-      {
-        allow: ['error'],
-      },
-    ],
-    'react/react-in-jsx-scope': 'off',
+    'no-console': [2, { allow: ['error'] }],
     'no-debugger': 'error',
     'no-duplicate-imports': 'error',
     'no-empty-function': 'error',
     'no-irregular-whitespace': 'error',
     'no-trailing-spaces': 'error',
-    'no-unused-vars': 'error',
     'prefer-const': 'error',
     'react/jsx-key': 'off',
     'simple-import-sort/exports': 'error',
     'simple-import-sort/imports': 'error',
-    'prettier/prettier': ['error'],
     camelcase: 'error',
-  },
-  settings: {
-    react: {
-      version: 'detect',
-    },
-    'import/resolver': {
-      node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
-      },
-    },
   },
 }

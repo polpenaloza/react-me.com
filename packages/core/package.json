@@ -1,0 +1,28 @@
+{
+  "author": "@polpenaloza (https://github.com/polpenaloza)",
+  "dependencies": {
+    "@total-typescript/ts-reset": "^0.5.1",
+    "dayjs": "^1.11.10",
+    "debug": "^4.3.4",
+    "sugar": "^2.0.6",
+    "viem": "^1.18.4"
+  },
+  "devDependencies": {
+    "config": "workspace:^",
+    "eslint": "workspace:^",
+    "tsconfig": "workspace:^",
+    "@types/debug": "^4.1.10",
+    "@types/node": "^20.8.10"
+  },
+  "license": "MIT",
+  "name": "core-js",
+  "private": true,
+  "repository": {
+    "access": "restricted",
+    "url": "git://github.com/polpenaloza/react-me.com.git"
+  },
+  "scripts": {
+    "lint": "eslint 'src/**/*.{tsx,ts,js,jsx}' --fix --cache"
+  },
+  "version": "0.1.0"
+}
