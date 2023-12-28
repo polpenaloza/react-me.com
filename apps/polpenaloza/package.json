@@ -60,7 +60,6 @@
     "dev:me": "next dev",
     "export": "next export",
     "format": "prettier --write .",
-    "generate:db": "prisma generate --accelerate",
     "lint": "next lint --fix",
     "start": "next start"
   },
