@@ -1,11 +1,11 @@
 module.exports = {
-  "$schema": "http://json.schemastore.org/prettierrc",
+  $schema: 'http://json.schemastore.org/prettierrc',
   bracketSameLine: false,
   bracketSpacing: true,
   endOfLine: 'lf',
-  "embeddedLanguageFormatting": "auto",
-  "htmlWhitespaceSensitivity": "css",
-  "jsxSingleQuote": true,
+  embeddedLanguageFormatting: 'auto',
+  htmlWhitespaceSensitivity: 'css',
+  jsxSingleQuote: true,
   overrides: [
     {
       files: ['*.json', '*.yaml'],
@@ -14,9 +14,9 @@ module.exports = {
       },
     },
   ],
-  "plugins": ["prettier-plugin-tailwindcss"],
-  "semi": false,
-  "singleQuote": true,
-  "trailingComma": "es5",
-  "useTabs": false,
+  plugins: ['prettier-plugin-tailwindcss'],
+  semi: false,
+  singleQuote: true,
+  trailingComma: 'es5',
+  useTabs: false,
 }

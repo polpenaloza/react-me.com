@@ -1,24 +1,24 @@
 {
   "author": "@polpenaloza (https://github.com/polpenaloza)",
   "dependencies": {
-    "core-js": "workspace:^",
-    "@prisma/client": "^5.5.2",
-    "@prisma/extension-accelerate": "^0.6.2"
+    "@prisma/client": "^5.7.1",
+    "@prisma/extension-accelerate": "^0.6.2",
+    "core-js": "workspace:^"
   },
   "devDependencies": {
-    "config": "workspace:^",
-    "eslint": "workspace:^",
-    "tsconfig": "workspace:^",
     "@types/debug": "^4.1.10",
-    "@types/node": "^20.8.10",
-    "axios": "^1.6.0",
+    "@types/node": "^20.10.5",
+    "axios": "^1.6.3",
+    "config": "workspace:^",
     "debug": "^4.3.4",
+    "eslint": "workspace:^",
     "prisma": "5.5.2",
     "prisma-dbml-generator": "^0.10.0",
+    "tsconfig": "workspace:^",
     "tslib": "^2.6.2",
     "tsx": "^3.14.0",
-    "typescript": "^5.2.2",
-    "viem": "^1.18.4"
+    "typescript": "^5.3.3",
+    "viem": "^1.21.1"
   },
   "files": [
     "dist",

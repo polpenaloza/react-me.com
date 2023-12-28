@@ -2,7 +2,7 @@
 const colors = require('tailwindcss/colors')
 
 function setupConfig(props = {}) {
-  return  {
+  return {
     ...props,
     content: [
       './src/components/**/*.{js,ts,jsx,tsx,mdx}',

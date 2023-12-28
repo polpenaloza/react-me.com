@@ -7,7 +7,6 @@
  * @constraint {{import('next').NextConfig}}
  */
 
-
 function getConfig(config) {
   return config
 }

@@ -5,14 +5,14 @@
     "dayjs": "^1.11.10",
     "debug": "^4.3.4",
     "sugar": "^2.0.6",
-    "viem": "^1.18.4"
+    "viem": "^1.21.1"
   },
   "devDependencies": {
+    "@types/debug": "^4.1.10",
+    "@types/node": "^20.10.5",
     "config": "workspace:^",
     "eslint": "workspace:^",
-    "tsconfig": "workspace:^",
-    "@types/debug": "^4.1.10",
-    "@types/node": "^20.8.10"
+    "tsconfig": "workspace:^"
   },
   "license": "MIT",
   "name": "core-js",

@@ -2,15 +2,7 @@
   "compilerOptions": {
     "baseUrl": "."
   },
-  "exclude": [
-    "dist",
-    "build",
-    "node_modules"
-  ],
+  "exclude": ["dist", "build", "node_modules"],
   "extends": "tsconfig/base.json",
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    "**/*.js"
-  ]
+  "include": ["**/*.ts", "**/*.tsx", "**/*.js"]
 }
