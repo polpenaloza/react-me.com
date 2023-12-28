@@ -21,7 +21,6 @@
     "@workspace/config": "workspace:^",
     "@workspace/eslint": "workspace:^",
     "@workspace/tsconfig": "workspace:^",
-    "@tanstack/react-query-devtools": "^5.15.0",
     "@types/debug": "^4.1.12",
     "@types/node": "^20.10.5",
     "@types/react": "^18.2.46",
