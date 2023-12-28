@@ -126,9 +126,6 @@ importers:
 
   apps/polpenaloza:
     dependencies:
-      '@mdi/js':
-        specifier: ^7.4.47
-        version: 7.4.47
       '@prisma/client':
         specifier: ^5.7.1
         version: 5.7.1(prisma@5.5.2)
@@ -150,6 +147,12 @@ importers:
       '@vercel/speed-insights':
         specifier: ^1.0.2
         version: 1.0.2
+      '@workspace/core-js':
+        specifier: workspace:^
+        version: link:../../packages/core
+      '@workspace/ui':
+        specifier: workspace:^
+        version: link:../../packages/ui
       animate.css:
         specifier: ^4.1.1
         version: 4.1.1
