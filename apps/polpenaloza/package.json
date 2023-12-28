@@ -20,6 +20,7 @@
     "@trpc/next": "^10.45.0",
     "@trpc/react-query": "^10.45.0",
     "@trpc/server": "^10.45.0",
+    "@vercel/speed-insights": "^1.0.2",
     "animate.css": "^4.1.1",
     "classnames": "^2.5.0",
     "debug": "^4.3.4",
@@ -44,14 +45,14 @@
     "zustand": "^4.4.7"
   },
   "devDependencies": {
-    "@workspace/config": "workspace:^",
-    "@workspace/eslint": "workspace:^",
-    "@workspace/tsconfig": "workspace:^",
     "@tanstack/react-query-devtools": "^5.15.0",
     "@types/debug": "^4.1.12",
     "@types/node": "^20.10.5",
     "@types/react": "^18.2.46",
     "@types/react-dom": "^18.2.18",
+    "@workspace/config": "workspace:^",
+    "@workspace/eslint": "workspace:^",
+    "@workspace/tsconfig": "workspace:^",
     "autoprefixer": "^10.4.16",
     "daisyui": "^4.4.24",
     "typescript": "5.2.2"

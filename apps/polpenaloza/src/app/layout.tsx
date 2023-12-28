@@ -1,6 +1,7 @@
 import '@/styles/main.css'
 import 'animate.css'
 
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -131,6 +132,7 @@ export default function Layout({ children }: { children: ReactNode }) {
     <html lang='en'>
       <body className={inter.className}>
         <AppProviders>{children}</AppProviders>
+        <SpeedInsights />
       </body>
     </html>
   )

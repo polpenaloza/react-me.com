@@ -72,15 +72,6 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
     devDependencies:
-      '@workspace/config':
-        specifier: workspace:^
-        version: link:../../packages/config
-      '@workspace/eslint':
-        specifier: workspace:^
-        version: link:../../packages/eslint
-      '@workspace/tsconfig':
-        specifier: workspace:^
-        version: link:../../packages/tsconfig
       '@tanstack/react-query-devtools':
         specifier: ^5.15.0
         version: 5.15.0(@tanstack/react-query@5.15.0)(react@18.2.0)
@@ -96,6 +87,15 @@ importers:
       '@types/react-dom':
         specifier: ^18.2.18
         version: 18.2.18
+      '@workspace/config':
+        specifier: workspace:^
+        version: link:../../packages/config
+      '@workspace/eslint':
+        specifier: workspace:^
+        version: link:../../packages/eslint
+      '@workspace/tsconfig':
+        specifier: workspace:^
+        version: link:../../packages/tsconfig
       autoprefixer:
         specifier: ^10.4.16
         version: 10.4.16(postcss@8.4.32)
@@ -147,6 +147,9 @@ importers:
       '@trpc/server':
         specifier: ^10.45.0
         version: 10.45.0
+      '@vercel/speed-insights':
+        specifier: ^1.0.2
+        version: 1.0.2
       animate.css:
         specifier: ^4.1.1
         version: 4.1.1
@@ -214,15 +217,6 @@ importers:
         specifier: ^4.4.7
         version: 4.4.7(@types/react@18.2.46)(immer@10.0.3)(react@18.2.0)
     devDependencies:
-      '@workspace/config':
-        specifier: workspace:^
-        version: link:../../packages/config
-      '@workspace/eslint':
-        specifier: workspace:^
-        version: link:../../packages/eslint
-      '@workspace/tsconfig':
-        specifier: workspace:^
-        version: link:../../packages/tsconfig
       '@tanstack/react-query-devtools':
         specifier: ^5.15.0
         version: 5.15.0(@tanstack/react-query@5.15.0)(react@18.2.0)
@@ -238,6 +232,15 @@ importers:
       '@types/react-dom':
         specifier: ^18.2.18
         version: 18.2.18
+      '@workspace/config':
+        specifier: workspace:^
+        version: link:../../packages/config
+      '@workspace/eslint':
+        specifier: workspace:^
+        version: link:../../packages/eslint
+      '@workspace/tsconfig':
+        specifier: workspace:^
+        version: link:../../packages/tsconfig
       autoprefixer:
         specifier: ^10.4.16
         version: 10.4.16(postcss@8.4.32)
@@ -318,6 +321,12 @@ importers:
         specifier: ^1.21.1
         version: 1.21.1(typescript@5.3.3)
     devDependencies:
+      '@types/debug':
+        specifier: ^4.1.10
+        version: 4.1.12
+      '@types/node':
+        specifier: ^20.10.5
+        version: 20.10.5
       '@workspace/config':
         specifier: workspace:^
         version: link:../config
@@ -327,25 +336,25 @@ importers:
       '@workspace/tsconfig':
         specifier: workspace:^
         version: link:../tsconfig
-      '@types/debug':
-        specifier: ^4.1.10
-        version: 4.1.12
-      '@types/node':
-        specifier: ^20.10.5
-        version: 20.10.5
 
   packages/database:
     dependencies:
-      '@workspace/core-js':
-        specifier: workspace:^
-        version: link:../core
       '@prisma/client':
         specifier: ^5.7.1
         version: 5.7.1(prisma@5.5.2)
       '@prisma/extension-accelerate':
         specifier: ^0.6.2
         version: 0.6.2(@prisma/client@5.7.1)
+      '@workspace/core-js':
+        specifier: workspace:^
+        version: link:../core
     devDependencies:
+      '@types/debug':
+        specifier: ^4.1.10
+        version: 4.1.12
+      '@types/node':
+        specifier: ^20.10.5
+        version: 20.10.5
       '@workspace/config':
         specifier: workspace:^
         version: link:../config
@@ -355,12 +364,6 @@ importers:
       '@workspace/tsconfig':
         specifier: workspace:^
         version: link:../tsconfig
-      '@types/debug':
-        specifier: ^4.1.10
-        version: 4.1.12
-      '@types/node':
-        specifier: ^20.10.5
-        version: 20.10.5
       axios:
         specifier: ^1.6.3
         version: 1.6.3(debug@4.3.4)
@@ -436,9 +439,6 @@ importers:
 
   packages/ui:
     dependencies:
-      '@workspace/core-js':
-        specifier: workspace:^
-        version: link:../core
       '@tanstack/match-sorter-utils':
         specifier: ^8.8.4
         version: 8.8.4
@@ -451,6 +451,9 @@ importers:
       '@tanstack/table-core':
         specifier: ^8.11.2
         version: 8.11.2
+      '@workspace/core-js':
+        specifier: workspace:^
+        version: link:../core
       classnames:
         specifier: ^2.5.0
         version: 2.5.0
@@ -473,6 +476,12 @@ importers:
         specifier: ^2.9.1
         version: 2.9.1(react-dom@18.2.0)(react@18.2.0)
     devDependencies:
+      '@types/lodash':
+        specifier: ^4.14.200
+        version: 4.14.202
+      '@types/react':
+        specifier: ^18.2.46
+        version: 18.2.46
       '@workspace/config':
         specifier: workspace:^
         version: link:../config
@@ -482,12 +491,6 @@ importers:
       '@workspace/tsconfig':
         specifier: workspace:^
         version: link:../tsconfig
-      '@types/lodash':
-        specifier: ^4.14.200
-        version: 4.14.202
-      '@types/react':
-        specifier: ^18.2.46
-        version: 18.2.46
       prop-types:
         specifier: ^15.8.1
         version: 15.8.1
@@ -2596,6 +2599,11 @@ packages:
   /@ungap/structured-clone@1.2.0:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
     dev: true
+
+  /@vercel/speed-insights@1.0.2:
+    resolution: {integrity: sha512-y5HWeB6RmlyVYxJAMrjiDEz8qAIy2cit0fhBq+MD78WaUwQvuBnQlX4+5MuwVTWi46bV3klaRMq83u9zUy1KOg==}
+    requiresBuild: true
+    dev: false
 
   /@webassemblyjs/ast@1.11.6:
     resolution: {integrity: sha512-IN1xI7PwOvLPgjcf180gC1bqn3q/QaOCwYUahIOhbYUu8KA/3tw2RT/T0Gidi1l7Hhj5D/INhJxiICObqpMu4Q==}
