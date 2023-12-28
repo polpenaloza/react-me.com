@@ -4,10 +4,9 @@ import './i18next.config'
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
+import { ErrorBoundary } from '@workspace/ui/src/ErrorBoundary'
 import { ReactNode, useState } from 'react'
 import { I18nextProvider, useTranslation } from 'react-i18next'
-
-import { ErrorBoundary } from '@/components/ErrorBoundary'
 
 type AppProvidersProps = {
   children: ReactNode

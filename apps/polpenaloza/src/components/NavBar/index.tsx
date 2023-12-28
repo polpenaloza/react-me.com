@@ -1,12 +1,12 @@
 /* eslint-disable jsx-a11y/no-noninteractive-tabindex */
 /* eslint-disable jsx-a11y/label-has-associated-control */
+import { ThemeIcon } from '@workspace/ui/src/Icon/ThemeIcon'
+import { TranslateIcon } from '@workspace/ui/src/Icon/TranslateIcon'
 import classNames from 'classnames'
 import Link from 'next/link'
 import { useTranslation } from 'react-i18next'
 
 import { Button } from '@/components/Button'
-import { ThemeIcon } from '@/components/Icon/ThemeIcon'
-import { TranslateIcon } from '@/components/Icon/TranslateIcon'
 import { RotateText } from '@/components/Rotate'
 import { iAppPersistState, useAppPersistStore } from '@/core/store/persistState'
 

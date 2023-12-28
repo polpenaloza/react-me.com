@@ -128,7 +128,7 @@ importers:
     dependencies:
       '@prisma/client':
         specifier: ^5.7.1
-        version: 5.7.1(prisma@5.5.2)
+        version: 5.7.1
       '@tanstack/react-query':
         specifier: ^5.15.0
         version: 5.15.0(react@18.2.0)
@@ -1867,6 +1867,17 @@ packages:
       '@pnpm/network.ca-file': 1.0.2
       config-chain: 1.1.13
     dev: true
+
+  /@prisma/client@5.7.1:
+    resolution: {integrity: sha512-TUSa4nUcC4nf/e7X3jyO1pEd6XcI/TLRCA0KjkA46RDIpxUaRsBYEOqITwXRW2c0bMFyKcCRXrH4f7h4q9oOlg==}
+    engines: {node: '>=16.13'}
+    requiresBuild: true
+    peerDependencies:
+      prisma: '*'
+    peerDependenciesMeta:
+      prisma:
+        optional: true
+    dev: false
 
   /@prisma/client@5.7.1(prisma@5.5.2):
     resolution: {integrity: sha512-TUSa4nUcC4nf/e7X3jyO1pEd6XcI/TLRCA0KjkA46RDIpxUaRsBYEOqITwXRW2c0bMFyKcCRXrH4f7h4q9oOlg==}

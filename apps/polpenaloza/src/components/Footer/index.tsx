@@ -1,9 +1,8 @@
+import { BrandIcon } from '@workspace/ui/src/Icon/BrandIcon'
+import { GithubIcon } from '@workspace/ui/src/Icon/GithubIcon'
+import { LinkedinIcon } from '@workspace/ui/src/Icon/LinkedinIcon'
+import { TwitterIcon } from '@workspace/ui/src/Icon/TwitterIcon'
 import { useTranslation } from 'react-i18next'
-
-import { BrandIcon } from '@/components/Icon/BrandIcon'
-import { GithubIcon } from '@/components/Icon/GithubIcon'
-import { LinkedinIcon } from '@/components/Icon/LinkedinIcon'
-import { TwitterIcon } from '@/components/Icon/TwitterIcon'
 
 export default function Footer() {
   const { t } = useTranslation()
