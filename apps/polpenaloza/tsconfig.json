@@ -12,5 +12,10 @@
   },
   "exclude": ["dist", "build", "node_modules"],
   "extends": "@workspace/tsconfig/nextjs.json",
-  "include": ["**/*.ts", "**/*.tsx", "**/*.js", ".next/types/**/*.ts", "../../packages/ui/src/Icon/BrandIcon.tsx", "../../packages/ui/src/Icon/GithubIcon.tsx", "../../packages/ui/src/Icon/LinkedinIcon.tsx", "../../packages/ui/src/Icon/ThemeIcon.tsx", "../../packages/ui/src/Icon/TranslateIcon.tsx", "../../packages/ui/src/Icon/TwitterIcon.tsx"]
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    ".next/types/**/*.ts",
+  ]
 }
