@@ -11,6 +11,6 @@
     ]
   },
   "exclude": ["dist", "build", "node_modules"],
-  "extends": "tsconfig/nextjs.json",
+  "extends": "@workspace/tsconfig/nextjs.json",
   "include": ["**/*.ts", "**/*.tsx", "**/*.js", ".next/types/**/*.ts"]
 }

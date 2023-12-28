@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-noninteractive-tabindex */
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import classNames from 'classnames'
 import Link from 'next/link'
 import { useTranslation } from 'react-i18next'
@@ -27,7 +29,12 @@ export const NavBar = () => {
     <div className='navbar bg-base-100'>
       <div className='navbar-start'>
         <div className='dropdown'>
-          <label tabIndex={0} className='btn btn-circle btn-ghost'>
+          <label
+            aria-hidden={true}
+            htmlFor='menu-toggle'
+            tabIndex={0}
+            className='btn btn-circle btn-ghost'
+          >
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className='h-5 w-5'
