@@ -1,0 +1,48 @@
+{
+  "author": "@polpenaloza (https://github.com/polpenaloza)",
+  "dependencies": {
+    "@workspace/core-js": "workspace:^",
+    "@prisma/client": "^5.7.1",
+    "@prisma/extension-accelerate": "^0.6.2"
+  },
+  "devDependencies": {
+    "@workspace/config": "workspace:^",
+    "@workspace/eslint": "workspace:^",
+    "@workspace/tsconfig": "workspace:^",
+    "@types/debug": "^4.1.10",
+    "@types/node": "^20.10.5",
+    "axios": "^1.6.3",
+    "debug": "^4.3.4",
+    "prisma": "5.5.2",
+    "prisma-dbml-generator": "^0.10.0",
+    "tslib": "^2.6.2",
+    "tsx": "^3.14.0",
+    "typescript": "^5.3.3",
+    "viem": "^1.21.1"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "license": "MIT",
+  "main": "./index.ts",
+  "module": "dist/module.js",
+  "name": "@workspace/database",
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
+  "private": true,
+  "repository": {
+    "access": "restricted",
+    "type": "git",
+    "url": "git://github.com/polpenaloza/react-me.com.git"
+  },
+  "scripts": {
+    "generate:db": "prisma generate --accelerate",
+    "lint": "eslint 'prisma/**/*.{tsx,ts,js,jsx}' --fix --cache",
+    "migrate:db": "prisma migrate dev"
+  },
+  "source": "./src",
+  "types": "./index.ts",
+  "version": "0.1.0"
+}

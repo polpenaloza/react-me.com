@@ -1,0 +1,67 @@
+{
+  "author": "@polpenaloza (https://twitter.com/polpenaloza)",
+  "browserslist": {
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ],
+    "production": [
+      ">0.3%",
+      "not dead",
+      "not op_mini all"
+    ]
+  },
+  "dependencies": {
+    "@prisma/client": "^5.7.1",
+    "@vercel/speed-insights": "^1.0.2",
+    "@workspace/core-js": "workspace:^",
+    "@workspace/ui": "workspace:^",
+    "animate.css": "^4.1.1",
+    "classnames": "^2.5.0",
+    "debug": "^4.3.4",
+    "i18next": "^23.7.12",
+    "i18next-http-backend": "^2.4.1",
+    "immer": "^10.0.3",
+    "next": "^14.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^13.5.0",
+    "react-particles": "^2.12.2",
+    "react-rotating-text": "^1.4.1",
+    "react-text-transition": "^3.1.0",
+    "sharp": "^0.32.6",
+    "tsparticles": "^2.12.0",
+    "tsparticles-engine": "^2.12.0",
+    "zustand": "^4.4.7"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.12",
+    "@types/node": "^20.10.5",
+    "@types/react": "^18.2.46",
+    "@types/react-dom": "^18.2.18",
+    "@workspace/config": "workspace:^",
+    "@workspace/eslint": "workspace:^",
+    "@workspace/tsconfig": "workspace:^",
+    "autoprefixer": "^10.4.16",
+    "daisyui": "^4.4.24",
+    "typescript": "5.2.2"
+  },
+  "license": "MIT",
+  "name": "react-me.com",
+  "packageManager": "pnpm@8.10.5",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/polpenaloza/react-me.com.git"
+  },
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "dev:me": "next dev",
+    "export": "next export",
+    "format": "prettier --write .",
+    "lint": "next lint --fix",
+    "start": "next start"
+  },
+  "version": "0.0.0-development"
+}
