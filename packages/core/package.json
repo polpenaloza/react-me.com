@@ -8,14 +8,14 @@
     "viem": "^1.21.1"
   },
   "devDependencies": {
+    "@workspace/config": "workspace:^",
+    "@workspace/eslint": "workspace:^",
+    "@workspace/tsconfig": "workspace:^",
     "@types/debug": "^4.1.10",
-    "@types/node": "^20.10.5",
-    "config": "workspace:^",
-    "eslint": "workspace:^",
-    "tsconfig": "workspace:^"
+    "@types/node": "^20.10.5"
   },
   "license": "MIT",
-  "name": "core-js",
+  "name": "@workspace/core-js",
   "private": true,
   "repository": {
     "access": "restricted",

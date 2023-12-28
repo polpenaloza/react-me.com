@@ -1,7 +1,7 @@
 {
   "author": "@polpenaloza (https://github.com/polpenaloza)",
   "devDependencies": {
-    "config": "workspace:^",
+    "@workspace/config": "workspace:^",
     "eslint": "^8.56.0",
     "eslint-config-next": "^14.0.4",
     "eslint-config-prettier": "^9.1.0",
@@ -14,7 +14,7 @@
   },
   "license": "MIT",
   "main": "index.js",
-  "name": "eslint",
+  "name": "@workspace/eslint",
   "private": true,
   "repository": {
     "access": "restricted",

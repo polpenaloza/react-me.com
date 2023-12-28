@@ -30,6 +30,11 @@
       "dependsOn": ["^generate:db"],
       "env": []
     },
+    "dev:me": {
+      "cache": false,
+      "dependsOn": ["^generate:db"],
+      "env": []
+    },
     "generate:db": {
       "cache": false,
       "env": []

@@ -40,6 +40,7 @@
     "clean:out": "npm exec --workspaces -- npx rimraf out",
     "clean:turbo": "npm exec --workspaces -- npx rimraf .turbo",
     "dev": "turbo run dev --parallel --no-daemon",
+    "dev:me": "turbo run dev:me --parallel --no-daemon",
     "export": "turbo run export",
     "format": "prettier . --write",
     "generate:db": "turbo run generate:db --parallel --no-daemon",

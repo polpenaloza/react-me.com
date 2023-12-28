@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": "."
   },
-  "extends": "tsconfig/react-library.json",
+  "extends": "@workspace/tsconfig/react-library.json",
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"]
 }

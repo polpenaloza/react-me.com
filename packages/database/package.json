@@ -1,20 +1,20 @@
 {
   "author": "@polpenaloza (https://github.com/polpenaloza)",
   "dependencies": {
+    "@workspace/core-js": "workspace:^",
     "@prisma/client": "^5.7.1",
-    "@prisma/extension-accelerate": "^0.6.2",
-    "core-js": "workspace:^"
+    "@prisma/extension-accelerate": "^0.6.2"
   },
   "devDependencies": {
+    "@workspace/config": "workspace:^",
+    "@workspace/eslint": "workspace:^",
+    "@workspace/tsconfig": "workspace:^",
     "@types/debug": "^4.1.10",
     "@types/node": "^20.10.5",
     "axios": "^1.6.3",
-    "config": "workspace:^",
     "debug": "^4.3.4",
-    "eslint": "workspace:^",
     "prisma": "5.5.2",
     "prisma-dbml-generator": "^0.10.0",
-    "tsconfig": "workspace:^",
     "tslib": "^2.6.2",
     "tsx": "^3.14.0",
     "typescript": "^5.3.3",
@@ -27,7 +27,7 @@
   "license": "MIT",
   "main": "./index.ts",
   "module": "dist/module.js",
-  "name": "database",
+  "name": "@workspace/database",
   "prisma": {
     "seed": "tsx prisma/seed.ts"
   },

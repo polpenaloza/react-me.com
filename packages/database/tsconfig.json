@@ -3,6 +3,6 @@
     "baseUrl": "."
   },
   "exclude": ["dist", "build", "node_modules"],
-  "extends": "tsconfig/base.json",
+  "extends": "@workspace/tsconfig/base.json",
   "include": ["**/*.ts", "**/*.tsx", "**/*.js"]
 }

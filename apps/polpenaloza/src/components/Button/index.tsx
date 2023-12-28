@@ -51,7 +51,7 @@ export const Button = ({
     const rotation = Math.random() * 520
     const delay = Math.random() * 200
 
-    var color = isDarkMode ? 'pink' : 'purple'
+    const color = isDarkMode ? 'pink' : 'purple'
 
     particle.style.boxShadow = `0 0 ${Math.floor(
       Math.random() * 10 + 10

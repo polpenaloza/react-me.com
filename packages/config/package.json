@@ -1,11 +1,6 @@
 {
   "author": "@polpenaloza (https://github.com/polpenaloza)",
   "dependencies": {
-    "@tanstack/react-query": "^4.36.1",
-    "@trpc/client": "^10.45.0",
-    "@trpc/react-query": "^10.45.0",
-    "@trpc/server": "^10.45.0",
-    "daisyui": "^3.9.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -31,7 +26,7 @@
     "tailwind.config"
   ],
   "license": "MIT",
-  "name": "config",
+  "name": "@workspace/config",
   "private": true,
   "repository": {
     "access": "restricted",

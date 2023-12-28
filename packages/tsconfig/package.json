@@ -5,7 +5,7 @@
     "nextjs.json",
     "react-library.json"
   ],
-  "name": "tsconfig",
+  "name": "@workspace/tsconfig",
   "private": true,
   "version": "0.1.0",
   "devDependencies": {

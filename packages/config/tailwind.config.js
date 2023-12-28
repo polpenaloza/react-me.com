@@ -1,13 +1,12 @@
 // https://dev.to/scriptmint/multicolor-theme-setup-with-tailwind-css-1odd
-const colors = require('tailwindcss/colors')
+import colors from 'tailwindcss/colors'
 
 function setupConfig(props = {}) {
   return {
     ...props,
     content: [
-      './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-      './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-      './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+      '../../packages/ui/**/*.{js,ts,jsx,tsx}',
+      './src/**/*.{js,ts,jsx,tsx}',
     ],
     daisyui: {
       base: true, // applies background color and foreground color for root element by default
@@ -139,11 +138,13 @@ function setupConfig(props = {}) {
         },
       },
     },
-    plugins: [require('tailwind-scrollbar'), require('daisyui')],
+    plugins: [require('daisyui'), require('tailwind-scrollbar')],
     variants: {
       scrollbar: ['dark'],
     },
   }
 }
 
-module.exports = setupConfig
+// module.exports = setupConfig
+
+export default setupConfig

@@ -32,7 +32,7 @@ const nextConfig = getConfig({
   reactStrictMode: true,
   swcMinify: process.env.NODE_ENV === 'production',
   trailingSlash: true,
-  transpilePackages: ['core', 'ui'],
+  transpilePackages: ['@workspace/ui'],
   typescript: {
     ignoreBuildErrors: Boolean(process.env.IGNORE_TYPECHECK),
   },
