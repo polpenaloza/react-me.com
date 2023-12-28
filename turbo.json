@@ -1,0 +1,61 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "globalDependencies": [".env", "tsconfig.json"],
+  "globalEnv": [
+    "CYCLIC_DB",
+    "DATABASE_URL",
+    "DEBUG",
+    "ENABLE_MIXPANEL_DEBUG",
+    "IGNORE_TYPECHECK",
+    "MIXPANEL_TOKEN",
+    "NEXT_PUBLIC_DEBUG",
+    "NEXT_PUBLIC_DEV",
+    "NEXT_PUBLIC_EMAIL_CONTACT",
+    "NEXT_PUBLIC_FEATURES_ENABLED",
+    "NEXT_PUBLIC_HOSTING_URL",
+    "NEXT_PUBLIC_OPENAI_API_KEY",
+    "NEXT_PUBLIC_SIGNIN_MESSAGE",
+    "NEXT_PUBLIC_SERVER_URL",
+    "NEXT_PUBLIC_UNOPTIMIZE_IMAGE",
+    "NODE_ENV",
+    "PORT",
+    "SHADOW_DATABASE_URL",
+    "VERCEL_URL"
+  ],
+  "pipeline": {
+    "build": {
+      "env": [],
+      "outputs": ["dist/**", ".next/**"]
+    },
+    "dev": {
+      "cache": false,
+      "dependsOn": ["^generate:db"],
+      "env": []
+    },
+    "dev:me": {
+      "cache": false,
+      "dependsOn": ["^generate:db"],
+      "env": []
+    },
+    "generate:db": {
+      "cache": false,
+      "env": []
+    },
+    "lint": {
+      "cache": true,
+      "env": []
+    },
+    "migrate:db": {
+      "cache": false
+    },
+    "postinstall": {
+      "cache": false,
+      "env": []
+    },
+    "start": {
+      "cache": false,
+      "dependsOn": ["^build"],
+      "env": []
+    }
+  }
+}
