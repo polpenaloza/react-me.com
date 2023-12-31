@@ -18,13 +18,13 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@workspace/config": "workspace:^",
-    "@workspace/eslint": "workspace:^",
-    "@workspace/tsconfig": "workspace:^",
     "@types/debug": "^4.1.12",
     "@types/node": "^20.10.5",
     "@types/react": "^18.2.46",
     "@types/react-dom": "^18.2.18",
+    "@workspace/config": "workspace:^",
+    "@workspace/eslint": "workspace:^",
+    "@workspace/tsconfig": "workspace:^",
     "autoprefixer": "^10.4.16",
     "daisyui": "^4.4.24",
     "postcss": "^8.4.32",

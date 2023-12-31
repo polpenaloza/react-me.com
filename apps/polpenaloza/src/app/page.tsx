@@ -1,6 +1,5 @@
 'use client'
 
-import { Particles } from '@workspace/ui/src/Particles'
 import classNames from 'classnames'
 
 import { iAppPersistState, useAppPersistStore } from '@/core/store/persistState'
@@ -41,9 +40,7 @@ const Home = () => {
           </>
         ) : null}
       </section>
-      <section>
-        <Particles config={darkMode ? 'parallax' : ''} />
-      </section>
+      <section>Lurking...</section>
     </>
   )
 }
