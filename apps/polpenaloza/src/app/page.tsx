@@ -1,8 +1,8 @@
 'use client'
 
+import { Particles } from '@workspace/ui/src/Particles'
 import classNames from 'classnames'
 
-import { Particles } from '@/components/Particles'
 import { iAppPersistState, useAppPersistStore } from '@/core/store/persistState'
 
 const Home = () => {

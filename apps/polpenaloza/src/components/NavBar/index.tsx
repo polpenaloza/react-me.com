@@ -1,13 +1,13 @@
 /* eslint-disable jsx-a11y/no-noninteractive-tabindex */
 /* eslint-disable jsx-a11y/label-has-associated-control */
+import { Button } from '@workspace/ui/src/Button/FancyButton'
 import { ThemeIcon } from '@workspace/ui/src/Icon/ThemeIcon'
 import { TranslateIcon } from '@workspace/ui/src/Icon/TranslateIcon'
+import { RotateText } from '@workspace/ui/src/Rotate'
 import classNames from 'classnames'
 import Link from 'next/link'
 import { useTranslation } from 'react-i18next'
 
-import { Button } from '@/components/Button'
-import { RotateText } from '@/components/Rotate'
 import { iAppPersistState, useAppPersistStore } from '@/core/store/persistState'
 
 export const NavBar = () => {

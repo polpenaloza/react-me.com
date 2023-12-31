@@ -13,9 +13,7 @@
     ]
   },
   "dependencies": {
-    "@prisma/client": "^5.7.1",
     "@vercel/speed-insights": "^1.0.2",
-    "@workspace/core-js": "workspace:^",
     "@workspace/ui": "workspace:^",
     "animate.css": "^4.1.1",
     "classnames": "^2.5.0",
@@ -27,12 +25,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^13.5.0",
-    "react-particles": "^2.12.2",
-    "react-rotating-text": "^1.4.1",
-    "react-text-transition": "^3.1.0",
-    "sharp": "^0.32.6",
-    "tsparticles": "^2.12.0",
-    "tsparticles-engine": "^2.12.0",
     "zustand": "^4.4.7"
   },
   "devDependencies": {

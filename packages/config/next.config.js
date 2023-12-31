@@ -30,7 +30,6 @@ const nextConfig = getConfig({
     NODE_ENV: process.env.NODE_ENV,
   },
   reactStrictMode: true,
-  swcMinify: process.env.NODE_ENV === 'production',
   trailingSlash: true,
   transpilePackages: ['@workspace/ui'],
   typescript: {
