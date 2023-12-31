@@ -1,19 +1,19 @@
 {
   "author": "@polpenaloza (https://github.com/polpenaloza)",
   "dependencies": {
-    "debug": "^4.3.4",
     "@prisma/client": "^5.7.1",
-    "@prisma/extension-accelerate": "^0.6.2"
+    "@prisma/extension-accelerate": "^0.6.2",
+    "debug": "^4.3.4"
   },
   "devDependencies": {
+    "@types/debug": "^4.1.10",
+    "@types/node": "^20.10.5",
     "@workspace/config": "workspace:^",
     "@workspace/eslint": "workspace:^",
     "@workspace/tsconfig": "workspace:^",
-    "@types/debug": "^4.1.10",
-    "@types/node": "^20.10.5",
     "axios": "^1.6.3",
-    "prisma": "5.5.2",
-    "tsx": "^3.14.0",
+    "prisma": "5.7.1",
+    "tsx": "^4.7.0",
     "typescript": "^5.3.3"
   },
   "files": [
