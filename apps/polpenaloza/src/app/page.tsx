@@ -2,7 +2,6 @@
 
 import classNames from 'classnames'
 
-import { Particles } from '@/components/Particles'
 import { iAppPersistState, useAppPersistStore } from '@/core/store/persistState'
 
 const Home = () => {
@@ -40,9 +39,6 @@ const Home = () => {
             </div>
           </>
         ) : null}
-      </section>
-      <section>
-        <Particles config={darkMode ? 'parallax' : ''} />
       </section>
     </>
   )

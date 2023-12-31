@@ -1,7 +1,5 @@
 export const DEFAULT_LIMIT = 50
 export const WINDOW_MS = 10 * 60 * 1000
-export const NFT_PRICE_ORACLE_ADDRESS =
-  '0xD28e78C3bf2C863540056A33CDd4C69c65ee4ffA'
 
 export const MAINNET = 'mainnet'
 export const TESTNET = 'testnet'

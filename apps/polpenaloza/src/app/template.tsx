@@ -1,9 +1,9 @@
 'use client'
 
+import { Loader } from '@workspace/ui/src/Loader'
 import dynamic from 'next/dynamic'
 import { ReactNode, Suspense, useState } from 'react'
 
-import { Loader } from '@/components/Loader'
 import { useIsMounted } from '@/core/hooks/useIsMounted'
 import { iAppPersistState, useAppPersistStore } from '@/core/store/persistState'
 
