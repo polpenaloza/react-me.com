@@ -40,7 +40,6 @@ const Home = () => {
           </>
         ) : null}
       </section>
-      <section>Lurking...</section>
     </>
   )
 }
