@@ -1,7 +1,7 @@
 import { formatEther as formatter } from 'viem'
 
 import { logger } from '../logger'
-import { formatNumber } from './format-number'
+import { formatNumber } from '../number/format-number'
 
 const log = logger('formatEther')
 

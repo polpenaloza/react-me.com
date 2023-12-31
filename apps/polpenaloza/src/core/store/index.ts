@@ -7,19 +7,18 @@ import { logger } from '../logger'
 const log = logger('store')
 
 export interface iAppState {
-  main: any
-  // eslint-disable-next-line no-unused-vars
-  setMain(state: any): void
+  main: string
+  setMain(state: string): void
 }
 
 export const useAppStore = create<iAppState>()(
   immer(
     persist<iAppState>(
       (set) => ({
-        main: {},
+        main: '',
         setMain: (mainState) =>
-          set((state: iAppState) => ({
-            main: { ...state.main, ...mainState },
+          set(() => ({
+            main: mainState,
           })),
       }),
       {

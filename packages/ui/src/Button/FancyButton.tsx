@@ -1,34 +1,26 @@
-import classNames from 'classnames'
-import { ReactNode } from 'react'
+import { iButtonProps } from '.'
+import { IconButton } from './IconButton'
 
-export interface BaseProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  children: ReactNode
-  className?: string
-  variant?: string
-  particles?: boolean
+interface iParticlesButtonProps extends iButtonProps {
   isDarkMode?: boolean
 }
 
-export const Button = ({
+export function ParticlesButton({
   children,
-  className = '',
-  variant = 'default',
-  onClick,
-  particles,
   isDarkMode,
+  onClick,
   ...otherProps
-}: BaseProps) => {
-  function pop(e: any) {
+}: iParticlesButtonProps) {
+  function pop(e: React.MouseEvent<HTMLButtonElement>) {
     const amount = 30
 
     // Quick check if user clicked the button using a keyboard
     if (e.clientX === 0 && e.clientY === 0) {
-      const bbox = e.target.getBoundingClientRect()
+      const bbox = (e.target as Element).getBoundingClientRect()
       const x = bbox.left + bbox.width / 2
       const y = bbox.top + bbox.height / 2
 
-      for (let i = 0; i < 30; i++) {
+      for (let i = 0; i < amount; i++) {
         // We call the function createParticle 30 times
         // We pass the coordinates of the button for x & y values
         createParticle(x, y)
@@ -50,7 +42,6 @@ export const Button = ({
     const destinationY = (Math.random() - 0.5) * 300
     const rotation = Math.random() * 520
     const delay = Math.random() * 200
-
     const color = isDarkMode ? 'pink' : 'purple'
 
     particle.style.boxShadow = `0 0 ${Math.floor(
@@ -62,7 +53,11 @@ export const Button = ({
 
     particle.style.width = `${width}px`
     particle.style.height = `${height}px`
-    const animation = particle.animate(
+    particle.style.position = 'fixed'
+    particle.style.top = '0px'
+    particle.style.zIndex = '99999999'
+
+    const animation: Animation = particle.animate(
       [
         {
           transform: `translate(-50%, -50%) translate(${x}px, ${y}px) rotate(0deg)`,
@@ -76,47 +71,27 @@ export const Button = ({
         },
       ],
       {
-        duration: Math.random() * 1000 + 5000,
+        duration: Math.random() * 1000 + 1500,
         easing: 'cubic-bezier(0, .9, .57, 1)',
         delay: delay,
       }
     )
 
-    animation.onfinish = removeParticle
+    animation.onfinish = () => removeParticle(particle)
   }
 
-  function removeParticle(e: any) {
-    e.srcElement.effect.target.remove()
+  function removeParticle(element: HTMLElement) {
+    element.remove()
   }
 
-  function handleClick(e: any) {
-    particles && pop(e)
+  function handleClick(e: React.MouseEvent<HTMLButtonElement>) {
+    pop(e)
     onClick?.(e)
   }
 
   return (
-    <div
-      className={classNames([
-        /** @outline */
-        {
-          ['bg-none']: variant === 'outline',
-        },
-        /** @baseClass */
-        'rounded-md text-xs font-medium',
-        'md:text-sm',
-        'focus:outline-none focus:ring-4',
-        className,
-      ])}
-    >
-      <button
-        {...otherProps}
-        data-type='shadow'
-        onClick={(e) => handleClick(e)}
-        className='h-full w-full px-4 py-2'
-        type='button'
-      >
-        {children}
-      </button>
-    </div>
+    <IconButton {...otherProps} onClick={(e) => handleClick(e)}>
+      {children}
+    </IconButton>
   )
 }

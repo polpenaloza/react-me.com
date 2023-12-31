@@ -1,5 +1,9 @@
 import { Component, ErrorInfo, ReactNode } from 'react'
 
+import { logger } from '../../logger'
+
+const log = logger('ErrorBoundary')
+
 interface Props {
   children: ReactNode
 }
@@ -19,8 +23,7 @@ export class ErrorBoundary extends Component<Props, State> {
   }
 
   public componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-    // This should be the ONLY console in the entire repo
-    console.error('Uncaught error:', error, errorInfo)
+    log('Uncaught error: %o %o', error, errorInfo)
   }
 
   public render() {

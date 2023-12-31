@@ -8,8 +8,4 @@ declare module 'sugar' {
 
 declare let Sugar: sugarjs.Sugar
 
-declare module 'turnstone'
-declare module 'turnstone-recent-searches'
-declare module 'split-match'
-
 export default Sugar

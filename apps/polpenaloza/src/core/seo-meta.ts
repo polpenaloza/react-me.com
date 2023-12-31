@@ -97,11 +97,6 @@ export async function seoGenerateMetadata({
       },
       url,
     },
-    viewport: {
-      width: 'device-width',
-      initialScale: 1,
-      maximumScale: 1,
-    },
     verification: {
       google: 'google',
     },

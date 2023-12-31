@@ -16,6 +16,7 @@ export async function generateMetadata() {
 export default function Layout({ children }: { children: ReactNode }) {
   return (
     <html lang='en'>
+      <script defer async src='/oneko.js' type='text/javascript'></script>
       <body className={inter.className}>
         <AppProviders>{children}</AppProviders>
         <SpeedInsights />

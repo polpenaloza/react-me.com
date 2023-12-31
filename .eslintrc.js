@@ -23,7 +23,6 @@ module.exports = {
   },
   plugins: ['@typescript-eslint', 'simple-import-sort', 'prettier'],
   rules: {
-    // '@next/next/no-html-link-for-pages': 'off',
     '@typescript-eslint/no-unused-vars': [
       2,
       {
@@ -32,14 +31,9 @@ module.exports = {
         ignoreRestSiblings: true,
       },
     ],
-    '@typescript-eslint/no-explicit-any': [1, { ignoreRestArgs: true }],
+    '@typescript-eslint/no-explicit-any': 'error',
     'newline-after-var': 'error',
-    'no-console': [
-      2,
-      {
-        allow: ['error'],
-      },
-    ],
+    'no-console': 'error',
     'react/react-in-jsx-scope': 'off',
     'no-debugger': 'error',
     'no-duplicate-imports': 'error',
