@@ -1,6 +1,5 @@
-/* eslint-disable jsx-a11y/no-noninteractive-tabindex */
-/* eslint-disable jsx-a11y/label-has-associated-control */
-import { Button } from '@workspace/ui/src/Button/FancyButton'
+import { Button } from '@workspace/ui/src/Button'
+import { ParticlesButton } from '@workspace/ui/src/Button/FancyButton'
 import { ThemeIcon } from '@workspace/ui/src/Icon/ThemeIcon'
 import { TranslateIcon } from '@workspace/ui/src/Icon/TranslateIcon'
 import { RotateText } from '@workspace/ui/src/Rotate'
@@ -29,12 +28,7 @@ export const NavBar = () => {
     <div className='navbar bg-base-100'>
       <div className='navbar-start'>
         <div className='dropdown'>
-          <label
-            aria-hidden={true}
-            htmlFor='menu-toggle'
-            tabIndex={0}
-            className='btn btn-circle btn-ghost'
-          >
+          <button className='btn btn-circle btn-ghost'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className='h-5 w-5'
@@ -49,11 +43,8 @@ export const NavBar = () => {
                 d='M4 6h16M4 12h16M4 18h7'
               />
             </svg>
-          </label>
-          <ul
-            tabIndex={0}
-            className='menu dropdown-content rounded-box bg-base-100 mt-3 w-52 p-2 shadow'
-          >
+          </button>
+          <ul className='menu dropdown-content rounded-box bg-base-100 mt-3 w-52 p-2 shadow'>
             <li>
               <Link href='/'>Home</Link>
             </li>
@@ -117,20 +108,19 @@ export const NavBar = () => {
           </div>
           <Button
             aria-label='translate'
-            variant='outline'
+            variant='clean'
             onClick={() => changeLanguage()}
           >
             <TranslateIcon />
           </Button>
-          <Button
+          <ParticlesButton
             aria-label='theme'
-            variant='outline'
-            particles
+            variant='clean'
             isDarkMode={darkMode}
             onClick={() => setDarkMode()}
           >
             <ThemeIcon />
-          </Button>
+          </ParticlesButton>
         </div>
       </div>
     </div>
