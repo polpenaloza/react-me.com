@@ -1,6 +1,7 @@
 'use client'
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+// eslint-disable-next-line camelcase
 import { loggerLink, unstable_httpBatchStreamLink } from '@trpc/client'
 import { createTRPCReact } from '@trpc/react-query'
 import { type AppRouter } from '@workspace/server/src/api/root'

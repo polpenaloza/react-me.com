@@ -3,7 +3,7 @@
 import { Button } from '@workspace/ui/src/Button'
 import classNames from 'classnames/dedupe'
 
-import { Link } from '../_components/Link'
+import { Link } from '@/app/_components/Link'
 
 export default function SignOut() {
   return (

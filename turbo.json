@@ -34,15 +34,15 @@
     },
     "dev": {
       "cache": false,
-      "dependsOn": ["^generate:db"],
+      "dependsOn": ["^db:generate"],
       "env": []
     },
     "dev:me": {
       "cache": false,
-      "dependsOn": ["^generate:db"],
+      "dependsOn": ["^db:generate"],
       "env": []
     },
-    "generate:db": {
+    "db:generate": {
       "cache": false,
       "env": []
     },

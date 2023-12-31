@@ -3,12 +3,7 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
-    },
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
+    }
   },
   "exclude": ["dist", "build", "node_modules"],
   "extends": "@workspace/tsconfig/nextjs.json",
