@@ -34,9 +34,11 @@
     "url": "git://github.com/polpenaloza/react-me.com.git"
   },
   "scripts": {
-    "generate:db": "prisma generate --accelerate",
-    "lint": "eslint 'prisma/**/*.{tsx,ts,js,jsx}' --fix --cache",
-    "migrate:db": "prisma migrate dev"
+    "db:generate": "prisma generate --accelerate",
+    "db:migrate": "prisma migrate dev",
+    "db:push": "prisma db push",
+    "db:studio": "prisma studio",
+    "lint": "eslint 'prisma/**/*.{tsx,ts,js,jsx}' --fix --cache"
   },
   "source": "./src",
   "types": "./index.ts",
