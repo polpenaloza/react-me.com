@@ -36,7 +36,7 @@
     "@workspace/eslint": "workspace:^",
     "@workspace/tsconfig": "workspace:^",
     "autoprefixer": "^10.4.16",
-    "daisyui": "^4.4.24",
+    "daisyui": "^4.5.0",
     "postcss": "^8.4.32",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^15.1.0",

@@ -91,8 +91,8 @@ importers:
         specifier: ^10.4.16
         version: 10.4.16(postcss@8.4.32)
       daisyui:
-        specifier: ^4.4.24
-        version: 4.4.24(postcss@8.4.32)
+        specifier: ^4.5.0
+        version: 4.5.0(postcss@8.4.32)
       postcss:
         specifier: ^8.4.32
         version: 8.4.32
@@ -182,8 +182,8 @@ importers:
         specifier: ^10.4.16
         version: 10.4.16(postcss@8.4.32)
       daisyui:
-        specifier: ^4.4.24
-        version: 4.4.24(postcss@8.4.32)
+        specifier: ^4.5.0
+        version: 4.5.0(postcss@8.4.32)
       postcss:
         specifier: ^8.4.32
         version: 8.4.32
@@ -341,8 +341,8 @@ importers:
         specifier: ^2.5.0
         version: 2.5.1
       daisyui:
-        specifier: ^4.4.24
-        version: 4.4.24(postcss@8.4.32)
+        specifier: ^4.5.0
+        version: 4.5.0(postcss@8.4.32)
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -3026,8 +3026,8 @@ packages:
     resolution: {integrity: sha512-pHJg+jbuFsCjz9iclQBqyL3B2HLCBF71BwVNujUYEvCeQMvV97R59MNK3R2+jgJ3a1fcZgI9B3vYgz8lzr/BFQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
-  /daisyui@4.4.24(postcss@8.4.32):
-    resolution: {integrity: sha512-u/B3484J08V7N0rIYymnC+SyxOjlYQL+2vyhHWV+/KC+VaUcbEF2Z3H06eCPgdTiZ0J+ml44aH7wBhIymPFQ+g==}
+  /daisyui@4.5.0(postcss@8.4.32):
+    resolution: {integrity: sha512-RWQCPQ0vBUaxGy768O7Ku8SRQgwdoto1lDzuKeVOcMtYghuSbUY7NoPoMK+k8JH4s1J02OvpNAgtB9MeKpZIwg==}
     engines: {node: '>=16.9.0'}
     dependencies:
       css-selector-tokenizer: 0.8.0
