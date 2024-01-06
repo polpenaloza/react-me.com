@@ -13,13 +13,14 @@
     ]
   },
   "dependencies": {
+    "@workspace/server": "workspace:^",
     "next": "^14.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/debug": "^4.1.12",
-    "@types/node": "^20.10.5",
+    "@types/node": "^20.10.6",
     "@types/react": "^18.2.46",
     "@types/react-dom": "^18.2.18",
     "@workspace/config": "workspace:^",
@@ -29,14 +30,14 @@
     "daisyui": "^4.4.24",
     "postcss": "^8.4.32",
     "postcss-flexbugs-fixes": "^5.0.2",
-    "postcss-import": "^15.1.0",
+    "postcss-import": "^16.0.0",
     "postcss-preset-env": "^9.3.0",
     "tailwind-scrollbar": "^3.0.5",
     "tailwindcss": "^3.4.0",
     "typescript": "5.3.3"
   },
   "license": "MIT",
-  "name": "cv.com",
+  "name": "@polpenaloza/cv",
   "packageManager": "pnpm@8.10.5",
   "repository": {
     "type": "git",
@@ -44,11 +45,13 @@
   },
   "scripts": {
     "build": "next build",
-    "dev": "next dev",
-    "export": "next export",
+    "build:cv": "next build",
+    "dev:cv": "next dev",
+    "export:cv": "next export",
     "format": "prettier --write .",
     "lint": "next lint --fix",
-    "start": "next start"
+    "start:cv": "next start"
   },
-  "version": "0.0.0-development"
+  "type": "module",
+  "version": "0.1.0"
 }

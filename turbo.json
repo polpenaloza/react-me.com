@@ -2,10 +2,11 @@
   "$schema": "https://turborepo.org/schema.json",
   "globalDependencies": [".env", "tsconfig.json"],
   "globalEnv": [
-    "CYCLIC_DB",
     "DATABASE_URL",
     "DEBUG",
     "ENABLE_MIXPANEL_DEBUG",
+    "GOOGLE_CLIENT_ID",
+    "GOOGLE_CLIENT_SECRET",
     "IGNORE_TYPECHECK",
     "MIXPANEL_TOKEN",
     "NEXT_PUBLIC_DEBUG",
@@ -14,13 +15,17 @@
     "NEXT_PUBLIC_FEATURES_ENABLED",
     "NEXT_PUBLIC_HOSTING_URL",
     "NEXT_PUBLIC_OPENAI_API_KEY",
-    "NEXT_PUBLIC_SIGNIN_MESSAGE",
     "NEXT_PUBLIC_SERVER_URL",
+    "NEXT_PUBLIC_SIGNIN_MESSAGE",
     "NEXT_PUBLIC_UNOPTIMIZE_IMAGE",
+    "NEXTAUTH_SECRET",
+    "NEXTAUTH_URL",
     "NODE_ENV",
     "PORT",
     "SHADOW_DATABASE_URL",
-    "VERCEL_URL"
+    "SKIP_ENV_VALIDATION",
+    "VERCEL_URL",
+    "VERCEL"
   ],
   "pipeline": {
     "build": {
@@ -29,15 +34,10 @@
     },
     "dev": {
       "cache": false,
-      "dependsOn": ["^generate:db"],
+      "dependsOn": ["^db:generate"],
       "env": []
     },
-    "dev:me": {
-      "cache": false,
-      "dependsOn": ["^generate:db"],
-      "env": []
-    },
-    "generate:db": {
+    "db:generate": {
       "cache": false,
       "env": []
     },
@@ -45,16 +45,8 @@
       "cache": true,
       "env": []
     },
-    "migrate:db": {
-      "cache": false
-    },
     "postinstall": {
       "cache": false,
-      "env": []
-    },
-    "start": {
-      "cache": false,
-      "dependsOn": ["^build"],
       "env": []
     }
   }

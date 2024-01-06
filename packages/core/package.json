@@ -5,18 +5,17 @@
     "dayjs": "^1.11.10",
     "debug": "^4.3.4",
     "sugar": "^2.0.6",
-    "viem": "^1.21.1"
+    "viem": "^2.0.2"
   },
   "devDependencies": {
+    "@types/debug": "^4.1.10",
+    "@types/node": "^20.10.6",
     "@workspace/config": "workspace:^",
     "@workspace/eslint": "workspace:^",
-    "@workspace/tsconfig": "workspace:^",
-    "@types/debug": "^4.1.10",
-    "@types/node": "^20.10.5"
+    "@workspace/tsconfig": "workspace:^"
   },
   "license": "MIT",
   "name": "@workspace/core-js",
-  "private": true,
   "repository": {
     "access": "restricted",
     "url": "git://github.com/polpenaloza/react-me.com.git"

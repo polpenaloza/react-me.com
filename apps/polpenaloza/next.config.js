@@ -1,3 +1,6 @@
-// https://nextjs.org/docs/pages/api-reference/next-config-js/output#automatically-copying-traced-files
+/** @type {import('next').NextConfig} */
+import config from '@workspace/config/next.config.js'
 
-module.exports = require('@workspace/config/next.config')
+await import('@workspace/server/src/env.js')
+
+export default config
