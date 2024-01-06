@@ -37,7 +37,7 @@
     "typescript": "5.3.3"
   },
   "license": "MIT",
-  "name": "cv.com",
+  "name": "@polpenaloza/cv",
   "packageManager": "pnpm@8.10.5",
   "repository": {
     "type": "git",

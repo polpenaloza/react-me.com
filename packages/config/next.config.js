@@ -30,9 +30,6 @@ const nextConfig = getConfig({
       ? 'export'
       : 'standalone',
   productionBrowserSourceMaps: true,
-  publicRuntimeConfig: {
-    NODE_ENV: process.env.NODE_ENV,
-  },
   reactStrictMode: true,
   trailingSlash: true,
   transpilePackages: ['@workspace/ui'],
