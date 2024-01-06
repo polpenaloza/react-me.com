@@ -1,5 +1,7 @@
 import '@/styles/globals.css'
 
+import { SpeedInsights } from '@vercel/speed-insights/next'
+
 import { SessionProviders } from '@/app/_providers/Session'
 import { TRPCProvider } from '@/app/_providers/Trcp'
 import { fonts } from '@/app/core/fonts'
@@ -20,6 +22,7 @@ export default function RootLayout({
         <TRPCProvider>
           <SessionProviders>{children}</SessionProviders>
         </TRPCProvider>
+        <SpeedInsights />
       </body>
     </html>
   )
