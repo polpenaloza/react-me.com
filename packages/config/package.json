@@ -7,11 +7,9 @@
   ],
   "license": "MIT",
   "name": "@workspace/config",
-  "private": true,
   "repository": {
     "access": "restricted",
     "url": "git://github.com/polpenaloza/react-me.com.git"
   },
-  "type": "module",
   "version": "0.1.0"
 }

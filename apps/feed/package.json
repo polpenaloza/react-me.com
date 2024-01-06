@@ -76,6 +76,5 @@
     "lint": "next lint --fix",
     "start:feed": "next start"
   },
-  "type": "module",
   "version": "0.1.0"
 }

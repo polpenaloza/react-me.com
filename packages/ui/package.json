@@ -21,7 +21,6 @@
   },
   "license": "MIT",
   "name": "@workspace/ui",
-  "private": true,
   "repository": {
     "access": "restricted",
     "url": "git://github.com/polpenaloza/react-me.com.git"

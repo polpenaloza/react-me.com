@@ -27,7 +27,6 @@
   "prisma": {
     "seed": "tsx prisma/seed.ts"
   },
-  "private": true,
   "repository": {
     "access": "restricted",
     "type": "git",
@@ -42,6 +41,5 @@
   },
   "source": "./src",
   "types": "./index.ts",
-  "type": "module",
   "version": "0.1.0"
 }

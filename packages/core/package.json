@@ -16,7 +16,6 @@
   },
   "license": "MIT",
   "name": "@workspace/core-js",
-  "private": true,
   "repository": {
     "access": "restricted",
     "url": "git://github.com/polpenaloza/react-me.com.git"
@@ -24,6 +23,5 @@
   "scripts": {
     "lint": "eslint 'src/**/*.{tsx,ts,js,jsx}' --fix --cache"
   },
-  "type": "module",
   "version": "0.1.0"
 }

@@ -39,7 +39,6 @@
     "typescript": "^5.1.6"
   },
   "name": "@workspace/server",
-  "private": true,
   "scripts": {
     "build": "next build",
     "db:push": "prisma db push",
@@ -49,6 +48,5 @@
     "postinstall": "prisma generate --accelerate",
     "start": "next start"
   },
-  "type": "module",
   "version": "0.1.0"
 }
