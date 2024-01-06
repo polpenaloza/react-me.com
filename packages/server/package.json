@@ -40,13 +40,7 @@
   },
   "name": "@workspace/server",
   "scripts": {
-    "build": "next build",
-    "db:push": "prisma db push",
-    "db:studio": "prisma studio",
-    "dev": "next dev",
-    "lint": "next lint",
-    "postinstall": "prisma generate --accelerate",
-    "start": "next start"
+    "lint": "eslint 'src/**/*.{tsx,ts,js,jsx}' --fix --cache"
   },
   "version": "0.1.0"
 }
