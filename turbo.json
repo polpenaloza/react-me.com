@@ -37,11 +37,6 @@
       "dependsOn": ["^db:generate"],
       "env": []
     },
-    "dev:me": {
-      "cache": false,
-      "dependsOn": ["^db:generate"],
-      "env": []
-    },
     "db:generate": {
       "cache": false,
       "env": []
@@ -50,16 +45,8 @@
       "cache": true,
       "env": []
     },
-    "migrate:db": {
-      "cache": false
-    },
     "postinstall": {
       "cache": false,
-      "env": []
-    },
-    "start": {
-      "cache": false,
-      "dependsOn": ["^build"],
       "env": []
     }
   }
