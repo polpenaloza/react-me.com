@@ -73,7 +73,7 @@ importers:
         specifier: ^4.1.12
         version: 4.1.12
       '@types/node':
-        specifier: ^20.10.5
+        specifier: ^20.10.6
         version: 20.10.6
       '@types/react':
         specifier: ^18.2.46
@@ -103,8 +103,8 @@ importers:
         specifier: ^5.0.2
         version: 5.0.2(postcss@8.4.33)
       postcss-import:
-        specifier: ^15.1.0
-        version: 15.1.0(postcss@8.4.33)
+        specifier: ^16.0.0
+        version: 16.0.0(postcss@8.4.33)
       postcss-preset-env:
         specifier: ^9.3.0
         version: 9.3.0(postcss@8.4.33)
@@ -200,8 +200,8 @@ importers:
         specifier: ^8.44.7
         version: 8.56.1
       '@types/node':
-        specifier: ^18.17.0
-        version: 18.19.4
+        specifier: ^20.10.6
+        version: 20.10.6
       '@types/react':
         specifier: ^18.2.37
         version: 18.2.47
@@ -297,7 +297,7 @@ importers:
         specifier: ^4.1.12
         version: 4.1.12
       '@types/node':
-        specifier: ^20.10.5
+        specifier: ^20.10.6
         version: 20.10.6
       '@types/react':
         specifier: ^18.2.46
@@ -327,8 +327,8 @@ importers:
         specifier: ^5.0.2
         version: 5.0.2(postcss@8.4.33)
       postcss-import:
-        specifier: ^15.1.0
-        version: 15.1.0(postcss@8.4.33)
+        specifier: ^16.0.0
+        version: 16.0.0(postcss@8.4.33)
       postcss-preset-env:
         specifier: ^9.3.0
         version: 9.3.0(postcss@8.4.33)
@@ -342,14 +342,7 @@ importers:
         specifier: 5.3.3
         version: 5.3.3
 
-  packages/config:
-    devDependencies:
-      '@types/node':
-        specifier: ^18.17.0
-        version: 18.19.4
-      '@workspace/tsconfig':
-        specifier: workspace:^
-        version: link:../tsconfig
+  packages/config: {}
 
   packages/core:
     dependencies:
@@ -366,14 +359,14 @@ importers:
         specifier: ^2.0.6
         version: 2.0.6
       viem:
-        specifier: ^1.21.1
-        version: 1.21.4(typescript@5.3.3)
+        specifier: ^2.0.2
+        version: 2.0.2
     devDependencies:
       '@types/debug':
         specifier: ^4.1.10
         version: 4.1.12
       '@types/node':
-        specifier: ^20.10.5
+        specifier: ^20.10.6
         version: 20.10.6
       '@workspace/config':
         specifier: workspace:^
@@ -401,7 +394,7 @@ importers:
         specifier: ^4.1.10
         version: 4.1.12
       '@types/node':
-        specifier: ^20.10.5
+        specifier: ^20.10.6
         version: 20.10.6
       '@workspace/config':
         specifier: workspace:^
@@ -525,8 +518,8 @@ importers:
         specifier: ^8.56.0
         version: 8.56.1
       '@types/node':
-        specifier: ^18.17.0
-        version: 18.19.4
+        specifier: ^20.10.6
+        version: 20.10.6
       '@types/react':
         specifier: ^18.2.46
         version: 18.2.47
@@ -2507,12 +2500,6 @@ packages:
     resolution: {integrity: sha512-nG96G3Wp6acyAgJqGasjODb+acrI7KltPiRxzHPXnP3NgI28bpQDRv53olbqGXbfcgF5aiiHmO3xpwEpS5Ld9g==}
     dev: true
 
-  /@types/node@18.19.4:
-    resolution: {integrity: sha512-xNzlUhzoHotIsnFoXmJB+yWmBvFZgKCI9TtPIEdYIMM1KWfwuY8zh7wvc1u1OAXlC7dlf6mZVx/s+Y5KfFz19A==}
-    dependencies:
-      undici-types: 5.26.5
-    dev: true
-
   /@types/node@20.10.6:
     resolution: {integrity: sha512-Vac8H+NlRNNlAmDfGUP7b5h/KA+AtWIzuXy0E6OyP8f1tCLYAtPvKRRDJjAPqhpCb0t6U2j7/xqAuLEebW2kiw==}
     dependencies:
@@ -2695,18 +2682,16 @@ packages:
       through: 2.3.8
     dev: true
 
-  /abitype@0.9.8(typescript@5.3.3):
-    resolution: {integrity: sha512-puLifILdm+8sjyss4S+fsUN09obiT1g2YW6CtcQF+QDzxR0euzgEB29MZujC6zMk2a6SVmtttq1fc6+YFA7WYQ==}
+  /abitype@0.10.0:
+    resolution: {integrity: sha512-QvMHEUzgI9nPj9TWtUGnS2scas80/qaL5PBxGdwWhhvzqXfOph+IEiiiWrzuisu3U3JgDQVruW9oLbJoQ3oZ3A==}
     peerDependencies:
       typescript: '>=5.0.4'
-      zod: ^3 >=3.19.1
+      zod: ^3 >=3.22.0
     peerDependenciesMeta:
       typescript:
         optional: true
       zod:
         optional: true
-    dependencies:
-      typescript: 5.3.3
     dev: false
 
   /acorn-jsx@5.3.2(acorn@8.11.3):
@@ -6190,6 +6175,18 @@ packages:
       resolve: 1.22.8
     dev: true
 
+  /postcss-import@16.0.0(postcss@8.4.33):
+    resolution: {integrity: sha512-e77lhVvrD1I2y7dYmBv0k9ULTdArgEYZt97T4w6sFIU5uxIHvDFQlKgUUyY7v7Barj0Yf/zm5A4OquZN7jKm5Q==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      postcss: ^8.0.0
+    dependencies:
+      postcss: 8.4.33
+      postcss-value-parser: 4.2.0
+      read-cache: 1.0.0
+      resolve: 1.22.8
+    dev: true
+
   /postcss-js@4.0.1(postcss@8.4.33):
     resolution: {integrity: sha512-dDLF8pEO191hJMtlHFPRa8xsizHaM82MLfNkUHdUtVEV3tgTp5oj+8qbEqYM57SLfc74KSbw//4SeJma2LRVIw==}
     engines: {node: ^12 || ^14 || >= 16}
@@ -7732,8 +7729,8 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /viem@1.21.4(typescript@5.3.3):
-    resolution: {integrity: sha512-BNVYdSaUjeS2zKQgPs+49e5JKocfo60Ib2yiXOWBT6LuVxY1I/6fFX3waEtpXvL1Xn4qu+BVitVtMh9lyThyhQ==}
+  /viem@2.0.2:
+    resolution: {integrity: sha512-vi0mDURG7MVKohXb5dCFAu1kDrNzoNsALfnMKUapyfK30HnXI77hiL5KxTM+Nao8UfYsgSHNZ/0lakC9yo1t2A==}
     peerDependencies:
       typescript: '>=5.0.4'
     peerDependenciesMeta:
@@ -7745,9 +7742,8 @@ packages:
       '@noble/hashes': 1.3.2
       '@scure/bip32': 1.3.2
       '@scure/bip39': 1.2.1
-      abitype: 0.9.8(typescript@5.3.3)
+      abitype: 0.10.0
       isows: 1.0.3(ws@8.13.0)
-      typescript: 5.3.3
       ws: 8.13.0
     transitivePeerDependencies:
       - bufferutil
