@@ -26,6 +26,7 @@
     "@trpc/next": "^10.43.6",
     "@trpc/react-query": "^10.43.6",
     "@trpc/server": "^10.43.6",
+    "@workspace/core-js": "workspace:^",
     "@workspace/server": "workspace:^",
     "@workspace/ui": "workspace:^",
     "classnames": "^2.3.2",
@@ -76,5 +77,6 @@
     "lint": "next lint --fix",
     "start:feed": "next start"
   },
+  "type": "module",
   "version": "0.1.0"
 }

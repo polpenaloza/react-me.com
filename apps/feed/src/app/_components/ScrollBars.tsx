@@ -29,6 +29,7 @@ export function Scrollbars({
   const loaderRef = useRef(null)
 
   useEffect(() => {
+    const current = loaderRef.current
     const observer = new IntersectionObserver(
       (entries) => {
         const target = entries[0]
@@ -40,13 +41,13 @@ export function Scrollbars({
       { threshold: 1 }
     )
 
-    if (loaderRef.current) {
-      observer.observe(loaderRef.current)
+    if (current) {
+      observer.observe(current)
     }
 
     return () => {
-      if (loaderRef.current) {
-        observer.unobserve(loaderRef.current)
+      if (current) {
+        observer.unobserve(current)
       }
     }
   }, [onScroll])

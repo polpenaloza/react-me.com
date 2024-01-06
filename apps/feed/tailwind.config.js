@@ -1,4 +1,4 @@
-import setupConfig from '@workspace/config/tailwind.config'
+import setupConfig from '@workspace/config/tailwind.config.js'
 
 const themeProps = {}
 
