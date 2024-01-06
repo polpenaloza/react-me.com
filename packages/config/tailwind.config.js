@@ -1,6 +1,4 @@
 // https://dev.to/scriptmint/multicolor-theme-setup-with-tailwind-css-1odd
-import colors from 'tailwindcss/colors'
-
 function setupConfig(props = {}) {
   return {
     ...props,
@@ -31,10 +29,6 @@ function setupConfig(props = {}) {
           'overlay-show': 'overlay-show 150ms cubic-bezier(0.16, 1, 0.3, 1)',
           'content-show': 'content-show 150ms cubic-bezier(0.16, 1, 0.3, 1);',
           wiggle: 'wiggle 200ms ease-in-out',
-        },
-        colors: {
-          primary: colors.purple,
-          secondary: colors.pink,
         },
         keyframes: {
           'fade-out': {
@@ -145,6 +139,4 @@ function setupConfig(props = {}) {
   }
 }
 
-// module.exports = setupConfig
-
-export default setupConfig
+module.exports = setupConfig

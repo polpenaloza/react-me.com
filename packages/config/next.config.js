@@ -19,16 +19,17 @@ const nextConfig = getConfig({
   eslint: { ignoreDuringBuilds: true },
   images: {
     unoptimized: Boolean(process.env.NEXT_PUBLIC_UNOPTIMIZE_IMAGE),
-    domains: ['google.com'],
+    domains: [
+      'lh3.googleusercontent.com',
+      'googleusercontent.com',
+      'google.com',
+    ],
   },
   output:
     process.env.NEXT_PUBLIC_UNOPTIMIZE_IMAGE === 'false'
       ? 'export'
       : 'standalone',
   productionBrowserSourceMaps: true,
-  publicRuntimeConfig: {
-    NODE_ENV: process.env.NODE_ENV,
-  },
   reactStrictMode: true,
   trailingSlash: true,
   transpilePackages: ['@workspace/ui'],

@@ -4,7 +4,7 @@
 
 ### Dependencies
 
-- [node](https://nodejs.org/en/download/) v18.x
+- [node](https://nodejs.org/en/download/) v20x
 - [nvm](https://github.com/nvm-sh/nvm/tree/master) v0.38.x
 - [pnpm](https://pnpm.io/) v8.x
 - [turborepo](https://turbo.build/) v1.x

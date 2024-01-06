@@ -6,6 +6,5 @@
     "react-library.json"
   ],
   "name": "@workspace/tsconfig",
-  "private": true,
   "version": "0.1.0"
 }

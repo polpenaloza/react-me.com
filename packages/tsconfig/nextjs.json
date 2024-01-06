@@ -1,7 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
-    "allowJs": true,
     "downlevelIteration": true,
     "forceConsistentCasingInFileNames": true,
     "importHelpers": true,
@@ -17,10 +16,14 @@
       "ES2020"
     ],
     "noEmit": true,
-    "outDir": "out"
+    "outDir": "out",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "display": "Next.js",
   "exclude": ["node_modules"],
-  "extends": "./base.json",
-  "include": ["src", "next-env.d.ts"]
+  "extends": "./base.json"
 }
