@@ -1,16 +1,12 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    },
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
+    "lib": ["esnext", "dom"],
+    "outDir": "dist",
+    "target": "esnext",
+    "types": ["node"]
   },
   "exclude": ["dist", "build", "node_modules"],
-  "extends": "@workspace/tsconfig/nextjs.json",
-  "include": ["**/*.ts", "**/*.tsx", "**/*.js", ".next/types/**/*.ts"]
+  "extends": "@workspace/tsconfig/base.json",
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js"]
 }

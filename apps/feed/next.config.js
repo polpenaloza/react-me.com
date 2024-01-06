@@ -2,6 +2,6 @@
 /** @type {import("next").NextConfig} */
 import nextConfig from '@workspace/config/next.config'
 
-await import('./src/env.js')
+await require('@workspace/server/src/env')
 
 export default nextConfig

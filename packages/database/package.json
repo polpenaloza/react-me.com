@@ -42,5 +42,6 @@
   },
   "source": "./src",
   "types": "./index.ts",
+  "type": "module",
   "version": "0.1.0"
 }

@@ -24,5 +24,6 @@
   "scripts": {
     "lint": "eslint 'src/**/*.{tsx,ts,js,jsx}' --fix --cache"
   },
+  "type": "module",
   "version": "0.1.0"
 }

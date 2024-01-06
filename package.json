@@ -43,7 +43,7 @@
     "format": "prettier . --write",
     "db:generate": "turbo run db:generate --parallel --no-daemon",
     "lint": "turbo run lint",
-    "maintenance": "pnpm clean && pnpm install && pnpm format && pnpm lint && pnpm build",
+    "maintenance": "pnpm clean && pnpm install ",
     "migrate:db": "turbo run migrate:db --parallel --no-daemon",
     "nuke": "pnpm clean && rm pnpm-lock.yaml",
     "postinstall": "pnpm db:generate",

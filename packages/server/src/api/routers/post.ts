@@ -1,11 +1,11 @@
 import { z } from 'zod'
 
-import { DEFAULT_LIMIT } from '@/_constants'
+import { DEFAULT_LIMIT } from '../../_constants'
 import {
   createTRPCRouter,
   protectedProcedure,
   publicProcedure,
-} from '@/api/trpc'
+} from '../../api/trpc'
 
 export const postRouter = createTRPCRouter({
   delete: protectedProcedure

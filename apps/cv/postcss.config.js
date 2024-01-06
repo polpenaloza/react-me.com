@@ -1,1 +1,3 @@
-module.exports = require('@workspace/config/postcss.config')
+import postcss from '@workspace/config/postcss.config'
+
+export default postcss

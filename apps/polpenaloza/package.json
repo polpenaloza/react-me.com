@@ -46,20 +46,20 @@
     "typescript": "5.3.3"
   },
   "license": "MIT",
-  "name": "react-me.com",
-  "packageManager": "pnpm@8.10.5",
+  "name": "@polpenaloza/me",
+  "packageManager": "pnpm@8.11.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/polpenaloza/react-me.com.git"
   },
   "scripts": {
     "build": "next build",
-    "dev": "next dev",
+    "build:me": "next build",
     "dev:me": "next dev",
-    "export": "next export",
+    "export:me": "next export",
     "format": "prettier --write .",
     "lint": "next lint --fix",
-    "start": "next start"
+    "start:me": "next start"
   },
   "version": "0.0.0-development"
 }

@@ -44,11 +44,12 @@
   },
   "scripts": {
     "build": "next build",
-    "dev": "next dev",
-    "export": "next export",
+    "build:cv": "next build",
+    "dev:cv": "next dev",
+    "export:cv": "next export",
     "format": "prettier --write .",
     "lint": "next lint --fix",
-    "start": "next start"
+    "start:cv": "next start"
   },
-  "version": "0.0.0-development"
+  "version": "0.1.0"
 }
