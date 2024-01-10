@@ -1,3 +1,4 @@
+import { TRPCError } from '@trpc/server'
 import { z } from 'zod'
 
 import { DEFAULT_LIMIT } from '../../_constants'
@@ -6,11 +7,22 @@ import {
   protectedProcedure,
   publicProcedure,
 } from '../../api/trpc'
+import { logger } from '../../logger'
+import { ratelimit } from '../../rate-limit-upstash'
+
+const log = logger('api:post')
 
 export const postRouter = createTRPCRouter({
   delete: protectedProcedure
     .input(z.object({ id: z.number() }))
-    .mutation(({ ctx, input }) => {
+    .mutation(async ({ ctx, input }) => {
+      const { user } = ctx.session
+
+      const { success } = await ratelimit.limit(user.id)
+
+      log('success %s', success)
+      if (!success) throw new TRPCError({ code: 'TOO_MANY_REQUESTS' })
+
       return ctx.db.post.delete({
         where: {
           id: input.id,
@@ -20,6 +32,13 @@ export const postRouter = createTRPCRouter({
   create: protectedProcedure
     .input(z.object({ name: z.string().min(1) }))
     .mutation(async ({ ctx, input }) => {
+      const { user } = ctx.session
+
+      const { success } = await ratelimit.limit(user.id)
+
+      log('success %s', success)
+      if (!success) throw new TRPCError({ code: 'TOO_MANY_REQUESTS' })
+
       return ctx.db.post.create({
         data: {
           name: input.name,

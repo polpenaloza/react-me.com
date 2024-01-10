@@ -23,6 +23,7 @@ const nextConfig = getConfig({
       'lh3.googleusercontent.com',
       'googleusercontent.com',
       'google.com',
+      'avatars.githubusercontent.com',
     ],
   },
   output:

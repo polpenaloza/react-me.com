@@ -1,7 +1,8 @@
 import { getServerAuthSession } from '@workspace/server/src/auth'
 import Link from 'next/link'
-import { BiHomeCircle, BiLogIn, BiLogOut, BiUser } from 'react-icons/bi'
+import { BiHomeCircle, BiUser } from 'react-icons/bi'
 
+import { SignIn, SignOut } from './AuthButtons'
 import { Avatar } from './Avatar'
 import { Logo } from './Logo'
 
@@ -18,15 +19,6 @@ export async function LeftSidebar() {
       title: 'Profile',
       icon: <BiUser />,
     },
-    session?.user
-      ? {
-          title: 'Logout',
-          icon: <BiLogOut />,
-        }
-      : {
-          title: 'Login',
-          icon: <BiLogIn />,
-        },
   ]
 
   return (
@@ -57,6 +49,7 @@ export async function LeftSidebar() {
               </Link>
             )
           })}
+          {session?.user ? <SignOut /> : <SignIn />}
         </div>
       </div>
       {session ? (

@@ -1,8 +1,8 @@
 'use client'
 
-import { FeedList } from '@/app/_components/Feed'
-import { Scrollbars } from '@/app/_components/ScrollBars'
-import { useGetPosts } from '@/app/query/useGetPosts'
+import { FeedList } from '@/components/Feed'
+import { Scrollbars } from '@/components/ScrollBars'
+import { useGetPosts } from '@/query/useGetPosts'
 
 export default function Home() {
   const { flatData, isError, isLoading, isFetching, fetchNextPage } =

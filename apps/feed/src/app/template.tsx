@@ -1,4 +1,4 @@
-import { LeftSidebar } from '@/app/_components/LeftSidebar'
+import { LeftSidebar } from '@/components/LeftSidebar'
 
 export default function RootTemplate({
   children,
