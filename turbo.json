@@ -7,6 +7,8 @@
     "ENABLE_MIXPANEL_DEBUG",
     "GOOGLE_CLIENT_ID",
     "GOOGLE_CLIENT_SECRET",
+    "GITHUB_CLIENT_ID",
+    "GITHUB_CLIENT_SECRET",
     "IGNORE_TYPECHECK",
     "MIXPANEL_TOKEN",
     "NEXT_PUBLIC_DEBUG",
@@ -24,6 +26,8 @@
     "PORT",
     "SHADOW_DATABASE_URL",
     "SKIP_ENV_VALIDATION",
+    "UPSTASH_REDIS_REST_TOKEN",
+    "UPSTASH_REDIS_REST_URL",
     "VERCEL_URL",
     "VERCEL"
   ],
@@ -32,13 +36,23 @@
       "env": [],
       "outputs": ["dist/**", ".next/**"]
     },
-    "dev": {
+    "dev:feed": {
+      "cache": false,
+      "dependsOn": ["^db:generate"],
+      "env": []
+    },
+    "dev:me": {
       "cache": false,
       "dependsOn": ["^db:generate"],
       "env": []
     },
     "db:generate": {
       "cache": false,
+      "env": []
+    },
+    "db:migrate": {
+      "cache": false,
+      "dependsOn": ["^db:generate"],
       "env": []
     },
     "lint": {

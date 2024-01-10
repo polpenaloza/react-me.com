@@ -73,3 +73,5 @@ export function Scrollbars({
     </div>
   )
 }
+
+export default Scrollbars

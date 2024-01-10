@@ -1,8 +1,8 @@
 import { Button } from '@workspace/ui/src/Button'
 import { type Metadata } from 'next'
 
-import { Image } from '@/app/_components/Image'
-import { Link } from '@/app/_components/Link'
+import { Image } from '@/components/Image'
+import { Link } from '@/components/Link'
 
 export const metadata: Metadata = {
   title: 'Log in',

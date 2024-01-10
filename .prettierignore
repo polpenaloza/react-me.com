@@ -8,6 +8,7 @@
 .vscode
 .yarn
 .pnpm
+.turbo
 
 build
 dist

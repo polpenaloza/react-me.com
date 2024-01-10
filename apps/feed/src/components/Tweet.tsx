@@ -3,8 +3,8 @@ import { type DefaultSession } from 'next-auth'
 import { useState } from 'react'
 import { MdDelete } from 'react-icons/md'
 
-import { useDropTweet } from '@/app/query/useDropTweet'
-import { formatDateRelative } from '@/app/utils/format-date-relative'
+import { useDropTweet } from '@/query/useDropTweet'
+import { formatDateRelative } from '@/utils/format-date-relative'
 
 import { Avatar } from './Avatar'
 import { CustomDialog } from './Dialog'

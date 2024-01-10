@@ -1,7 +1,7 @@
 import { getServerAuthSession } from '@workspace/server/src/auth'
 import { type Metadata } from 'next'
 
-import { CreatePost } from '@/app/_components/CreatePost'
+import { CreatePost } from '@/components/CreatePost'
 
 export const metadata: Metadata = {
   title: 'Feed',

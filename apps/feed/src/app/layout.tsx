@@ -2,10 +2,10 @@ import '@/styles/globals.css'
 
 import { SpeedInsights } from '@vercel/speed-insights/next'
 
-import { SessionProviders } from '@/app/_providers/Session'
-import { TRPCProvider } from '@/app/_providers/Trcp'
-import { fonts } from '@/app/core/fonts'
-import { seoGenerateMetadata } from '@/app/core/seo-meta'
+import { fonts } from '@/core/fonts'
+import { seoGenerateMetadata } from '@/core/seo-meta'
+import { SessionProviders } from '@/providers/Session'
+import { TRPCProvider } from '@/providers/Trcp'
 
 export async function generateMetadata() {
   return seoGenerateMetadata({ title: 'X-Clone' })

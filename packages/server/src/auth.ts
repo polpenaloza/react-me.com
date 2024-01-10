@@ -4,10 +4,14 @@ import {
   getServerSession,
   type NextAuthOptions,
 } from 'next-auth'
+import GithubProvider from 'next-auth/providers/github'
 import GoogleProvider from 'next-auth/providers/google'
 
 import { db } from './db'
 import { env } from './env'
+import { logger } from './logger'
+
+const log = logger('auth')
 
 /**
  * Module augmentation for `next-auth` types. Allows us to add custom properties to the `session`
@@ -36,6 +40,18 @@ declare module 'next-auth' {
  * @see https://next-auth.js.org/configuration/options
  */
 export const authOptions: NextAuthOptions = {
+  debug: env.NODE_ENV === 'development',
+  logger: {
+    error(code, metadata) {
+      log('error >> code: %s, metadata: %o', code, metadata)
+    },
+    warn(code) {
+      log('warn >> code: %s', code)
+    },
+    debug(code, metadata) {
+      log('debug >> code: %s, metadata: %o', code, metadata)
+    },
+  },
   // https://next-auth.js.org/configuration/callbacks
   callbacks: {
     async signIn({ account, profile }) {
@@ -60,6 +76,10 @@ export const authOptions: NextAuthOptions = {
     GoogleProvider({
       clientId: env.GOOGLE_CLIENT_ID,
       clientSecret: env.GOOGLE_CLIENT_SECRET,
+    }),
+    GithubProvider({
+      clientId: env.GITHUB_CLIENT_ID,
+      clientSecret: env.GITHUB_CLIENT_SECRET,
     }),
     /**
      * ...add more providers here.
