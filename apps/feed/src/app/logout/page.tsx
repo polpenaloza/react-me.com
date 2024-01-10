@@ -1,25 +1,22 @@
 'use client'
 
-import { Button } from '@workspace/ui/src/Button'
 import classNames from 'classnames/dedupe'
 
-import { Link } from '@/app/_components/Link'
+import { SignOut } from '@/components/AuthButtons'
 
-export default function SignOut() {
+export default function Logout() {
   return (
     <>
       <div
         className={classNames([
-          'text-primary font-dela mt-20 text-8xl font-extrabold',
+          'text-primary font-dela mt-20 text-4xl font-extrabold',
         ])}
       >
-        {'Sign out?'}
+        {'See you later!'}
       </div>
-      <Link className='p-10' href={'/api/auth/signout'}>
-        <Button className='w-60' variant='outline-primary' fullLength>
-          Logout
-        </Button>
-      </Link>
+      <div className='p-10'>
+        <SignOut />
+      </div>
     </>
   )
 }

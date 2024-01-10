@@ -489,9 +489,21 @@ importers:
       '@trpc/server':
         specifier: ^10.45.0
         version: 10.45.0
+      '@upstash/ratelimit':
+        specifier: ^1.0.0
+        version: 1.0.0
+      '@upstash/redis':
+        specifier: ^1.28.0
+        version: 1.28.0
       '@workspace/database':
         specifier: workspace:^
         version: link:../database
+      debug:
+        specifier: ^4.3.4
+        version: 4.3.4
+      isomorphic-fetch:
+        specifier: ^3.0.0
+        version: 3.0.0
       next-auth:
         specifier: ^4.24.5
         version: 4.24.5(next@14.0.4)(react-dom@18.2.0)(react@18.2.0)
@@ -517,6 +529,9 @@ importers:
       '@next/eslint-plugin-next':
         specifier: ^14.0.3
         version: 14.0.4
+      '@types/debug':
+        specifier: ^4.1.12
+        version: 4.1.12
       '@types/eslint':
         specifier: ^8.56.0
         version: 8.56.1
@@ -2672,6 +2687,25 @@ packages:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
     dev: true
 
+  /@upstash/core-analytics@0.0.6:
+    resolution: {integrity: sha512-cpPSR0XJAJs4Ddz9nq3tINlPS5aLfWVCqhhtHnXt4p7qr5+/Znlt1Es736poB/9rnl1hAHrOsOvVj46NEXcVqA==}
+    engines: {node: '>=16.0.0'}
+    dependencies:
+      '@upstash/redis': 1.28.0
+    dev: false
+
+  /@upstash/ratelimit@1.0.0:
+    resolution: {integrity: sha512-IUlc+UKuHJQqXGQi7E3UKV0CKfRZ0g6qeNnbSve940k3xLoM+X3H45MrSwDaH7meMWemztLs0Q4yjkd3ItddCw==}
+    dependencies:
+      '@upstash/core-analytics': 0.0.6
+    dev: false
+
+  /@upstash/redis@1.28.0:
+    resolution: {integrity: sha512-vvFMUHGA5jUAXQHuAzFHNLD2TND/2aaf1BUPYBeg73CkQ9X+jorWVi7VGxZtRXPDEFJR9KvzuwCacbSproOKcw==}
+    dependencies:
+      crypto-js: 4.2.0
+    dev: false
+
   /@vercel/speed-insights@1.0.2:
     resolution: {integrity: sha512-y5HWeB6RmlyVYxJAMrjiDEz8qAIy2cit0fhBq+MD78WaUwQvuBnQlX4+5MuwVTWi46bV3klaRMq83u9zUy1KOg==}
     requiresBuild: true
@@ -3342,6 +3376,10 @@ packages:
       shebang-command: 2.0.0
       which: 2.0.2
     dev: true
+
+  /crypto-js@4.2.0:
+    resolution: {integrity: sha512-KALDyEYgpY+Rlob/iriUtjV6d5Eq+Y191A5g4UqLAi8CyGP9N1+FdVbkc1SxKc2r4YAYqG8JzO2KGL+AizD70Q==}
+    dev: false
 
   /crypto-random-string@4.0.0:
     resolution: {integrity: sha512-x8dy3RnvYdlUcPOjkEHqozhiwzKNSq7GcPuXFbnyMOCHxX8V3OgIg/pYuabl2sbUPfIJaeAQB7PMOK8DFIdoRA==}
@@ -4948,6 +4986,15 @@ packages:
   /isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
     dev: true
+
+  /isomorphic-fetch@3.0.0:
+    resolution: {integrity: sha512-qvUtwJ3j6qwsF3jLxkZ72qCgjMysPzDfeV240JHiGZsANBYd+EEuu35v7dfrJ9Up0Ak07D7GGSkGhCHTqg/5wA==}
+    dependencies:
+      node-fetch: 2.7.0
+      whatwg-fetch: 3.6.20
+    transitivePeerDependencies:
+      - encoding
+    dev: false
 
   /isows@1.0.3(ws@8.13.0):
     resolution: {integrity: sha512-2cKei4vlmg2cxEjm3wVSqn8pcoRF/LX/wpifuuNquFO4SQmPwarClT+SUCA2lt+l581tTeZIPIZuIDo2jWN1fg==}
@@ -7772,6 +7819,10 @@ packages:
 
   /webidl-conversions@3.0.1:
     resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
+    dev: false
+
+  /whatwg-fetch@3.6.20:
+    resolution: {integrity: sha512-EqhiFU6daOA8kpjOWTL0olhVOF3i7OrFzSYiGsEMB8GcXS+RrzauAERX65xMeNWVqxA6HXH2m69Z9LaKKdisfg==}
     dev: false
 
   /whatwg-url@5.0.0:

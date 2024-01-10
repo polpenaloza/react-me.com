@@ -25,3 +25,5 @@ export function FeedList({ list }: FeedListProps) {
     </div>
   )
 }
+
+export default FeedList

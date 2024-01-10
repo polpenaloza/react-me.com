@@ -1,4 +1,4 @@
-import { FourOhFour } from '@/app/_components/404'
+import { FourOhFour } from '@/components/404'
 
 export default function NotFound() {
   /** @render */
