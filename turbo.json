@@ -36,13 +36,23 @@
       "env": [],
       "outputs": ["dist/**", ".next/**"]
     },
-    "dev": {
+    "dev:feed": {
+      "cache": false,
+      "dependsOn": ["^db:generate"],
+      "env": []
+    },
+    "dev:me": {
       "cache": false,
       "dependsOn": ["^db:generate"],
       "env": []
     },
     "db:generate": {
       "cache": false,
+      "env": []
+    },
+    "db:migrate": {
+      "cache": false,
+      "dependsOn": ["^db:generate"],
       "env": []
     },
     "lint": {

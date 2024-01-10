@@ -35,7 +35,7 @@ export async function seoGenerateMetadata({
     alternates: {
       canonical: url,
     },
-    metadataBase: new URL(HOSTING_URL),
+    // metadataBase: new URL(HOSTING_URL),
     keywords:
       'nextjs, coding, software, react, typescript, javascript, nodejs, web, development, developer, programming, code, coder, webdev, webdevelopment, webdeveloper, frontend',
     manifest: '/manifest.json',
