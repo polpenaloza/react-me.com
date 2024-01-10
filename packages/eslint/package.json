@@ -1,7 +1,7 @@
 {
   "author": "@polpenaloza (https://github.com/polpenaloza)",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/eslint-plugin": "^6.18.1",
     "@typescript-eslint/parser": "^6.16.0",
     "@workspace/config": "workspace:^",
     "eslint": "^8.56.0",
