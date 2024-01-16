@@ -1,12 +1,10 @@
 name: Release
+run-name: ${{ github.actor }} is automatically releasing 🚀
 
 on:
   push:
     branches:
       - main
-
-# env:
-#   SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 
 jobs:
   Release:
@@ -14,7 +12,12 @@ jobs:
     steps:
       - name: Cancel Previous Runs
         uses: styfle/cancel-workflow-action@0.12.0
-
+      - name: 'Generate token'
+        id: generate_token
+        uses: tibdex/github-app-token@v1
+        with:
+          app_id: ${{ secrets.BOT_APP_ID }}
+          private_key: ${{ secrets.BOT_PRIVATE_KEY }}
       - name: Checkout
         uses: actions/checkout@v4
         with:
@@ -24,9 +27,12 @@ jobs:
       - name: Setup Node.js
         uses: ./.github/actions/node
 
+      - name: 'Verifying the signatures'
+        run: pnpm audit signatures
+
       - name: Perform Release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
         run: npx semantic-release
 
       # - name: Slack Error Notification
