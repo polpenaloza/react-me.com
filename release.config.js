@@ -19,5 +19,5 @@ module.exports = {
       },
     ],
   ],
-  branches: [{ name: 'beta', prerelease: true }, { name: 'v1' }],
+  branches: [{ name: 'main' }],
 }
