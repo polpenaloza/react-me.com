@@ -14,7 +14,7 @@
     "husky": "^8.0.3",
     "precise-commits": "^1.0.2",
     "rimraf": "^5.0.5",
-    "semantic-release": "^22.0.12",
+    "semantic-release": "^23.0.0",
     "turbo": "^1.11.2"
   },
   "engines": {
