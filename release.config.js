@@ -13,11 +13,11 @@ module.exports = {
     [
       '@semantic-release/git',
       {
-        assets: ['docs/CHANGELOG.md'],
+        assets: ['docs/CHANGELOG.md', 'package.json'],
         message:
           'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
       },
     ],
   ],
-  branches: [{ name: 'beta', prerelease: true }, { name: 'v1' }],
+  branches: [{ name: 'main' }],
 }

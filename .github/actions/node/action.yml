@@ -7,7 +7,7 @@ inputs:
   node-version:
     description: "Node version to use, default to (20.x)"
     required: true
-    default: 20.6.1
+    default: 20.8.1
 
 runs:
   using: "composite"
