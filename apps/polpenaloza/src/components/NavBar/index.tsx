@@ -47,6 +47,7 @@ export const NavBar = () => {
           <ul className='menu dropdown-content rounded-box bg-base-100 mt-3 w-52 p-2 shadow'>
             <li>
               <Link href='/'>Home</Link>
+              <Link href='https://x.polpenaloza.com'>X-Clone</Link>
             </li>
           </ul>
         </div>
