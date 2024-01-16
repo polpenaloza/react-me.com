@@ -4,15 +4,15 @@
     "@mdi/js": "^7.4.47",
     "@workspace/core-js": "workspace:^",
     "classnames": "^2.5.0",
-    "daisyui": "^4.4.24",
+    "daisyui": "^4.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-text-transition": "^3.1.0",
-    "tsparticles": "^3.0.3",
-    "usehooks-ts": "^2.9.1"
+    "tsparticles": "^3.1.0",
+    "usehooks-ts": "^2.9.4"
   },
   "devDependencies": {
-    "@types/react": "^18.2.46",
+    "@types/react": "^18.2.48",
     "@workspace/config": "workspace:^",
     "@workspace/eslint": "workspace:^",
     "@workspace/tsconfig": "workspace:^",
