@@ -1,7 +1,7 @@
-import type { Movie } from '@prisma/client'
+import type { Account } from '@prisma/client'
 
-export type MovieMap = {
-  [key: string]: Movie
+export type AccountMap = {
+  [key: string]: Account
 }
 
-export type { Movie }
+export type { Account }

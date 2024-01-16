@@ -37,7 +37,7 @@
     "db:migrate": "prisma migrate dev",
     "db:push": "prisma db push",
     "db:studio": "prisma studio",
-    "lint": "eslint 'prisma/**/*.{tsx,ts,js,jsx}' --fix --cache"
+    "lint": "eslint 'src/**/*.{tsx,ts,js,jsx}' --fix --cache"
   },
   "source": "./src",
   "types": "./index.ts",
