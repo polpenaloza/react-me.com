@@ -1,3 +1,10 @@
+## [1.12.1](https://github.com/polpenaloza/react-me.com/compare/v1.12.0...v1.12.1) (2024-01-23)
+
+
+### Bug Fixes
+
+* **pkg:** dependencies ([#250](https://github.com/polpenaloza/react-me.com/issues/250)) ([31dba10](https://github.com/polpenaloza/react-me.com/commit/31dba109e4f592bbb12b6f368f5b4ab9d7f3b184))
+
 # [1.12.0](https://github.com/polpenaloza/react-me.com/compare/v1.11.0...v1.12.0) (2024-01-16)
 
 ### Bug Fixes
