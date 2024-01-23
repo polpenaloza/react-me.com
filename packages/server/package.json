@@ -10,7 +10,7 @@
     "@t3-oss/env-nextjs": "^0.7.3",
     "@tanstack/react-query": "^5.17.19",
     "@total-typescript/ts-reset": "^0.5.1",
-    "@trpc/server": "11.0.0-next-beta.193",
+    "@trpc/server": "11.0.0-next.91",
     "@upstash/ratelimit": "^1.0.0",
     "@upstash/redis": "^1.28.2",
     "@workspace/database": "workspace:^",
