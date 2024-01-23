@@ -1,19 +1,17 @@
 # [1.12.0](https://github.com/polpenaloza/react-me.com/compare/v1.11.0...v1.12.0) (2024-01-16)
 
-
 ### Bug Fixes
 
-* **actions:** spacing ([d117d32](https://github.com/polpenaloza/react-me.com/commit/d117d32d66480fbeea1cc54cf086a24c2d502643))
-* **ci:** husky hooks ([568a4f3](https://github.com/polpenaloza/react-me.com/commit/568a4f356e981021b00f5351d0a950dddb200517))
-
+- **actions:** spacing ([d117d32](https://github.com/polpenaloza/react-me.com/commit/d117d32d66480fbeea1cc54cf086a24c2d502643))
+- **ci:** husky hooks ([568a4f3](https://github.com/polpenaloza/react-me.com/commit/568a4f356e981021b00f5351d0a950dddb200517))
 
 ### Features
 
-* **feed:** login n logout ([#230](https://github.com/polpenaloza/react-me.com/issues/230)) ([53ca5cd](https://github.com/polpenaloza/react-me.com/commit/53ca5cddbcd4e94150670a1a633814888dd00915))
-* **me:** link feed ([#239](https://github.com/polpenaloza/react-me.com/issues/239)) ([d0f70c4](https://github.com/polpenaloza/react-me.com/commit/d0f70c49c525007acc0c5c850d8d6e52deefaf26))
-* **monorepo:** updates ([#222](https://github.com/polpenaloza/react-me.com/issues/222)) ([f1a9cdc](https://github.com/polpenaloza/react-me.com/commit/f1a9cdca22379b95652fcc515747a4c0011167b8))
-* **packages:** server and feed ([#228](https://github.com/polpenaloza/react-me.com/issues/228)) ([7e059cc](https://github.com/polpenaloza/react-me.com/commit/7e059cc1dff47140854d5261a6dd2cadfd0f8b4d))
-* **release:** semantic ([d4dd356](https://github.com/polpenaloza/react-me.com/commit/d4dd35698cbe9e113fd803744bf38999db2d66ee))
+- **feed:** login n logout ([#230](https://github.com/polpenaloza/react-me.com/issues/230)) ([53ca5cd](https://github.com/polpenaloza/react-me.com/commit/53ca5cddbcd4e94150670a1a633814888dd00915))
+- **me:** link feed ([#239](https://github.com/polpenaloza/react-me.com/issues/239)) ([d0f70c4](https://github.com/polpenaloza/react-me.com/commit/d0f70c49c525007acc0c5c850d8d6e52deefaf26))
+- **monorepo:** updates ([#222](https://github.com/polpenaloza/react-me.com/issues/222)) ([f1a9cdc](https://github.com/polpenaloza/react-me.com/commit/f1a9cdca22379b95652fcc515747a4c0011167b8))
+- **packages:** server and feed ([#228](https://github.com/polpenaloza/react-me.com/issues/228)) ([7e059cc](https://github.com/polpenaloza/react-me.com/commit/7e059cc1dff47140854d5261a6dd2cadfd0f8b4d))
+- **release:** semantic ([d4dd356](https://github.com/polpenaloza/react-me.com/commit/d4dd35698cbe9e113fd803744bf38999db2d66ee))
 
 # [1.11.0](https://github.com/polpenaloza/react-me.com/compare/v1.10.0...v1.11.0) (2023-12-28)
 
