@@ -1,4 +1,8 @@
+'use client'
+
 import { type Post, type User } from '@prisma/client'
+import { Avatar } from '@workspace/ui/src/Avatar'
+import { Loading } from '@workspace/ui/src/Loader/Loading'
 import { type DefaultSession } from 'next-auth'
 import { useState } from 'react'
 import { MdDelete } from 'react-icons/md'
@@ -6,10 +10,9 @@ import { MdDelete } from 'react-icons/md'
 import { useDropTweet } from '@/query/useDropTweet'
 import { formatDateRelative } from '@/utils/format-date-relative'
 
-import { Avatar } from './Avatar'
 import { CustomDialog } from './Dialog'
+import { Image } from './Image'
 import { Link } from './Link'
-import { Loading } from './Loading'
 
 interface Session extends DefaultSession {
   user: {
@@ -47,11 +50,9 @@ export function Tweet({ createdAt, createdBy, name, session, id }: TweetProps) {
     <div className='flex w-full items-start'>
       <div className='flex-shrink-0'>
         <Link href={`/user/${createdBy.id}`}>
-          <Avatar
-            imgSrc={createdBy.image}
-            name={createdBy.name}
-            size='h-8 w-8'
-          />
+          <Avatar name={createdBy.name ?? undefined} size='h-8 w-8'>
+            <Image src={createdBy.image as string} alt={'name'} fit />
+          </Avatar>
         </Link>
       </div>
       <button

@@ -1,3 +1,5 @@
+'use client '
+
 import { Dialog } from '@headlessui/react'
 import { MdClose } from 'react-icons/md'
 

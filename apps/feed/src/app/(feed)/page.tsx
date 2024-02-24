@@ -1,18 +1,18 @@
 'use client'
 
+import { Loader } from '@workspace/ui/src/Loader'
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
 
-import { Loading } from '@/components/Loading'
 import { useGetPosts } from '@/query/useGetPosts'
 
 const FeedList = dynamic(() => import('@/components/Feed'), {
   ssr: false,
-  loading: () => <Loading />,
+  loading: () => <Loader />,
 })
-const Scrollbars = dynamic(() => import('@/components/ScrollBars'), {
+const Scrollbars = dynamic(() => import('@workspace/ui/src/ScrollBars'), {
   ssr: false,
-  loading: () => <Loading />,
+  loading: () => <Loader />,
 })
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
     useGetPosts({})
 
   return (
-    <Suspense fallback={<Loading />}>
+    <Suspense fallback={<Loader />}>
       <div className='relative flex w-full flex-col items-center justify-center'>
         <Scrollbars
           showMessage={Boolean(isError)}

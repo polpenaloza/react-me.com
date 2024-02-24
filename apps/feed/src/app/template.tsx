@@ -1,3 +1,5 @@
+'use client'
+
 import { LeftSidebar } from '@/components/LeftSidebar'
 
 export default function RootTemplate({

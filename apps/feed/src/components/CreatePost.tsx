@@ -8,11 +8,11 @@ import { api } from '@/trpc/react'
 
 import { CustomDialog } from './Dialog'
 
-export function CreatePost() {
+export function CreatePost({ isOpen }: { isOpen?: boolean }) {
   const utils = api.useUtils()
   const router = useRouter()
   const [name, setName] = useState('')
-  const [showInput, setShowInput] = useState(false)
+  const [showDialog, setShowDialog] = useState(!!isOpen)
 
   const createPost = api.post.create.useMutation({
     onSuccess: async () => {
@@ -23,7 +23,7 @@ export function CreatePost() {
   })
 
   function handleClose() {
-    setShowInput(!showInput)
+    setShowDialog(!showDialog)
   }
 
   return (
@@ -34,11 +34,11 @@ export function CreatePost() {
       >
         <FaRegEdit />
       </button>
-      {showInput ? (
+      {showDialog ? (
         <CustomDialog
-          isOpen={showInput}
+          isOpen={showDialog}
           setIsOpen={handleClose}
-          title='New Tweet'
+          title='New Post'
         >
           <form
             onSubmit={(e) => {
@@ -57,7 +57,7 @@ export function CreatePost() {
                 value={name}
                 onKeyDown={(e) => {
                   if (e.key === 'Escape') {
-                    setShowInput(false)
+                    setShowDialog(false)
                   }
                 }}
                 onChange={(e) => {

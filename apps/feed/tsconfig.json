@@ -10,9 +10,9 @@
       },
     ],
   },
+  "exclude": ["dist", "build", "node_modules"],
   "extends": "@workspace/tsconfig/nextjs.json",
   "include": [
-    ".eslintrc.cjs",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",

@@ -1,9 +1,10 @@
 import { getServerAuthSession } from '@workspace/server/src/auth'
-import Link from 'next/link'
+import { Avatar } from '@workspace/ui/src/Avatar'
 import { BiHomeCircle, BiUser } from 'react-icons/bi'
 
 import { SignIn, SignOut } from './AuthButtons'
-import { Avatar } from './Avatar'
+import { Image } from './Image'
+import { Link } from './Link'
 import { Logo } from './Logo'
 
 export async function LeftSidebar() {
@@ -55,7 +56,15 @@ export async function LeftSidebar() {
       {session ? (
         <button className='hidden w-full items-center justify-between space-x-2 rounded-full bg-transparent p-4 text-center transition duration-200 hover:bg-white/10 sm:flex'>
           <div className='flex items-center space-x-2'>
-            <Avatar imgSrc={session?.user.image} name={session?.user.name} />
+            <Avatar name={session?.user.name ?? undefined}>
+              {session?.user.image ? (
+                <Image
+                  src={session?.user.image}
+                  alt={`avatar ${session?.user.name}`}
+                  className='visible h-full w-full object-cover object-center group-hover:hidden'
+                />
+              ) : null}
+            </Avatar>
             <div className='text-left text-sm'>
               <div className='font-semibold'>{session?.user?.name}</div>
               <div className=''>@{username}</div>
