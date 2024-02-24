@@ -1,4 +1,5 @@
 // https://dev.to/scriptmint/multicolor-theme-setup-with-tailwind-css-1odd
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const { nextui } = require('@nextui-org/react')
 
 function setupConfig(props = {}) {
