@@ -69,7 +69,7 @@ export function Tweet({ createdAt, createdBy, name, session, id }: TweetProps) {
         {formatDateRelative(createdAt)} ago
       </div>
 
-      <CustomDialog title='Tweet'>
+      <CustomDialog open={showModal} title='Tweet'>
         <div className='grid grid-flow-row-dense grid-cols-4 items-center gap-2'>
           <div className='col-span-3'>
             <p className='truncate text-sm font-medium text-gray-900 dark:text-white'>

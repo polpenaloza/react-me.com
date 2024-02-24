@@ -14,9 +14,10 @@ import { MdClose } from 'react-icons/md'
 interface DialogProps {
   children: React.ReactNode
   title: string
+  open?: boolean
 }
 
-export function CustomDialog({ title, children }: DialogProps) {
+export function CustomDialog({ title, children, open }: DialogProps) {
   const { isOpen, onOpen, onOpenChange } = useDisclosure()
 
   return (
@@ -31,7 +32,7 @@ export function CustomDialog({ title, children }: DialogProps) {
       </div>
       <Modal
         backdrop='blur'
-        isOpen={isOpen}
+        isOpen={isOpen || open}
         onOpenChange={onOpenChange}
         classNames={{
           backdrop:
