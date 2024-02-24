@@ -4,9 +4,9 @@
     "lib": ["esnext", "dom"],
     "outDir": "dist",
     "target": "esnext",
-    "types": ["node"],
+    "types": ["node"]
   },
   "exclude": ["dist", "build", "node_modules"],
   "extends": "@workspace/tsconfig/base.json",
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js"]
 }
