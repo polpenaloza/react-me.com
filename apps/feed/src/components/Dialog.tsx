@@ -1,38 +1,58 @@
-import { Dialog } from '@headlessui/react'
+'use client '
+
+import {
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalFooter,
+  ModalHeader,
+  useDisclosure,
+} from '@nextui-org/modal'
+import { FaRegEdit } from 'react-icons/fa'
 import { MdClose } from 'react-icons/md'
 
 interface DialogProps {
-  isOpen: boolean
-  setIsOpen: () => void
   children: React.ReactNode
   title: string
+  open?: boolean
 }
 
-export function CustomDialog({
-  isOpen,
-  setIsOpen,
-  title,
-  children,
-}: DialogProps) {
-  return (
-    <Dialog open={isOpen} onClose={() => setIsOpen()} className='relative z-50'>
-      {/* The backdrop, rendered as a fixed sibling to the panel container */}
-      <div className='fixed inset-0 bg-black/30' aria-hidden='true' />
+export function CustomDialog({ title, children, open }: DialogProps) {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure()
 
-      {/* Full-screen container to center the panel */}
-      <div className='fixed inset-0 flex w-screen  items-center justify-center sm:p-4'>
-        {/* The actual dialog panel  */}
-        <Dialog.Panel className='relative mx-auto h-full w-full rounded-xl border-2 border-violet-950 bg-violet-900 p-8 sm:h-auto sm:max-w-sm'>
-          <button
-            className='absolute left-2 top-2 flex h-6 w-6 items-center justify-center rounded-full bg-pink-500 text-xl font-bold text-white'
-            onClick={() => setIsOpen()}
-          >
-            <MdClose />
-          </button>
-          <Dialog.Title>{title}</Dialog.Title>
-          {children}
-        </Dialog.Panel>
+  return (
+    <>
+      <div className='xs:fixed absolute bottom-2 right-2 z-50 flex flex-col gap-2'>
+        <button
+          className='flex h-14 w-14 items-center justify-center rounded-full bg-pink-700'
+          onClick={onOpen}
+        >
+          <FaRegEdit />
+        </button>
       </div>
-    </Dialog>
+      <Modal
+        backdrop='blur'
+        isOpen={isOpen || open}
+        onOpenChange={onOpenChange}
+        classNames={{
+          backdrop:
+            'bg-gradient-to-t from-zinc-900 to-zinc-900/10 backdrop-opacity-20',
+        }}
+      >
+        <ModalContent>
+          {(onClose) => (
+            <>
+              <ModalHeader className='flex flex-col gap-1'>{title}</ModalHeader>
+              <ModalBody>{children}</ModalBody>
+              <ModalFooter>
+                <button onClick={onClose}>
+                  <MdClose />
+                </button>
+              </ModalFooter>
+            </>
+          )}
+        </ModalContent>
+      </Modal>
+    </>
   )
 }

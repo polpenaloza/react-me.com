@@ -1,17 +1,17 @@
 'use client'
 
+import { Loading } from '@workspace/ui/src/Loader/Loading'
 import dynamic from 'next/dynamic'
 import { useParams } from 'next/navigation'
 import React from 'react'
 
-import { Loading } from '@/components/Loading'
 import { useGetPosts } from '@/query/useGetPosts'
 
 const FeedList = dynamic(() => import('@/components/Feed'), {
   ssr: false,
   loading: () => <Loading />,
 })
-const Scrollbars = dynamic(() => import('@/components/ScrollBars'), {
+const Scrollbars = dynamic(() => import('@workspace/ui/src/ScrollBars'), {
   ssr: false,
   loading: () => <Loading />,
 })

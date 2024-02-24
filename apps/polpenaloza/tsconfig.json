@@ -2,15 +2,22 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
+      "@/*": ["src/*"]
     },
     "plugins": [
       {
-        "name": "next",
-      },
-    ],
+        "name": "next"
+      }
+    ]
   },
   "exclude": ["dist", "build", "node_modules"],
   "extends": "@workspace/tsconfig/nextjs.json",
-  "include": ["**/*.ts", "**/*.tsx", "**/*.js", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.cjs",
+    "**/*.js",
+    ".next/types/**/*.ts"
+  ]
 }

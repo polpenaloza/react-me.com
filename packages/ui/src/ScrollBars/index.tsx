@@ -1,9 +1,9 @@
 import classNames from 'classnames/dedupe'
 import { type ReactNode, useEffect, useRef } from 'react'
 
-import { ErrorApi } from './ErrorApi'
-import { Loading } from './Loading'
-import { Message } from './Message'
+import { ErrorApi } from '../Error/Api'
+import { Loading } from '../Loader/Loading'
+import { Message } from '../Message'
 
 interface ScrollbarsProps {
   addedHeight?: number

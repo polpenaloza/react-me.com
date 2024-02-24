@@ -101,5 +101,9 @@ export async function seoGenerateMetadata({
     },
     bookmarks: [url],
     category: 'technology',
+    themeColor: [
+      { media: '(prefers-color-scheme: light)', color: 'white' },
+      { media: '(prefers-color-scheme: dark)', color: 'black' },
+    ],
   }
 }

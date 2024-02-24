@@ -40,5 +40,3 @@ export function Image({
     />
   )
 }
-
-export default Image

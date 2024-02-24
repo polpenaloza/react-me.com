@@ -1,14 +1,13 @@
 import classNames from 'classnames/dedupe'
-
-import { Image } from './Image'
+import { ReactNode } from 'react'
 
 interface AvatarProps {
-  imgSrc?: string | null
-  name?: string | null
   size?: string
+  name?: string
+  children?: ReactNode
 }
 
-export function Avatar({ imgSrc, name, size }: AvatarProps) {
+export function Avatar({ name, children, size }: AvatarProps) {
   const [first, second] = (name ?? 'N A').split(' ')
 
   const avatarSize = size ?? 'h-10 w-10'
@@ -20,13 +19,7 @@ export function Avatar({ imgSrc, name, size }: AvatarProps) {
           {first?.charAt(0)}
           {second ? second.charAt(0) : first?.charAt(1)}
         </span>
-        {imgSrc ? (
-          <Image
-            src={imgSrc}
-            alt={`avatar ${name}`}
-            className='visible h-full w-full object-cover object-center group-hover:hidden'
-          />
-        ) : (
+        {children ?? (
           <div
             className={classNames([
               'bg-gray-10 relative overflow-hidden rounded-full',
