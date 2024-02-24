@@ -35,7 +35,7 @@
     "clean:dist": "npm exec --workspaces -- npx rimraf dist",
     "clean:eslint": "npm exec --workspaces -- npx rimraf .eslintcache",
     "clean:next": "npm exec --workspaces -- npx rimraf .next",
-    "clean:node": "npm exec --workspaces -- npx rimraf node_modules && npx rimraf node_modules",
+    "clean:node": "npm exec --workspaces -- npx rimraf node_modules",
     "clean:out": "npm exec --workspaces -- npx rimraf out",
     "clean:turbo": "npm exec --workspaces -- npx rimraf .turbo",
     "db:generate": "turbo run db:generate --parallel --no-daemon",
