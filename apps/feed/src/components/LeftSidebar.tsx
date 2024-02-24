@@ -1,16 +1,17 @@
-import { getServerAuthSession } from '@workspace/server/src/auth'
+'use client'
+
 import { Avatar } from '@workspace/ui/src/Avatar'
+import { type Session } from 'next-auth'
 import { BiHomeCircle, BiUser } from 'react-icons/bi'
 
 import { SignIn, SignOut } from './AuthButtons'
 import { Image } from './Image'
 import { Link } from './Link'
 import { Logo } from './Logo'
+import { ThemeSwitch } from './ThemeSwitch'
 
-export async function LeftSidebar() {
-  const session = await getServerAuthSession()
+export function LeftSidebar({ session }: { session: Session | null }) {
   const username = session?.user?.name?.toLocaleLowerCase().replace(/ /g, '_')
-
   const NAVIGATION_ITEMS = [
     {
       title: 'Home',
@@ -28,9 +29,10 @@ export async function LeftSidebar() {
         <Logo />
 
         <div className='flex w-full flex-col items-stretch space-y-4'>
-          {NAVIGATION_ITEMS.map((item) => {
+          <ThemeSwitch />
+          {NAVIGATION_ITEMS.map((item, index) => {
             if (item.title.toLocaleLowerCase() === 'profile' && !session)
-              return <></>
+              return <div key={`item-undefined-${index}`} />
             return (
               <Link
                 className='flex w-full items-center justify-start space-x-4 rounded-3xl px-6 py-2 text-2xl transition duration-200 hover:bg-white/10'

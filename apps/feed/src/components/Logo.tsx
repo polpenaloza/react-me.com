@@ -23,7 +23,7 @@ export function Logo({
           'h-20 w-20': size === 'sm',
         })}
       >
-        <Image src={imgUrl} height={120} width={120} alt='logo' />
+        <Image priority src={imgUrl} height={120} width={120} alt='logo' />
       </div>
     </Link>
   )

@@ -1,17 +1,5 @@
 {
   "author": "@polpenaloza (https://twitter.com/polpenaloza)",
-  "browserslist": {
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ],
-    "production": [
-      ">0.3%",
-      "not dead",
-      "not op_mini all"
-    ]
-  },
   "dependencies": {
     "@nextui-org/react": "^2.2.9",
     "@vercel/speed-insights": "^1.0.10",

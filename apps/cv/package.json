@@ -1,20 +1,10 @@
 {
   "author": "@polpenaloza (https://twitter.com/polpenaloza)",
-  "browserslist": {
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ],
-    "production": [
-      ">0.3%",
-      "not dead",
-      "not op_mini all"
-    ]
-  },
   "dependencies": {
     "@nextui-org/react": "^2.2.9",
     "@workspace/server": "workspace:^",
+    "@workspace/ui": "workspace:^",
+    "animate.css": "^4.1.1",
     "framer-motion": "^11.0.6",
     "next": "^14.1.0",
     "react": "^18.2.0",

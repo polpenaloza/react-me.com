@@ -13,6 +13,7 @@
     "eslint": "^8.57.0",
     "husky": "^9.0.11",
     "precise-commits": "^1.0.2",
+    "prettier": "^3.2.5",
     "rimraf": "^5.0.5",
     "semantic-release": "^23.0.2",
     "turbo": "^1.12.4"
@@ -38,7 +39,7 @@
     "clean:out": "npm exec --workspaces -- npx rimraf out",
     "clean:turbo": "npm exec --workspaces -- npx rimraf .turbo",
     "db:generate": "turbo run db:generate --parallel --no-daemon",
-    "db:migrate": "turbo run migrate:db --parallel --no-daemon",
+    "db:migrate": "turbo run db:migrate --parallel --no-daemon",
     "dev:feed": "turbo run dev:feed --parallel --no-daemon",
     "dev:me": "turbo run dev:me --parallel --no-daemon",
     "export": "turbo run export",

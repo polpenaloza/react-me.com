@@ -14,13 +14,15 @@ export default async function NewPostLayout({
   const session = await getServerAuthSession()
   const userData = session?.user
 
-  if (!userData) redirect('/')
+  // if (!userData) redirect('/')
 
   return (
-    <section className='relative flex w-full grow'>
-      <div className='relative flex grow flex-col items-center gap-2 overflow-auto p-2'>
-        {children}
-      </div>
-    </section>
+    <>
+      {/* <section className='relative flex w-full grow'> */}
+      {/* <div className='relative flex grow flex-col items-center gap-2 overflow-auto p-2'> */}
+      {children}
+      {/* </div> */}
+      {/* </section> */}
+    </>
   )
 }
