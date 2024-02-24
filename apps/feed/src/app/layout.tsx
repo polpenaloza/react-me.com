@@ -1,15 +1,15 @@
 import '@/styles/globals.css'
 
+import { Link } from '@nextui-org/link'
 import { SpeedInsights } from '@vercel/speed-insights/next'
-
 import { getServerAuthSession } from '@workspace/server/src/auth'
+
+import { LeftSidebar } from '@/components/LeftSidebar'
 import { fonts } from '@/core/fonts'
 import { seoGenerateMetadata } from '@/core/seo-meta'
 import { NextUIReactProvider } from '@/providers/NextUI'
 import { SessionProviders } from '@/providers/Session'
 import { TRPCProvider } from '@/providers/Trcp'
-import { LeftSidebar } from '@/components/LeftSidebar'
-import { Link } from '@nextui-org/link'
 
 export async function generateMetadata() {
   return seoGenerateMetadata({ title: 'X-Clone' })

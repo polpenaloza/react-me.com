@@ -17,9 +17,7 @@ interface DialogProps {
 }
 
 export function CustomDialog({ title, children }: DialogProps) {
-  const { isOpen, onOpen, onOpenChange, getButtonProps } = useDisclosure()
-
-  console.log({ isOpen, props: getButtonProps() })
+  const { isOpen, onOpen, onOpenChange } = useDisclosure()
 
   return (
     <>
