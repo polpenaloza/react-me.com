@@ -36,10 +36,6 @@ export function Tweet({ createdAt, createdBy, name, session, id }: TweetProps) {
     setShowModal(true)
   }
 
-  function handleHideModal() {
-    setShowModal(false)
-  }
-
   async function handleDropTweet() {
     setIsBusy(true)
     await dropTweet(id)
@@ -73,11 +69,7 @@ export function Tweet({ createdAt, createdBy, name, session, id }: TweetProps) {
         {formatDateRelative(createdAt)} ago
       </div>
 
-      <CustomDialog
-        isOpen={showModal}
-        setIsOpen={handleHideModal}
-        title='Tweet'
-      >
+      <CustomDialog open={showModal} title='Tweet'>
         <div className='grid grid-flow-row-dense grid-cols-4 items-center gap-2'>
           <div className='col-span-3'>
             <p className='truncate text-sm font-medium text-gray-900 dark:text-white'>

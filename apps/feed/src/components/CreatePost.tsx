@@ -35,11 +35,7 @@ export function CreatePost({ isOpen }: { isOpen?: boolean }) {
         <FaRegEdit />
       </button>
       {showDialog ? (
-        <CustomDialog
-          isOpen={showDialog}
-          setIsOpen={handleClose}
-          title='New Post'
-        >
+        <CustomDialog open={showDialog} title='New Post'>
           <form
             onSubmit={(e) => {
               e.preventDefault()

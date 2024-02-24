@@ -12,12 +12,13 @@ import {
 import { MdClose } from 'react-icons/md'
 
 interface DialogProps {
+  open?: boolean
   children: React.ReactNode
   title: string
 }
 
-export function CustomDialog({ title, children }: DialogProps) {
-  const { isOpen, onOpen, onOpenChange } = useDisclosure()
+export function CustomDialog({ open, title, children }: DialogProps) {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure({ isOpen: !!open })
 
   return (
     <>
