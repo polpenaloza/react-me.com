@@ -13,12 +13,14 @@
     ]
   },
   "dependencies": {
+    "@nextui-org/react": "^2.2.9",
     "@vercel/speed-insights": "^1.0.10",
     "@workspace/server": "workspace:^",
     "@workspace/ui": "workspace:^",
     "animate.css": "^4.1.1",
     "classnames": "^2.5.0",
     "debug": "^4.3.4",
+    "framer-motion": "^11.0.6",
     "i18next": "^23.10.0",
     "i18next-http-backend": "^2.5.0",
     "immer": "^10.0.3",
@@ -37,7 +39,6 @@
     "@workspace/eslint": "workspace:^",
     "@workspace/tsconfig": "workspace:^",
     "autoprefixer": "^10.4.17",
-    "daisyui": "^4.7.2",
     "postcss": "^8.4.35",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^16.0.1",

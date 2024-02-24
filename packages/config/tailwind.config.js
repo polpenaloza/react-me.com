@@ -6,15 +6,6 @@ function setupConfig(props = {}) {
       '../../packages/ui/**/*.{js,ts,jsx,tsx}',
       './src/**/*.{js,ts,jsx,tsx}',
     ],
-    daisyui: {
-      base: true, // applies background color and foreground color for root element by default
-      darkTheme: 'dark', // name of one of the included themes for dark mode
-      logs: true, // Shows info about daisyUI version and used config in the console when building your CSS
-      rtl: false, // rotate style direction from left-to-right to right-to-left. You also need to add dir="rtl" to your html tag and install `tailwindcss-flip` plugin for Tailwind CSS.
-      styled: true, // include daisyUI colors and design decisions for all components
-      utils: true, // adds responsive and modifier utility classes
-      themes: ['light', 'night'],
-    },
     theme: {
       extend: {
         animation: {
@@ -132,7 +123,7 @@ function setupConfig(props = {}) {
         },
       },
     },
-    plugins: [require('daisyui'), require('tailwind-scrollbar')],
+    plugins: [require('tailwind-scrollbar')],
     variants: {
       scrollbar: ['dark'],
     },

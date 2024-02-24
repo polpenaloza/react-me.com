@@ -2,8 +2,10 @@
   "author": "@polpenaloza (https://github.com/polpenaloza)",
   "dependencies": {
     "@mdi/js": "^7.4.47",
+    "@nextui-org/react": "^2.2.9",
     "@workspace/core-js": "workspace:^",
     "classnames": "^2.5.0",
+    "framer-motion": "^11.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-text-transition": "^3.1.0",
@@ -15,7 +17,6 @@
     "@workspace/config": "workspace:^",
     "@workspace/eslint": "workspace:^",
     "@workspace/tsconfig": "workspace:^",
-    "daisyui": "^4.7.2",
     "postcss": "^8.4.35",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^16.0.1",
