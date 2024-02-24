@@ -1,10 +1,13 @@
 // https://dev.to/scriptmint/multicolor-theme-setup-with-tailwind-css-1odd
+const { nextui } = require('@nextui-org/react')
+
 function setupConfig(props = {}) {
   return {
     ...props,
     content: [
       '../../packages/ui/**/*.{js,ts,jsx,tsx}',
       './src/**/*.{js,ts,jsx,tsx}',
+      './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
     ],
     theme: {
       extend: {
@@ -123,7 +126,8 @@ function setupConfig(props = {}) {
         },
       },
     },
-    plugins: [require('tailwind-scrollbar')],
+    darkMode: 'class',
+    plugins: [nextui(), require('tailwind-scrollbar')],
     variants: {
       scrollbar: ['dark'],
     },
