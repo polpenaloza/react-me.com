@@ -1,7 +1,7 @@
-import { Button } from '@workspace/ui/src/Button'
+import { UIButton } from '@workspace/ui/src/Button'
 import { ParticlesButton } from '@workspace/ui/src/Button/FancyButton'
-import { ThemeIcon } from '@workspace/ui/src/Icon/ThemeIcon'
-import { TranslateIcon } from '@workspace/ui/src/Icon/TranslateIcon'
+import { IconTheme } from '@workspace/ui/src/Icon/Theme'
+import { IconTranslate } from '@workspace/ui/src/Icon/Translate'
 import { RotateText } from '@workspace/ui/src/Rotate'
 import clsx from 'clsx'
 import Link from 'next/link'
@@ -107,20 +107,15 @@ export const NavBar = () => {
           <div className='mt-1 hidden h-full px-2 py-1 text-xs uppercase sm:block'>
             {i18n.language}
           </div>
-          <Button
-            aria-label='translate'
-            variant='clean'
-            onClick={() => changeLanguage()}
-          >
-            <TranslateIcon />
-          </Button>
+          <UIButton aria-label='translate' onClick={() => changeLanguage()}>
+            <IconTranslate />
+          </UIButton>
           <ParticlesButton
             aria-label='theme'
-            variant='clean'
             isDarkMode={darkMode}
             onClick={() => setDarkMode()}
           >
-            <ThemeIcon />
+            <IconTheme />
           </ParticlesButton>
         </div>
       </div>

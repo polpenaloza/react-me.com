@@ -1,7 +1,7 @@
-import { BrandIcon } from '@workspace/ui/src/Icon/BrandIcon'
-import { GithubIcon } from '@workspace/ui/src/Icon/GithubIcon'
-import { LinkedinIcon } from '@workspace/ui/src/Icon/LinkedinIcon'
-import { TwitterIcon } from '@workspace/ui/src/Icon/TwitterIcon'
+import { BrandIcon } from '@workspace/ui/src/Icon/Brand'
+import { IconGithub } from '@workspace/ui/src/Icon/Github'
+import { IconLinkedin } from '@workspace/ui/src/Icon/Linkedin'
+import { IconTwitter } from '@workspace/ui/src/Icon/Twitter'
 import { useTranslation } from 'react-i18next'
 
 export default function Footer() {
@@ -23,7 +23,7 @@ export default function Footer() {
           rel='noopener noreferrer'
           title='polpenaloza'
         >
-          <GithubIcon iconSize={30} />
+          <IconGithub iconSize={30} />
         </a>
         <a
           target={'_blank'}
@@ -31,7 +31,7 @@ export default function Footer() {
           rel='noopener noreferrer'
           title='@polpenaloza'
         >
-          <TwitterIcon iconSize={30} />
+          <IconTwitter iconSize={30} />
         </a>
         <a
           target={'_blank'}
@@ -39,7 +39,7 @@ export default function Footer() {
           rel='noopener noreferrer'
           title='polpenaloza'
         >
-          <LinkedinIcon iconSize={30} />
+          <IconLinkedin iconSize={30} />
         </a>
       </div>
     </footer>
