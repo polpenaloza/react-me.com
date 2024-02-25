@@ -1,4 +1,4 @@
-import classNames from 'classnames/dedupe'
+import clsx from 'clsx'
 
 export function Message({
   text,
@@ -9,10 +9,7 @@ export function Message({
 }) {
   return (
     <div
-      className={classNames([
-        'flex w-full items-center justify-center',
-        className,
-      ])}
+      className={clsx(['flex w-full items-center justify-center', className])}
     >
       <h1 className='my-10 text-2xl'>{text}</h1>
     </div>

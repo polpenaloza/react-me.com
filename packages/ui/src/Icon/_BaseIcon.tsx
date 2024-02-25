@@ -1,4 +1,4 @@
-import classNames from 'classnames/dedupe'
+import clsx from 'clsx'
 import { SVGAttributes } from 'react'
 
 export interface iBaseIconProps extends SVGAttributes<HTMLOrSVGElement> {
@@ -36,7 +36,7 @@ export function BaseIcon({
 
   return (
     <div
-      className={classNames([
+      className={clsx([
         'flex items-center justify-center transition-colors',
         { [`w-${size}`]: size },
         { [`h-${size}`]: size },

@@ -3,7 +3,7 @@ import { ParticlesButton } from '@workspace/ui/src/Button/FancyButton'
 import { ThemeIcon } from '@workspace/ui/src/Icon/ThemeIcon'
 import { TranslateIcon } from '@workspace/ui/src/Icon/TranslateIcon'
 import { RotateText } from '@workspace/ui/src/Rotate'
-import classNames from 'classnames'
+import clsx from 'clsx'
 import Link from 'next/link'
 import { useTranslation } from 'react-i18next'
 
@@ -63,7 +63,7 @@ export const NavBar = () => {
             dev@polpenaloza: ~/$
           </a>
           <div
-            className={classNames([
+            className={clsx([
               'flex items-center justify-center gap-1 font-light',
               {
                 'text-purple-700': !darkMode,

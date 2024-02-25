@@ -1,4 +1,4 @@
-import classNames from 'classnames/dedupe'
+import clsx from 'clsx'
 
 import { Image } from './Image'
 import { Link } from './Link'
@@ -15,9 +15,9 @@ export function Logo({
 
   /** @render */
   return (
-    <Link className={classNames(['flex items-center p-0'])} href='/'>
+    <Link className={clsx(['flex items-center p-0'])} href='/'>
       <div
-        className={classNames(['relative'], {
+        className={clsx(['relative'], {
           invert: isBlack,
           'h-32 w-32': size === 'md',
           'h-20 w-20': size === 'sm',

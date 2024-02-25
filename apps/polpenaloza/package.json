@@ -6,7 +6,7 @@
     "@workspace/server": "workspace:^",
     "@workspace/ui": "workspace:^",
     "animate.css": "^4.1.1",
-    "classnames": "^2.5.0",
+    "clsx": "^2.1.0",
     "debug": "^4.3.4",
     "framer-motion": "^11.0.6",
     "i18next": "^23.10.0",

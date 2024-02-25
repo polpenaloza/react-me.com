@@ -71,6 +71,9 @@ importers:
       animate.css:
         specifier: ^4.1.1
         version: 4.1.1
+      clsx:
+        specifier: ^2.1.0
+        version: 2.1.0
       framer-motion:
         specifier: ^11.0.6
         version: 11.0.6(react-dom@18.2.0)(react@18.2.0)
@@ -135,33 +138,6 @@ importers:
       '@next-auth/prisma-adapter':
         specifier: ^1.0.7
         version: 1.0.7(@prisma/client@5.10.2)(next-auth@4.24.6)
-      '@nextui-org/button':
-        specifier: 2.0.26
-        version: 2.0.26(@nextui-org/system@2.0.15)(@nextui-org/theme@2.1.17)(framer-motion@11.0.6)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.20)
-      '@nextui-org/code':
-        specifier: 2.0.24
-        version: 2.0.24(@nextui-org/theme@2.1.17)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.20)
-      '@nextui-org/input':
-        specifier: 2.1.16
-        version: 2.1.16(@nextui-org/system@2.0.15)(@nextui-org/theme@2.1.17)(@types/react@18.2.58)(react-dom@18.2.0)(react@18.2.0)
-      '@nextui-org/kbd':
-        specifier: 2.0.25
-        version: 2.0.25(@nextui-org/theme@2.1.17)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.20)
-      '@nextui-org/link':
-        specifier: 2.0.26
-        version: 2.0.26(@nextui-org/system@2.0.15)(@nextui-org/theme@2.1.17)(react-dom@18.2.0)(react@18.2.0)
-      '@nextui-org/modal':
-        specifier: ^2.0.28
-        version: 2.0.28(@nextui-org/system@2.0.15)(@nextui-org/theme@2.1.17)(@types/react@18.2.58)(framer-motion@11.0.6)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.20)
-      '@nextui-org/navbar':
-        specifier: 2.0.27
-        version: 2.0.27(@nextui-org/system@2.0.15)(@nextui-org/theme@2.1.17)(@types/react@18.2.58)(framer-motion@11.0.6)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.20)
-      '@nextui-org/snippet':
-        specifier: 2.0.30
-        version: 2.0.30(@nextui-org/system@2.0.15)(@nextui-org/theme@2.1.17)(framer-motion@11.0.6)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.20)
-      '@nextui-org/switch':
-        specifier: 2.0.25
-        version: 2.0.25(@nextui-org/system@2.0.15)(@nextui-org/theme@2.1.17)(react-dom@18.2.0)(react@18.2.0)
       '@nextui-org/system':
         specifier: 2.0.15
         version: 2.0.15(@nextui-org/theme@2.1.17)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.20)
@@ -216,9 +192,9 @@ importers:
       autoprefixer:
         specifier: 10.4.16
         version: 10.4.16(postcss@8.4.35)
-      classnames:
-        specifier: ^2.3.2
-        version: 2.5.1
+      clsx:
+        specifier: ^2.1.0
+        version: 2.1.0
       dayjs:
         specifier: ^1.11.10
         version: 1.11.10
@@ -240,9 +216,6 @@ importers:
       react-dom:
         specifier: 18.2.0
         version: 18.2.0(react@18.2.0)
-      react-icons:
-        specifier: ^5.0.1
-        version: 5.0.1(react@18.2.0)
       sharp:
         specifier: ^0.33.2
         version: 0.33.2
@@ -322,9 +295,9 @@ importers:
       animate.css:
         specifier: ^4.1.1
         version: 4.1.1
-      classnames:
-        specifier: ^2.5.0
-        version: 2.5.1
+      clsx:
+        specifier: ^2.1.0
+        version: 2.1.0
       debug:
         specifier: ^4.3.4
         version: 4.3.4
@@ -642,12 +615,30 @@ importers:
       '@mdi/js':
         specifier: ^7.4.47
         version: 7.4.47
+      '@nextui-org/button':
+        specifier: 2.0.26
+        version: 2.0.26(@nextui-org/system@2.0.15)(@nextui-org/theme@2.1.17)(framer-motion@11.0.6)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.20)
+      '@nextui-org/modal':
+        specifier: ^2.0.28
+        version: 2.0.28(@nextui-org/system@2.0.15)(@nextui-org/theme@2.1.17)(@types/react@18.2.58)(framer-motion@11.0.6)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.20)
+      '@nextui-org/system':
+        specifier: 2.0.15
+        version: 2.0.15(@nextui-org/theme@2.1.17)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.20)
+      '@react-aria/ssr':
+        specifier: ^3.9.2
+        version: 3.9.2(react@18.2.0)
+      '@react-aria/visually-hidden':
+        specifier: ^3.8.10
+        version: 3.8.10(react@18.2.0)
       '@workspace/core-js':
         specifier: workspace:^
         version: link:../core
-      classnames:
-        specifier: ^2.5.0
-        version: 2.5.1
+      clsx:
+        specifier: ^2.1.0
+        version: 2.1.0
+      next-themes:
+        specifier: ^0.2.1
+        version: 0.2.1(next@14.1.0)(react-dom@18.2.0)(react@18.2.0)
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -5801,10 +5792,6 @@ packages:
     optionalDependencies:
       fsevents: 2.3.3
 
-  /classnames@2.5.1:
-    resolution: {integrity: sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==}
-    dev: false
-
   /clean-stack@2.2.0:
     resolution: {integrity: sha512-4diC9HaTE+KRAMWhDhrGOECgWZxoevMc5TlkObMqNSsVU62PYzXZ/SMTjzyGAFF1YusgxGcSWTEXBhp0CPwQ1A==}
     engines: {node: '>=6'}
@@ -9462,14 +9449,6 @@ packages:
       i18next: 23.10.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /react-icons@5.0.1(react@18.2.0):
-    resolution: {integrity: sha512-WqLZJ4bLzlhmsvme6iFdgO8gfZP17rfjYEJ2m9RsZjZ+cc4k1hTzknEz63YS1MeT50kVzoa1Nz36f4BEx+Wigw==}
-    peerDependencies:
-      react: '*'
-    dependencies:
-      react: 18.2.0
     dev: false
 
   /react-is@16.13.1:

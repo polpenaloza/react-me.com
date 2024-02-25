@@ -1,4 +1,4 @@
-import classNames from 'classnames/dedupe'
+import clsx from 'clsx'
 import { forwardRef, InputHTMLAttributes, Ref } from 'react'
 
 export interface iCheckBoxProps extends InputHTMLAttributes<HTMLInputElement> {
@@ -18,7 +18,7 @@ export const Checkbox = forwardRef(
         <label className='label cursor-pointer gap-4'>
           <input
             type='checkbox'
-            className={classNames([
+            className={clsx([
               'checkbox checkbox-primary rounded-sm',
               className,
             ])}

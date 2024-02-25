@@ -1,46 +1,24 @@
-import classNames from 'classnames/dedupe'
-import { ButtonHTMLAttributes } from 'react'
+import clsx from 'clsx'
 
-import { iBaseButtonProps, useButton } from './useButton'
+import { Button, ButtonProps } from '@nextui-org/button'
 
-interface iIconButtonProps
-  extends iBaseButtonProps,
-    ButtonHTMLAttributes<HTMLButtonElement> {
+interface iIconButtonProps extends ButtonProps {
   children: React.ReactNode
 }
 
 export function IconButton({
   children,
   className,
-  fullLength = false,
-  loading,
-  variant = 'default',
-  size = 'md',
-  circle = true,
   ...otherProps
 }: iIconButtonProps) {
-  const cssClass = useButton({
-    circle,
-    className,
-    fullLength,
-    variant,
-    size,
-    ...otherProps,
-  })
-
   return (
-    <button
+    <Button
       {...otherProps}
-      className={classNames([
-        cssClass,
-        {
-          'btn-circle': circle,
-          'rounded-[0.15rem]': !circle,
-        },
-      ])}
+      className={clsx([className])}
+      isIconOnly
+      color='danger'
     >
-      {loading ? <span className='loading loading-spinner'></span> : null}
-      {children}
-    </button>
+      <>{children}</>
+    </Button>
   )
 }

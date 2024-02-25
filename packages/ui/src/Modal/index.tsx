@@ -8,8 +8,10 @@ import {
   ModalHeader,
   useDisclosure,
 } from '@nextui-org/modal'
-import { FaRegEdit } from 'react-icons/fa'
-import { MdClose } from 'react-icons/md'
+import { IconButton } from '../Button/IconButton'
+
+import { IconCancel } from '../Icon/Cancel'
+import { IconEdit } from '../Icon/Edit'
 
 interface DialogProps {
   children: React.ReactNode
@@ -23,12 +25,9 @@ export function CustomDialog({ title, children, open }: DialogProps) {
   return (
     <>
       <div className='xs:fixed absolute bottom-2 right-2 z-50 flex flex-col gap-2'>
-        <button
-          className='flex h-14 w-14 items-center justify-center rounded-full bg-pink-700'
-          onClick={onOpen}
-        >
-          <FaRegEdit />
-        </button>
+        <IconButton onClick={onOpen}>
+          <IconEdit />
+        </IconButton>
       </div>
       <Modal
         backdrop='blur'
@@ -44,11 +43,11 @@ export function CustomDialog({ title, children, open }: DialogProps) {
             <>
               <ModalHeader className='flex flex-col gap-1'>{title}</ModalHeader>
               <ModalBody>{children}</ModalBody>
-              <ModalFooter>
+              {/* <ModalFooter>
                 <button onClick={onClose}>
-                  <MdClose />
+                  <IconCancel />
                 </button>
-              </ModalFooter>
+              </ModalFooter> */}
             </>
           )}
         </ModalContent>

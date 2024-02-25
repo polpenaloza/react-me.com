@@ -1,5 +1,5 @@
 import { mdiAutorenew } from '@mdi/js'
-import classNames from 'classnames/dedupe'
+import clsx from 'clsx'
 
 import { BaseIcon, iBaseIconProps } from './_BaseIcon'
 
@@ -9,7 +9,7 @@ export function IconRefresh(props: Omit<iBaseIconProps, 'path'>) {
   return (
     <BaseIcon
       {...props}
-      className={classNames(['rotate-90 transform', className])}
+      className={clsx(['rotate-90 transform', className])}
       aria-label='icon refresh'
       path={mdiAutorenew}
     />

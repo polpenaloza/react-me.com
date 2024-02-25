@@ -1,32 +1,14 @@
-import { AnchorHTMLAttributes, ReactNode } from 'react'
+import { ReactNode } from 'react'
 
-import { iBaseButtonProps, useButton } from './useButton'
-export interface iButtonProps
-  extends iBaseButtonProps,
-    AnchorHTMLAttributes<HTMLAnchorElement> {
+import { Link, LinkProps } from '@nextui-org/react'
+export interface iButtonProps extends LinkProps {
   children: ReactNode
 }
 
-export function AnchorButton({
-  children,
-  className = '',
-  fullLength = false,
-  variant = 'default',
-  size = 'md',
-  loading,
-  ...otherProps
-}: iButtonProps) {
-  const classNames = useButton({
-    className,
-    fullLength,
-    variant,
-    size,
-  })
-
+export function AnchorButton({ children, ...otherProps }: iButtonProps) {
   return (
-    <a {...otherProps} className={classNames}>
-      {loading ? <span className='loading loading-spinner'></span> : null}
-      {children}
-    </a>
+    <Link {...otherProps} isExternal>
+      <>{children}</>
+    </Link>
   )
 }

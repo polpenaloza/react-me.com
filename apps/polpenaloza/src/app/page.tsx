@@ -1,6 +1,6 @@
 'use client'
 
-import classNames from 'classnames'
+import clsx from 'clsx'
 
 import { iAppPersistState, useAppPersistStore } from '@/core/store/persistState'
 
@@ -15,7 +15,7 @@ const Home = () => {
         {!darkMode ? (
           <>
             <div
-              className={classNames([
+              className={clsx([
                 'flex items-center justify-center',
                 'z-1 relative h-full min-h-max w-full overflow-hidden',
                 'bg-cover p-2 bg-blend-lighten',

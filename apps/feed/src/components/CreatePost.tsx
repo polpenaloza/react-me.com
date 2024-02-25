@@ -2,10 +2,9 @@
 
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
+import { CustomDialog } from '@workspace/ui/src/Modal'
 
 import { api } from '@/trpc/react'
-
-import { CustomDialog } from './Dialog'
 
 export function CreatePost() {
   const utils = api.useUtils()

@@ -1,4 +1,5 @@
-import { BiLogIn, BiLogOut } from 'react-icons/bi'
+import { IconLogin } from '@workspace/ui/src/Icon/Login'
+import { IconLogout } from '@workspace/ui/src/Icon/Logout'
 
 import { Link } from '@/components/Link'
 
@@ -9,7 +10,7 @@ export function SignIn() {
       href={'/api/auth/signin'}
     >
       <div>
-        <BiLogIn />
+        <IconLogin />
       </div>
       <div className='hidden sm:block'>Login</div>
     </Link>
@@ -23,7 +24,7 @@ export function SignOut() {
       href={'/api/auth/signout'}
     >
       <div>
-        <BiLogOut />
+        <IconLogout />
       </div>
       <div className='hidden sm:block'>Logout</div>
     </Link>

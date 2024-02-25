@@ -3,10 +3,11 @@
 import { SwitchProps, useSwitch } from '@nextui-org/switch'
 import { useIsSSR } from '@react-aria/ssr'
 import { VisuallyHidden } from '@react-aria/visually-hidden'
-import { ThemeIcon } from '@workspace/ui/src/Icon/ThemeIcon'
-import clsx from 'classnames/dedupe'
+import clsx from 'clsx'
 import { useTheme } from 'next-themes'
 import { FC } from 'react'
+import { IconSun } from '../Icon/Sun'
+import { IconMoon } from '../Icon/Moon'
 
 export interface ThemeSwitchProps {
   className?: string
@@ -69,11 +70,7 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
           ),
         })}
       >
-        {!isSelected || isSSR ? (
-          <ThemeIcon size={22} />
-        ) : (
-          <ThemeIcon size={22} />
-        )}
+        {!isSelected || isSSR ? <IconSun size={22} /> : <IconMoon size={22} />}
       </div>
     </Component>
   )

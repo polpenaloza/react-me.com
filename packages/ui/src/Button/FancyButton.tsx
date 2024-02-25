@@ -1,7 +1,7 @@
-import { iButtonProps } from '.'
+import { ButtonProps } from '@nextui-org/button'
 import { IconButton } from './IconButton'
 
-interface iParticlesButtonProps extends iButtonProps {
+interface iParticlesButtonProps extends ButtonProps {
   isDarkMode?: boolean
 }
 

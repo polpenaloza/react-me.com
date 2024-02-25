@@ -5,12 +5,12 @@ import { Avatar } from '@workspace/ui/src/Avatar'
 import { Loading } from '@workspace/ui/src/Loader/Loading'
 import { type DefaultSession } from 'next-auth'
 import { useState } from 'react'
-import { MdDelete } from 'react-icons/md'
+import { IconTrash } from '@workspace/ui/src/Icon/Trash'
 
 import { useDropTweet } from '@/query/useDropTweet'
 import { formatDateRelative } from '@/utils/format-date-relative'
+import { CustomDialog } from '@workspace/ui/src/Modal'
 
-import { CustomDialog } from './Dialog'
 import { Image } from './Image'
 import { Link } from './Link'
 
@@ -87,7 +87,7 @@ export function Tweet({ createdAt, createdBy, name, session, id }: TweetProps) {
                 className='flex h-8 w-8 items-center justify-center rounded-full border border-pink-800 bg-pink-600 text-xl'
                 disabled={isBusy}
               >
-                <MdDelete />
+                <IconTrash />
               </button>
               {isBusy ? (
                 <div className='absolute'>

@@ -1,33 +1,14 @@
-import { ButtonHTMLAttributes, ReactNode } from 'react'
+import { ReactNode } from 'react'
 
-import { iBaseButtonProps, useButton } from './useButton'
-export interface iButtonProps
-  extends iBaseButtonProps,
-    ButtonHTMLAttributes<HTMLButtonElement> {
+import { Button, ButtonProps } from '@nextui-org/button'
+interface iButtonProps extends ButtonProps {
   children: ReactNode
 }
 
-export function Button({
-  children,
-  className,
-  fullLength = false,
-  variant = 'default',
-  size = 'md',
-  loading,
-  ...otherProps
-}: iButtonProps) {
-  const classNames = useButton({
-    className,
-    fullLength,
-    variant,
-    size,
-    ...otherProps,
-  })
-
+export function UIButton({ children, className, ...otherProps }: iButtonProps) {
   return (
-    <button {...otherProps} className={classNames} type='button'>
-      {loading ? <span className='loading loading-spinner'></span> : null}
-      {children}
-    </button>
+    <Button {...otherProps} className={className}>
+      <>{children}</>
+    </Button>
   )
 }

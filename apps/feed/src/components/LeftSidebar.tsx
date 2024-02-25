@@ -2,24 +2,25 @@
 
 import { Avatar } from '@workspace/ui/src/Avatar'
 import { type Session } from 'next-auth'
-import { BiHomeCircle, BiUser } from 'react-icons/bi'
+import { BrandIcon } from '@workspace/ui/src/Icon/BrandIcon'
+import { IconHome } from '@workspace/ui/src/Icon/Home'
 
 import { SignIn, SignOut } from './AuthButtons'
 import { Image } from './Image'
 import { Link } from './Link'
 import { Logo } from './Logo'
-import { ThemeSwitch } from './ThemeSwitch'
+import { ThemeSwitch } from '@workspace/ui/src/Button/ThemeSwitch'
 
 export function LeftSidebar({ session }: { session: Session | null }) {
   const username = session?.user?.name?.toLocaleLowerCase().replace(/ /g, '_')
   const NAVIGATION_ITEMS = [
     {
       title: 'Home',
-      icon: <BiHomeCircle />,
+      icon: <IconHome />,
     },
     {
       title: 'Profile',
-      icon: <BiUser />,
+      icon: <BrandIcon />,
     },
   ]
 

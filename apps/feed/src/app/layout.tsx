@@ -4,12 +4,14 @@ import { Link } from '@nextui-org/link'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { getServerAuthSession } from '@workspace/server/src/auth'
 
-import { LeftSidebar } from '@/components/LeftSidebar'
-import { fonts } from '@/core/fonts'
-import { seoGenerateMetadata } from '@/core/seo-meta'
+// import { LeftSidebar } from '@/components/LeftSidebar'
+import { Navbar } from '@workspace/ui/src/NavBar'
+import { fonts } from '@/config/fonts'
+import { seoGenerateMetadata } from '@/config/seo-meta'
 import { NextUIReactProvider } from '@/providers/NextUI'
 import { SessionProviders } from '@/providers/Session'
 import { TRPCProvider } from '@/providers/Trcp'
+import { siteConfig } from '@/config/site'
 
 export async function generateMetadata() {
   return seoGenerateMetadata({ title: 'X-Clone' })
@@ -33,7 +35,7 @@ export default async function RootLayout({
               themeProps={{ attribute: 'class', defaultTheme: 'dark' }}
             >
               <div className='relative flex h-screen flex-col'>
-                <LeftSidebar session={session} />
+                <Navbar siteConfig={siteConfig} session={session} />
                 <main className='container mx-auto max-w-7xl flex-grow px-6 pt-16'>
                   {children}
                 </main>
