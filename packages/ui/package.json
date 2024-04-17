@@ -11,7 +11,7 @@
     "usehooks-ts": "^2.15.1"
   },
   "devDependencies": {
-    "@types/react": "^18.2.58",
+    "@types/react": "^18.2.79",
     "@workspace/config": "workspace:^",
     "@workspace/eslint": "workspace:^",
     "@workspace/tsconfig": "workspace:^",
