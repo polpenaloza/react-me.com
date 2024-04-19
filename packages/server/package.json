@@ -8,7 +8,7 @@
     "@prisma/client": "^5.10.2",
     "@prisma/extension-accelerate": "^0.6.3",
     "@t3-oss/env-nextjs": "^0.9.2",
-    "@tanstack/react-query": "^5.22.2",
+    "@tanstack/react-query": "^5.29.2",
     "@total-typescript/ts-reset": "^0.5.1",
     "@trpc/server": "11.0.0-next-beta.228",
     "@upstash/ratelimit": "^1.0.1",
