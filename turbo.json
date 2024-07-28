@@ -31,7 +31,7 @@
     "VERCEL_URL",
     "VERCEL"
   ],
-  "pipeline": {
+  "tasks": {
     "build": {
       "env": [],
       "outputs": ["dist/**", ".next/**"]
