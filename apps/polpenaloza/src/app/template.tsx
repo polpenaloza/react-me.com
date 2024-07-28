@@ -37,9 +37,7 @@ export default function MainTemplate({ children }: Props) {
         className='flex h-full min-h-screen w-screen flex-col'
         data-theme={darkMode ? 'night' : 'light'}
       >
-        <div className='h-14'>
-          <NavBar />
-        </div>
+        <NavBar />
         {children}
         <Footer />
       </div>

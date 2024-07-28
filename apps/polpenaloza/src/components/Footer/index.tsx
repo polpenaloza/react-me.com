@@ -1,8 +1,13 @@
-import { BrandIcon } from '@workspace/ui/src/Icon/Brand'
-import { IconGithub } from '@workspace/ui/src/Icon/Github'
-import { IconLinkedin } from '@workspace/ui/src/Icon/Linkedin'
-import { IconTwitter } from '@workspace/ui/src/Icon/Twitter'
+// import { BrandIcon } from '@workspace/ui/src/Icon/Brand'
+// import { IconGithub } from '@workspace/ui/src/Icon/Github'
+// import { IconLinkedin } from '@workspace/ui/src/Icon/Linkedin'
+// import { IconTwitter } from '@workspace/ui/src/Icon/Twitter'
+import dynamic from 'next/dynamic'
 import { useTranslation } from 'react-i18next'
+const BrandIcon = dynamic(() => import('@workspace/ui/src/Icon/Brand'))
+const IconGithub = dynamic(() => import('@workspace/ui/src/Icon/Github'))
+const IconLinkedin = dynamic(() => import('@workspace/ui/src/Icon/Linkedin'))
+const IconTwitter = dynamic(() => import('@workspace/ui/src/Icon/Twitter'))
 
 export default function Footer() {
   const { t } = useTranslation()
