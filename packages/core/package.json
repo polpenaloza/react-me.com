@@ -2,14 +2,14 @@
   "author": "@polpenaloza (https://github.com/polpenaloza)",
   "dependencies": {
     "@total-typescript/ts-reset": "^0.5.1",
-    "dayjs": "^1.11.10",
-    "debug": "^4.3.4",
+    "dayjs": "^1.11.12",
+    "debug": "^4.3.6",
     "sugar": "^2.0.6",
-    "viem": "^2.7.13"
+    "viem": "^2.18.2"
   },
   "devDependencies": {
     "@types/debug": "^4.1.10",
-    "@types/node": "^20.11.20",
+    "@types/node": "^22.0.0",
     "@workspace/config": "workspace:^",
     "@workspace/eslint": "workspace:^",
     "@workspace/tsconfig": "workspace:^"

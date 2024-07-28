@@ -32,8 +32,8 @@ const nextConfig = getConfig({
       : 'standalone',
   productionBrowserSourceMaps: true,
   reactStrictMode: true,
-  trailingSlash: true,
-  transpilePackages: ['@workspace/ui'],
+  // trailingSlash: true,
+  // transpilePackages: ['@workspace/ui'],
   typescript: {
     ignoreBuildErrors: Boolean(process.env.IGNORE_TYPECHECK),
   },
