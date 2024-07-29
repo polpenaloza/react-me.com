@@ -2,7 +2,7 @@
 
 import { Avatar } from '@workspace/ui/src/Avatar'
 import { type Session } from 'next-auth'
-import { BrandIcon } from '@workspace/ui/src/Icon/BrandIcon'
+// import { BrandIcon } from '@workspace/ui/src/Icon/BrandIcon'
 import { IconHome } from '@workspace/ui/src/Icon/Home'
 
 import { SignIn, SignOut } from './AuthButtons'
@@ -20,7 +20,7 @@ export function LeftSidebar({ session }: { session: Session | null }) {
     },
     {
       title: 'Profile',
-      icon: <BrandIcon />,
+      // icon: <BrandIcon />,
     },
   ]
 

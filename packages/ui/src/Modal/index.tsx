@@ -8,6 +8,7 @@ import {
   ModalHeader,
   useDisclosure,
 } from '@nextui-org/modal'
+import { NextUIProvider } from '@nextui-org/react'
 import { IconButton } from '../Button/IconButton'
 
 import { IconCancel } from '../Icon/Cancel'
@@ -23,7 +24,7 @@ export function CustomDialog({ title, children, open }: DialogProps) {
   const { isOpen, onOpen, onOpenChange } = useDisclosure()
 
   return (
-    <>
+    <NextUIProvider>
       <div className='xs:fixed absolute bottom-2 right-2 z-50 flex flex-col gap-2'>
         <IconButton onClick={onOpen}>
           <IconEdit />
@@ -52,6 +53,6 @@ export function CustomDialog({ title, children, open }: DialogProps) {
           )}
         </ModalContent>
       </Modal>
-    </>
+    </NextUIProvider>
   )
 }

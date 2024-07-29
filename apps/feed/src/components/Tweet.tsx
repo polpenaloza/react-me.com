@@ -59,7 +59,7 @@ export function Tweet({ createdAt, createdBy, name, session, id }: TweetProps) {
       >
         <p className='truncate text-sm font-medium text-gray-900 dark:text-white'>
           {createdBy.name}
-          <span className='italix hidden px-2 text-xs text-gray-600/80 sm:inline-block'>
+          <span className='italic hidden px-2 text-xs text-gray-600/80 sm:inline-block'>
             @{username}
           </span>
         </p>
@@ -74,7 +74,7 @@ export function Tweet({ createdAt, createdBy, name, session, id }: TweetProps) {
           <div className='col-span-3'>
             <p className='truncate text-sm font-medium text-gray-900 dark:text-white'>
               {createdBy.name}
-              <span className='italix hidden px-2 text-xs text-gray-600/80 sm:inline-block'>
+              <span className='italic hidden px-2 text-xs text-gray-600/80 sm:inline-block'>
                 @{username}
               </span>
             </p>

@@ -1,4 +1,4 @@
-import { Button } from '@workspace/ui/src/Button'
+import { UIButton } from '@workspace/ui/src/Button'
 import { type Metadata } from 'next'
 
 import { Image } from '@/components/Image'
@@ -19,9 +19,9 @@ export default function SignOutTemplate({
         <div className='flex w-full flex-col items-center'>
           {children}
           <Link href='/'>
-            <Button variant='primary' className='w-60'>
+            <UIButton className='w-60'>
               Go to Homepage
-            </Button>
+            </UIButton>
           </Link>
         </div>
         <div className='relative h-72 w-72'>

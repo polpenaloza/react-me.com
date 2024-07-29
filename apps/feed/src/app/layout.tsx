@@ -31,9 +31,7 @@ export default async function RootLayout({
       >
         <TRPCProvider>
           <SessionProviders>
-            <NextUIReactProvider
-              themeProps={{ attribute: 'class', defaultTheme: 'dark' }}
-            >
+            <NextUIReactProvider>
               <div className='relative flex h-screen flex-col'>
                 <Navbar siteConfig={siteConfig} session={session} />
                 <main className='container mx-auto max-w-7xl flex-grow px-6 pt-16'>
