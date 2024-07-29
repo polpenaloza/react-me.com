@@ -145,14 +145,14 @@ export const NavBar = () => {
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify='end'>
-        <NavbarItem className='hidden lg:flex'>
+        {/* <NavbarItem className='hidden lg:flex'>
           <Link href='#'>Login</Link>
-        </NavbarItem>
-        <NavbarItem>
+        </NavbarItem> */}
+        {/* <NavbarItem>
           <Button as={Link} color='primary' href='#' variant='flat'>
             Sign Up
           </Button>
-        </NavbarItem>
+        </NavbarItem> */}
         <NavbarItem>
           <ParticlesButton
             aria-label='theme'

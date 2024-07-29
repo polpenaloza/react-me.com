@@ -34,11 +34,13 @@ export default function MainTemplate({ children }: Props) {
   return (
     <Suspense fallback={<div className='animate-pulse'>...</div>}>
       <div
-        className='flex h-full min-h-screen w-screen flex-col'
+        className='relative flex h-full min-h-screen w-screen flex-col'
         data-theme={darkMode ? 'night' : 'light'}
       >
         <NavBar />
-        {children}
+        <main className='container mx-auto max-w-7xl pt-16 px-6 flex-grow'>
+          {children}
+        </main>
         <Footer />
       </div>
     </Suspense>

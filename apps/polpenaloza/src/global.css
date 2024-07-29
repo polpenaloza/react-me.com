@@ -23,3 +23,8 @@ input[type='number'] {
   min-height: 100vh;
   min-height: 100dvh;
 }
+
+#oneko {
+  z-index: 9999;
+  pointer-events: none;
+}
