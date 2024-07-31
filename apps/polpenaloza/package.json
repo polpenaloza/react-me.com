@@ -27,7 +27,7 @@
     "@workspace/eslint": "workspace:^",
     "@workspace/tsconfig": "workspace:^",
     "autoprefixer": "^10.4.17",
-    "postcss": "^8.4.35",
+    "postcss": "^8.4.40",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^16.0.1",
     "postcss-preset-env": "^9.4.0",
