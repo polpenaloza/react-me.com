@@ -6,6 +6,7 @@ import { ReactNode, Suspense, useState } from 'react'
 
 import { useIsMounted } from '@/core/hooks/useIsMounted'
 import { iAppPersistState, useAppPersistStore } from '@/core/store/persistState'
+import clsx from 'clsx'
 
 const Footer = dynamic(() => import('@/components/Footer'))
 const NavBar = dynamic(() => import('@/components/NavBar'))
@@ -34,8 +35,10 @@ export default function MainTemplate({ children }: Props) {
   return (
     <Suspense fallback={<div className='animate-pulse'>...</div>}>
       <div
-        className='relative flex h-full min-h-screen w-screen flex-col'
-        data-theme={darkMode ? 'night' : 'light'}
+        className={clsx([
+          darkMode ? 'dark' : 'light',
+          'relative flex h-full min-h-screen w-screen flex-col',
+        ])}
       >
         <NavBar />
         <main className='container mx-auto max-w-7xl pt-16 px-6 flex-grow'>

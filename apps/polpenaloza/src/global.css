@@ -2,7 +2,7 @@
 @import 'animate.css';
 
 body {
-  @apply bg-[#e5e5e5] text-white;
+  @apply bg-black text-slate-100;
 
   overscroll-behavior: none;
 }
@@ -25,6 +25,18 @@ input[type='number'] {
 }
 
 #oneko {
-  z-index: 9999;
+  /* z-index: 9999; */
   pointer-events: none;
+}
+
+@keyframes blinking-cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

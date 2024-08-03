@@ -9,20 +9,3 @@
 *::after {
   box-sizing: border-box;
 }
-
-body {
-  @apply bg-black text-slate-100;
-  overscroll-behavior: none;
-}
-
-@keyframes blinking-cursor {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
