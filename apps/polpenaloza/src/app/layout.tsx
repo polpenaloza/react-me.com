@@ -12,14 +12,16 @@ export async function generateMetadata() {
   return seoGenerateMetadata({ title: 'polpenaloza' })
 }
 
-export default function Layout({ children }: { children: ReactNode }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html suppressHydrationWarning lang='en'>
-      <script defer async src='/oneko.js' type='text/javascript'></script>
+      <head>
+        <script defer async src='/oneko.js' type='text/javascript' />
+      </head>
       <body
         className={clsx(
-          fonts,
-          'min-h-screen bg-background font-inter antialiased'
+          'min-h-screen font-inter antialiased',
+          fonts
         )}
       >
         <AppProviders>{children}</AppProviders>

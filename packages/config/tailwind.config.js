@@ -134,7 +134,7 @@ function setupConfig(props = {}) {
       },
     },
     darkMode: 'class',
-    plugins: [nextui(), require('tailwind-scrollbar')],
+    plugins: [nextui()],
     variants: {
       scrollbar: ['dark'],
     },

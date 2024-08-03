@@ -3,6 +3,7 @@ import { ParticlesButton } from '@workspace/ui/src/Button/FancyButton'
 import { IconTheme } from '@workspace/ui/src/Icon/Theme'
 import { IconTranslate } from '@workspace/ui/src/Icon/Translate'
 import { RotateText } from '@workspace/ui/src/Rotate'
+import { useIsSSR } from '@react-aria/ssr'
 import {
   Navbar,
   NavbarBrand,
@@ -18,9 +19,11 @@ import { useTranslation } from 'react-i18next'
 
 import { iAppPersistState, useAppPersistStore } from '@/core/store/persistState'
 import dynamic from 'next/dynamic'
+import { useTheme } from 'next-themes'
 
 export const NavBar = () => {
   const { i18n } = useTranslation()
+  const { theme, setTheme } = useTheme()
   const darkMode = useAppPersistStore(
     (state: iAppPersistState) => state.darkMode
   )
@@ -32,6 +35,11 @@ export const NavBar = () => {
     const switchTo = i18n.language === 'en' ? 'es' : 'en'
 
     i18n.changeLanguage(switchTo)
+  }
+
+  function handleSwitchTheme() {
+    setTheme(darkMode ? 'light' : 'dark')
+    setDarkMode()
   }
 
   // return (
@@ -157,7 +165,7 @@ export const NavBar = () => {
           <ParticlesButton
             aria-label='theme'
             isDarkMode={darkMode}
-            onClick={() => setDarkMode()}
+            onClick={handleSwitchTheme}
           >
             <IconTheme />
           </ParticlesButton>

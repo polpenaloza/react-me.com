@@ -19,7 +19,9 @@ export function AppProviders({ children }: AppProvidersProps) {
     <React.StrictMode>
       <ErrorBoundary>
         <I18nextProvider i18n={i18n}>
-          <NextUIReactProvider>{children}</NextUIReactProvider>
+          <NextUIReactProvider>
+            <main className='text-foreground bg-background'>{children}</main>
+          </NextUIReactProvider>
         </I18nextProvider>
       </ErrorBoundary>
     </React.StrictMode>
