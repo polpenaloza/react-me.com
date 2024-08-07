@@ -15,7 +15,7 @@
     "@workspace/config": "workspace:^",
     "@workspace/eslint": "workspace:^",
     "@workspace/tsconfig": "workspace:^",
-    "postcss": "^8.4.35",
+    "postcss": "^8.4.41",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^16.0.1",
     "postcss-preset-env": "^9.4.0",
