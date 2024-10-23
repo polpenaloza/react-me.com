@@ -75,8 +75,8 @@ importers:
         specifier: ^11.0.6
         version: 11.0.6(react-dom@18.2.0)(react@18.2.0)
       next:
-        specifier: ^14.2.5
-        version: 14.2.5(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^15.0.1
+        version: 15.0.1(react-dom@18.2.0)(react@18.2.0)
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -194,7 +194,7 @@ importers:
         version: 11.0.0-next-beta.228(@trpc/server@11.0.0-next-beta.228)
       '@trpc/next':
         specifier: 11.0.0-next-beta.228
-        version: 11.0.0-next-beta.228(@tanstack/react-query@5.29.2)(@trpc/client@11.0.0-next-beta.228)(@trpc/react-query@11.0.0-next-beta.228)(@trpc/server@11.0.0-next-beta.228)(next@14.2.5)(react-dom@18.2.0)(react@18.2.0)
+        version: 11.0.0-next-beta.228(@tanstack/react-query@5.29.2)(@trpc/client@11.0.0-next-beta.228)(@trpc/react-query@11.0.0-next-beta.228)(@trpc/server@11.0.0-next-beta.228)(next@15.0.1)(react-dom@18.2.0)(react@18.2.0)
       '@trpc/react-query':
         specifier: 11.0.0-next-beta.228
         version: 11.0.0-next-beta.228(@tanstack/react-query@5.29.2)(@trpc/client@11.0.0-next-beta.228)(@trpc/server@11.0.0-next-beta.228)(react-dom@18.2.0)(react@18.2.0)
@@ -203,7 +203,7 @@ importers:
         version: 11.0.0-next-beta.228
       '@vercel/speed-insights':
         specifier: ^1.0.10
-        version: 1.0.10(next@14.2.5)(react@18.2.0)
+        version: 1.0.10(next@15.0.1)(react@18.2.0)
       '@workspace/core-js':
         specifier: workspace:^
         version: link:../../packages/core
@@ -226,14 +226,14 @@ importers:
         specifier: ^11.0.6
         version: 11.0.6(react-dom@18.2.0)(react@18.2.0)
       next:
-        specifier: ^14.2.5
-        version: 14.2.5(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^15.0.1
+        version: 15.0.1(react-dom@18.2.0)(react@18.2.0)
       next-auth:
         specifier: ^4.24.6
-        version: 4.24.6(next@14.2.5)(react-dom@18.2.0)(react@18.2.0)
+        version: 4.24.6(next@15.0.1)(react-dom@18.2.0)(react@18.2.0)
       next-themes:
         specifier: ^0.2.1
-        version: 0.2.1(next@14.2.5)(react-dom@18.2.0)(react@18.2.0)
+        version: 0.2.1(next@15.0.1)(react-dom@18.2.0)(react@18.2.0)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -312,7 +312,7 @@ importers:
         version: 2.2.9(@types/react@18.2.79)(framer-motion@11.0.6)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.20)(tailwindcss@3.4.1)
       '@vercel/speed-insights':
         specifier: ^1.0.10
-        version: 1.0.10(next@14.2.5)(react@18.2.0)
+        version: 1.0.10(next@15.0.1)(react@18.2.0)
       '@workspace/server':
         specifier: workspace:^
         version: link:../../packages/server
@@ -341,8 +341,8 @@ importers:
         specifier: ^10.0.3
         version: 10.0.3
       next:
-        specifier: ^14.2.5
-        version: 14.2.5(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^15.0.1
+        version: 15.0.1(react-dom@18.2.0)(react@18.2.0)
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -1345,6 +1345,14 @@ packages:
     dev: false
     optional: true
 
+  /@emnapi/runtime@1.3.1:
+    resolution: {integrity: sha512-kEBmG8KyqtxJZv+ygbEim+KCGtIq1fC22Ms3S4ziXmYKm8uyoLX0MHONVKwp+9opg390VaKRNt4a7A9NwmpNhw==}
+    requiresBuild: true
+    dependencies:
+      tslib: 2.6.2
+    dev: false
+    optional: true
+
   /@emotion/is-prop-valid@0.8.8:
     resolution: {integrity: sha512-u5WtneEAr5IDG2Wv65yhunPSMLIpuKsbuOktRojfrEiEvRyC85LgPMZI63cr7NUqT8ZIGdSVg8ZKGxIug4lXcA==}
     requiresBuild: true
@@ -1668,6 +1676,17 @@ packages:
     dev: false
     optional: true
 
+  /@img/sharp-darwin-arm64@0.33.5:
+    resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
+    engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    optionalDependencies:
+      '@img/sharp-libvips-darwin-arm64': 1.0.4
+    dev: false
+    optional: true
+
   /@img/sharp-darwin-x64@0.33.2:
     resolution: {integrity: sha512-/rK/69Rrp9x5kaWBjVN07KixZanRr+W1OiyKdXcbjQD6KbW+obaTeBBtLUAtbBsnlTTmWthw99xqoOS7SsySDg==}
     engines: {glibc: '>=2.26', node: ^18.17.0 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0', yarn: '>=3.2.0'}
@@ -1679,9 +1698,28 @@ packages:
     dev: false
     optional: true
 
+  /@img/sharp-darwin-x64@0.33.5:
+    resolution: {integrity: sha512-fyHac4jIc1ANYGRDxtiqelIbdWkIuQaI84Mv45KvGRRxSAa7o7d1ZKAOBaYbnepLC1WqxfpimdeWfvqqSGwR2Q==}
+    engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    optionalDependencies:
+      '@img/sharp-libvips-darwin-x64': 1.0.4
+    dev: false
+    optional: true
+
   /@img/sharp-libvips-darwin-arm64@1.0.1:
     resolution: {integrity: sha512-kQyrSNd6lmBV7O0BUiyu/OEw9yeNGFbQhbxswS1i6rMDwBBSX+e+rPzu3S+MwAiGU3HdLze3PanQ4Xkfemgzcw==}
     engines: {macos: '>=11', npm: '>=9.6.5', pnpm: '>=7.1.0', yarn: '>=3.2.0'}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@img/sharp-libvips-darwin-arm64@1.0.4:
+    resolution: {integrity: sha512-XblONe153h0O2zuFfTAbQYAX2JhYmDHeWikp1LM9Hul9gVPjFY427k6dFEcOL72O01QxQsWi761svJ/ev9xEDg==}
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
@@ -1697,9 +1735,25 @@ packages:
     dev: false
     optional: true
 
+  /@img/sharp-libvips-darwin-x64@1.0.4:
+    resolution: {integrity: sha512-xnGR8YuZYfJGmWPvmlunFaWJsb9T/AO2ykoP3Fz/0X5XV2aoYBPkX6xqCQvUTKKiLddarLaxpzNe+b1hjeWHAQ==}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
   /@img/sharp-libvips-linux-arm64@1.0.1:
     resolution: {integrity: sha512-bnGG+MJjdX70mAQcSLxgeJco11G+MxTz+ebxlz8Y3dxyeb3Nkl7LgLI0mXupoO+u1wRNx/iRj5yHtzA4sde1yA==}
     engines: {glibc: '>=2.26', npm: '>=9.6.5', pnpm: '>=7.1.0', yarn: '>=3.2.0'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@img/sharp-libvips-linux-arm64@1.0.4:
+    resolution: {integrity: sha512-9B+taZ8DlyyqzZQnoeIvDVR/2F4EbMepXMc/NdVbkzsJbzkUjhXv/70GQJ7tdLA4YJgNP25zukcxpX2/SueNrA==}
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
@@ -1715,9 +1769,25 @@ packages:
     dev: false
     optional: true
 
+  /@img/sharp-libvips-linux-arm@1.0.5:
+    resolution: {integrity: sha512-gvcC4ACAOPRNATg/ov8/MnbxFDJqf/pDePbBnuBDcjsI8PssmjoKMAz4LtLaVi+OnSb5FK/yIOamqDwGmXW32g==}
+    cpu: [arm]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
   /@img/sharp-libvips-linux-s390x@1.0.1:
     resolution: {integrity: sha512-3+rzfAR1YpMOeA2zZNp+aYEzGNWK4zF3+sdMxuCS3ey9HhDbJ66w6hDSHDMoap32DueFwhhs3vwooAB2MaK4XQ==}
     engines: {glibc: '>=2.28', npm: '>=9.6.5', pnpm: '>=7.1.0', yarn: '>=3.2.0'}
+    cpu: [s390x]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@img/sharp-libvips-linux-s390x@1.0.4:
+    resolution: {integrity: sha512-u7Wz6ntiSSgGSGcjZ55im6uvTrOxSIS8/dgoVMoiGE9I6JAfU50yH5BoDlYA1tcuGS7g/QNtetJnxA6QEsCVTA==}
     cpu: [s390x]
     os: [linux]
     requiresBuild: true
@@ -1733,6 +1803,14 @@ packages:
     dev: false
     optional: true
 
+  /@img/sharp-libvips-linux-x64@1.0.4:
+    resolution: {integrity: sha512-MmWmQ3iPFZr0Iev+BAgVMb3ZyC4KeFc3jFxnNbEPas60e1cIfevbtuyf9nDGIzOaW9PdnDciJm+wFFaTlj5xYw==}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
   /@img/sharp-libvips-linuxmusl-arm64@1.0.1:
     resolution: {integrity: sha512-5aBRcjHDG/T6jwC3Edl3lP8nl9U2Yo8+oTl5drd1dh9Z1EBfzUKAJFUDTDisDjUwc7N4AjnPGfCA3jl3hY8uDg==}
     engines: {musl: '>=1.2.2', npm: '>=9.6.5', pnpm: '>=7.1.0', yarn: '>=3.2.0'}
@@ -1742,9 +1820,25 @@ packages:
     dev: false
     optional: true
 
+  /@img/sharp-libvips-linuxmusl-arm64@1.0.4:
+    resolution: {integrity: sha512-9Ti+BbTYDcsbp4wfYib8Ctm1ilkugkA/uscUn6UXK1ldpC1JjiXbLfFZtRlBhjPZ5o1NCLiDbg8fhUPKStHoTA==}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
   /@img/sharp-libvips-linuxmusl-x64@1.0.1:
     resolution: {integrity: sha512-dcT7inI9DBFK6ovfeWRe3hG30h51cBAP5JXlZfx6pzc/Mnf9HFCQDLtYf4MCBjxaaTfjCCjkBxcy3XzOAo5txw==}
     engines: {musl: '>=1.2.2', npm: '>=9.6.5', pnpm: '>=7.1.0', yarn: '>=3.2.0'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@img/sharp-libvips-linuxmusl-x64@1.0.4:
+    resolution: {integrity: sha512-viYN1KX9m+/hGkJtvYYp+CCLgnJXwiQB39damAO7WMdKWlIhmYTfHjwSbQeUK/20vY154mwezd9HflVFM1wVSw==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
@@ -1762,6 +1856,17 @@ packages:
     dev: false
     optional: true
 
+  /@img/sharp-linux-arm64@0.33.5:
+    resolution: {integrity: sha512-JMVv+AMRyGOHtO1RFBiJy/MBsgz0x4AWrT6QoEVVTyh1E39TrCUpTRI7mx9VksGX4awWASxqCYLCV4wBZHAYxA==}
+    engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    optionalDependencies:
+      '@img/sharp-libvips-linux-arm64': 1.0.4
+    dev: false
+    optional: true
+
   /@img/sharp-linux-arm@0.33.2:
     resolution: {integrity: sha512-Fndk/4Zq3vAc4G/qyfXASbS3HBZbKrlnKZLEJzPLrXoJuipFNNwTes71+Ki1hwYW5lch26niRYoZFAtZVf3EGA==}
     engines: {glibc: '>=2.28', node: ^18.17.0 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0', yarn: '>=3.2.0'}
@@ -1770,6 +1875,17 @@ packages:
     requiresBuild: true
     optionalDependencies:
       '@img/sharp-libvips-linux-arm': 1.0.1
+    dev: false
+    optional: true
+
+  /@img/sharp-linux-arm@0.33.5:
+    resolution: {integrity: sha512-JTS1eldqZbJxjvKaAkxhZmBqPRGmxgu+qFKSInv8moZ2AmT5Yib3EQ1c6gp493HvrvV8QgdOXdyaIBrhvFhBMQ==}
+    engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
+    cpu: [arm]
+    os: [linux]
+    requiresBuild: true
+    optionalDependencies:
+      '@img/sharp-libvips-linux-arm': 1.0.5
     dev: false
     optional: true
 
@@ -1784,6 +1900,17 @@ packages:
     dev: false
     optional: true
 
+  /@img/sharp-linux-s390x@0.33.5:
+    resolution: {integrity: sha512-y/5PCd+mP4CA/sPDKl2961b+C9d+vPAveS33s6Z3zfASk2j5upL6fXVPZi7ztePZ5CuH+1kW8JtvxgbuXHRa4Q==}
+    engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
+    cpu: [s390x]
+    os: [linux]
+    requiresBuild: true
+    optionalDependencies:
+      '@img/sharp-libvips-linux-s390x': 1.0.4
+    dev: false
+    optional: true
+
   /@img/sharp-linux-x64@0.33.2:
     resolution: {integrity: sha512-xUT82H5IbXewKkeF5aiooajoO1tQV4PnKfS/OZtb5DDdxS/FCI/uXTVZ35GQ97RZXsycojz/AJ0asoz6p2/H/A==}
     engines: {glibc: '>=2.26', node: ^18.17.0 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0', yarn: '>=3.2.0'}
@@ -1792,6 +1919,17 @@ packages:
     requiresBuild: true
     optionalDependencies:
       '@img/sharp-libvips-linux-x64': 1.0.1
+    dev: false
+    optional: true
+
+  /@img/sharp-linux-x64@0.33.5:
+    resolution: {integrity: sha512-opC+Ok5pRNAzuvq1AG0ar+1owsu842/Ab+4qvU879ippJBHvyY5n2mxF1izXqkPYlGuP/M556uh53jRLJmzTWA==}
+    engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    optionalDependencies:
+      '@img/sharp-libvips-linux-x64': 1.0.4
     dev: false
     optional: true
 
@@ -1806,6 +1944,17 @@ packages:
     dev: false
     optional: true
 
+  /@img/sharp-linuxmusl-arm64@0.33.5:
+    resolution: {integrity: sha512-XrHMZwGQGvJg2V/oRSUfSAfjfPxO+4DkiRh6p2AFjLQztWUuY/o8Mq0eMQVIY7HJ1CDQUJlxGGZRw1a5bqmd1g==}
+    engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    optionalDependencies:
+      '@img/sharp-libvips-linuxmusl-arm64': 1.0.4
+    dev: false
+    optional: true
+
   /@img/sharp-linuxmusl-x64@0.33.2:
     resolution: {integrity: sha512-+ZLE3SQmSL+Fn1gmSaM8uFusW5Y3J9VOf+wMGNnTtJUMUxFhv+P4UPaYEYT8tqnyYVaOVGgMN/zsOxn9pSsO2A==}
     engines: {musl: '>=1.2.2', node: ^18.17.0 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0', yarn: '>=3.2.0'}
@@ -1814,6 +1963,17 @@ packages:
     requiresBuild: true
     optionalDependencies:
       '@img/sharp-libvips-linuxmusl-x64': 1.0.1
+    dev: false
+    optional: true
+
+  /@img/sharp-linuxmusl-x64@0.33.5:
+    resolution: {integrity: sha512-WT+d/cgqKkkKySYmqoZ8y3pxx7lx9vVejxW/W4DOFMYVSkErR+w7mf2u8m/y4+xHe7yY9DAXQMWQhpnMuFfScw==}
+    engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    optionalDependencies:
+      '@img/sharp-libvips-linuxmusl-x64': 1.0.4
     dev: false
     optional: true
 
@@ -1827,9 +1987,28 @@ packages:
     dev: false
     optional: true
 
+  /@img/sharp-wasm32@0.33.5:
+    resolution: {integrity: sha512-ykUW4LVGaMcU9lu9thv85CbRMAwfeadCJHRsg2GmeRa/cJxsVY9Rbd57JcMxBkKHag5U/x7TSBpScF4U8ElVzg==}
+    engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
+    cpu: [wasm32]
+    requiresBuild: true
+    dependencies:
+      '@emnapi/runtime': 1.3.1
+    dev: false
+    optional: true
+
   /@img/sharp-win32-ia32@0.33.2:
     resolution: {integrity: sha512-okBpql96hIGuZ4lN3+nsAjGeggxKm7hIRu9zyec0lnfB8E7Z6p95BuRZzDDXZOl2e8UmR4RhYt631i7mfmKU8g==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0', yarn: '>=3.2.0'}
+    cpu: [ia32]
+    os: [win32]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@img/sharp-win32-ia32@0.33.5:
+    resolution: {integrity: sha512-T36PblLaTwuVJ/zw/LaH0PdZkRz5rd3SmMHX8GSmR7vtNSP5Z6bQkExdSK7xGWyxLw4sUknBuugTelgw2faBbQ==}
+    engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
     cpu: [ia32]
     os: [win32]
     requiresBuild: true
@@ -1845,29 +2024,38 @@ packages:
     dev: false
     optional: true
 
+  /@img/sharp-win32-x64@0.33.5:
+    resolution: {integrity: sha512-MpY/o8/8kj+EcnxwvrP4aTJSWw/aZ7JIGR4aBeZkZw5B7/Jn+tY9/VNwtcoGmdT7GfggGIU4kygOMSbYnOrAbg==}
+    engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: false
+    optional: true
+
   /@internationalized/date@3.5.4:
     resolution: {integrity: sha512-qoVJVro+O0rBaw+8HPjUB1iH8Ihf8oziEnqMnvhJUSuVIrHOuZ6eNLHNvzXJKUvAtaDiqMnRlg8Z2mgh09BlUw==}
     dependencies:
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
     dev: false
 
   /@internationalized/message@3.1.4:
     resolution: {integrity: sha512-Dygi9hH1s7V9nha07pggCkvmRfDd3q2lWnMGvrJyrOwYMe1yj4D2T9BoH9I6MGR7xz0biQrtLPsqUkqXzIrBOw==}
     dependencies:
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       intl-messageformat: 10.5.11
     dev: false
 
   /@internationalized/number@3.5.3:
     resolution: {integrity: sha512-rd1wA3ebzlp0Mehj5YTuTI50AQEx80gWFyHcQu+u91/5NgdwBecO8BH6ipPfE+lmQ9d63vpB3H9SHoIUiupllw==}
     dependencies:
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
     dev: false
 
   /@internationalized/string@3.2.3:
     resolution: {integrity: sha512-9kpfLoA8HegiWTeCbR2livhdVeKobCnVv8tlJ6M2jF+4tcMqDo94ezwlnrUANBWPgd8U7OXIHCk2Ov2qhk4KXw==}
     dependencies:
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
     dev: false
 
   /@isaacs/cliui@8.0.2:
@@ -1917,11 +2105,15 @@ packages:
       next-auth: ^4
     dependencies:
       '@prisma/client': 5.10.2(prisma@5.10.2)
-      next-auth: 4.24.6(next@14.2.5)(react-dom@18.2.0)(react@18.2.0)
+      next-auth: 4.24.6(next@15.0.1)(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
   /@next/env@14.2.5:
     resolution: {integrity: sha512-/zZGkrTOsraVfYjGP8uM0p6r0BDT6xWpkjdVbcz66PJVSpwXX3yNiRycxAuDfBKGWBrZBXRuK/YVlkNgxHGwmA==}
+    dev: false
+
+  /@next/env@15.0.1:
+    resolution: {integrity: sha512-lc4HeDUKO9gxxlM5G2knTRifqhsY6yYpwuHspBZdboZe0Gp+rZHBNNSIjmQKDJIdRXiXGyVnSD6gafrbQPvILQ==}
     dev: false
 
   /@next/eslint-plugin-next@14.1.0:
@@ -1939,8 +2131,26 @@ packages:
     dev: false
     optional: true
 
+  /@next/swc-darwin-arm64@15.0.1:
+    resolution: {integrity: sha512-C9k/Xv4sxkQRTA37Z6MzNq3Yb1BJMmSqjmwowoWEpbXTkAdfOwnoKOpAb71ItSzoA26yUTIo6ZhN8rKGu4ExQw==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
   /@next/swc-darwin-x64@14.2.5:
     resolution: {integrity: sha512-vXHOPCwfDe9qLDuq7U1OYM2wUY+KQ4Ex6ozwsKxp26BlJ6XXbHleOUldenM67JRyBfVjv371oneEvYd3H2gNSA==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@next/swc-darwin-x64@15.0.1:
+    resolution: {integrity: sha512-uHl13HXOuq1G7ovWFxCACDJHTSDVbn/sbLv8V1p+7KIvTrYQ5HNoSmKBdYeEKRRCbEmd+OohOgg9YOp8Ux3MBg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
@@ -1957,8 +2167,26 @@ packages:
     dev: false
     optional: true
 
+  /@next/swc-linux-arm64-gnu@15.0.1:
+    resolution: {integrity: sha512-LvyhvxHOihFTEIbb35KxOc3q8w8G4xAAAH/AQnsYDEnOvwawjL2eawsB59AX02ki6LJdgDaHoTEnC54Gw+82xw==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
   /@next/swc-linux-arm64-musl@14.2.5:
     resolution: {integrity: sha512-NpDB9NUR2t0hXzJJwQSGu1IAOYybsfeB+LxpGsXrRIb7QOrYmidJz3shzY8cM6+rO4Aojuef0N/PEaX18pi9OA==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@next/swc-linux-arm64-musl@15.0.1:
+    resolution: {integrity: sha512-vFmCGUFNyk/A5/BYcQNhAQqPIw01RJaK6dRO+ZEhz0DncoW+hJW1kZ8aH2UvTX27zPq3m85zN5waMSbZEmANcQ==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
@@ -1975,6 +2203,15 @@ packages:
     dev: false
     optional: true
 
+  /@next/swc-linux-x64-gnu@15.0.1:
+    resolution: {integrity: sha512-5by7IYq0NCF8rouz6Qg9T97jYU68kaClHPfGpQG2lCZpSYHtSPQF1kjnqBTd34RIqPKMbCa4DqCufirgr8HM5w==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
   /@next/swc-linux-x64-musl@14.2.5:
     resolution: {integrity: sha512-6QLwi7RaYiQDcRDSU/os40r5o06b5ue7Jsk5JgdRBGGp8l37RZEh9JsLSM8QF0YDsgcosSeHjglgqi25+m04IQ==}
     engines: {node: '>= 10'}
@@ -1984,8 +2221,26 @@ packages:
     dev: false
     optional: true
 
+  /@next/swc-linux-x64-musl@15.0.1:
+    resolution: {integrity: sha512-lmYr6H3JyDNBJLzklGXLfbehU3ay78a+b6UmBGlHls4xhDXBNZfgb0aI67sflrX+cGBnv1LgmWzFlYrAYxS1Qw==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
   /@next/swc-win32-arm64-msvc@14.2.5:
     resolution: {integrity: sha512-1GpG2VhbspO+aYoMOQPQiqc/tG3LzmsdBH0LhnDS3JrtDx2QmzXe0B6mSZZiN3Bq7IOMXxv1nlsjzoS1+9mzZw==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@next/swc-win32-arm64-msvc@15.0.1:
+    resolution: {integrity: sha512-DS8wQtl6diAj0eZTdH0sefykm4iXMbHT4MOvLwqZiIkeezKpkgPFcEdFlz3vKvXa2R/2UEgMh48z1nEpNhjeOQ==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
@@ -2004,6 +2259,15 @@ packages:
 
   /@next/swc-win32-x64-msvc@14.2.5:
     resolution: {integrity: sha512-tEQ7oinq1/CjSG9uSTerca3v4AZ+dFa+4Yu6ihaG8Ud8ddqLQgFGcnwYls13H5X5CPDPZJdYxyeMui6muOLd4g==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@next/swc-win32-x64-msvc@15.0.1:
+    resolution: {integrity: sha512-4Ho2ggvDdMKlZ/0e9HNdZ9ngeaBwtc+2VS5oCeqrbXqOgutX6I4U2X/42VBw0o+M5evn4/7v3zKgGHo+9v/VjA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
@@ -3812,7 +4076,7 @@ packages:
       '@react-aria/utils': 3.24.1(react@18.2.0)
       '@react-types/breadcrumbs': 3.7.3(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -3827,7 +4091,7 @@ packages:
       '@react-stately/toggle': 3.7.2(react@18.2.0)
       '@react-types/button': 3.9.2(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -3846,7 +4110,7 @@ packages:
       '@react-stately/toggle': 3.7.2(react@18.2.0)
       '@react-types/checkbox': 3.7.1(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -3870,7 +4134,7 @@ packages:
       '@react-types/button': 3.9.4(react@18.2.0)
       '@react-types/combobox': 3.10.1(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
@@ -3886,7 +4150,7 @@ packages:
       '@react-aria/utils': 3.24.1(react@18.2.0)
       '@react-types/dialog': 3.5.8(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
@@ -3899,7 +4163,7 @@ packages:
       '@react-aria/interactions': 3.21.3(react@18.2.0)
       '@react-aria/utils': 3.24.1(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       clsx: 2.1.0
       react: 18.2.0
     dev: false
@@ -3912,7 +4176,7 @@ packages:
       '@react-aria/interactions': 3.21.3(react@18.2.0)
       '@react-aria/utils': 3.24.1(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       clsx: 2.1.0
       react: 18.2.0
     dev: false
@@ -3926,7 +4190,7 @@ packages:
       '@react-aria/utils': 3.24.1(react@18.2.0)
       '@react-stately/form': 3.0.1(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -3949,7 +4213,7 @@ packages:
       '@react-types/checkbox': 3.7.1(react@18.2.0)
       '@react-types/grid': 3.2.4(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
@@ -3966,7 +4230,7 @@ packages:
       '@react-aria/ssr': 3.9.4(react@18.2.0)
       '@react-aria/utils': 3.24.1(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -3978,7 +4242,7 @@ packages:
       '@react-aria/ssr': 3.9.4(react@18.2.0)
       '@react-aria/utils': 3.24.1(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -3990,7 +4254,7 @@ packages:
       '@react-aria/ssr': 3.9.4(react@18.2.0)
       '@react-aria/utils': 3.24.1(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4001,7 +4265,7 @@ packages:
     dependencies:
       '@react-aria/utils': 3.24.1(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4015,7 +4279,7 @@ packages:
       '@react-aria/utils': 3.24.1(react@18.2.0)
       '@react-types/link': 3.5.3(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4033,7 +4297,7 @@ packages:
       '@react-stately/list': 3.10.3(react@18.2.0)
       '@react-types/listbox': 3.4.7(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
@@ -4041,7 +4305,7 @@ packages:
   /@react-aria/live-announcer@3.3.2:
     resolution: {integrity: sha512-aOyPcsfyY9tLCBhuUaYCruwcd1IrYLc47Ou+J7wMzjeN9v4lsaEfiN12WFl8pDqOwfy6/7It2wmlm5hOuZY8wQ==}
     dependencies:
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
     dev: false
 
   /@react-aria/menu@3.13.1(react-dom@18.2.0)(react@18.2.0):
@@ -4062,7 +4326,7 @@ packages:
       '@react-types/button': 3.9.4(react@18.2.0)
       '@react-types/menu': 3.9.7(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
@@ -4083,7 +4347,7 @@ packages:
       '@react-types/button': 3.9.4(react@18.2.0)
       '@react-types/overlays': 3.8.7(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
@@ -4104,7 +4368,7 @@ packages:
       '@react-types/button': 3.9.4(react@18.2.0)
       '@react-types/overlays': 3.8.7(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
@@ -4119,7 +4383,7 @@ packages:
       '@react-aria/utils': 3.24.1(react@18.2.0)
       '@react-types/progress': 3.5.2(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4137,7 +4401,7 @@ packages:
       '@react-stately/radio': 3.10.2(react@18.2.0)
       '@react-types/radio': 3.7.1(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4153,7 +4417,7 @@ packages:
       '@react-aria/utils': 3.24.1(react@18.2.0)
       '@react-stately/selection': 3.14.3(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
@@ -4171,7 +4435,7 @@ packages:
       '@react-stately/slider': 3.5.2(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
       '@react-types/slider': 3.7.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4191,7 +4455,7 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
     dependencies:
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4203,7 +4467,7 @@ packages:
       '@react-aria/toggle': 3.10.2(react@18.2.0)
       '@react-stately/toggle': 3.7.2(react@18.2.0)
       '@react-types/switch': 3.5.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4228,7 +4492,7 @@ packages:
       '@react-types/grid': 3.2.4(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
       '@react-types/table': 3.9.3(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
@@ -4246,7 +4510,7 @@ packages:
       '@react-stately/tabs': 3.6.4(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
       '@react-types/tabs': 3.3.5(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
@@ -4264,7 +4528,7 @@ packages:
       '@react-stately/utils': 3.10.1(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
       '@react-types/textfield': 3.9.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4278,7 +4542,7 @@ packages:
       '@react-aria/utils': 3.24.1(react@18.2.0)
       '@react-stately/toggle': 3.7.2(react@18.2.0)
       '@react-types/checkbox': 3.7.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4293,7 +4557,7 @@ packages:
       '@react-stately/tooltip': 3.4.7(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
       '@react-types/tooltip': 3.4.7(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4305,7 +4569,7 @@ packages:
       '@react-aria/ssr': 3.9.4(react@18.2.0)
       '@react-stately/utils': 3.10.1(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       clsx: 2.1.0
       react: 18.2.0
     dev: false
@@ -4318,7 +4582,7 @@ packages:
       '@react-aria/ssr': 3.9.4(react@18.2.0)
       '@react-stately/utils': 3.10.1(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       clsx: 2.1.0
       react: 18.2.0
     dev: false
@@ -4331,7 +4595,7 @@ packages:
       '@react-aria/interactions': 3.21.1(react@18.2.0)
       '@react-aria/utils': 3.24.1(react@18.2.0)
       '@react-types/shared': 3.22.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4343,7 +4607,7 @@ packages:
       '@react-aria/interactions': 3.21.3(react@18.2.0)
       '@react-aria/utils': 3.24.1(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4404,7 +4668,7 @@ packages:
       '@react-stately/utils': 3.10.1(react@18.2.0)
       '@react-types/checkbox': 3.7.1(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4414,7 +4678,7 @@ packages:
       react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
     dependencies:
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4431,7 +4695,7 @@ packages:
       '@react-stately/utils': 3.10.1(react@18.2.0)
       '@react-types/combobox': 3.10.1(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4447,7 +4711,7 @@ packages:
       react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
     dependencies:
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4460,7 +4724,7 @@ packages:
       '@react-stately/selection': 3.14.3(react@18.2.0)
       '@react-types/grid': 3.2.4(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4473,7 +4737,7 @@ packages:
       '@react-stately/selection': 3.14.3(react@18.2.0)
       '@react-stately/utils': 3.10.1(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4485,7 +4749,7 @@ packages:
       '@react-stately/overlays': 3.6.7(react@18.2.0)
       '@react-types/menu': 3.9.7(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4496,7 +4760,7 @@ packages:
     dependencies:
       '@react-stately/utils': 3.10.1(react@18.2.0)
       '@react-types/overlays': 3.8.7(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4507,7 +4771,7 @@ packages:
     dependencies:
       '@react-stately/utils': 3.10.1(react@18.2.0)
       '@react-types/overlays': 3.8.7(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4520,7 +4784,7 @@ packages:
       '@react-stately/utils': 3.10.1(react@18.2.0)
       '@react-types/radio': 3.7.1(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4534,7 +4798,7 @@ packages:
       '@react-stately/overlays': 3.6.7(react@18.2.0)
       '@react-types/select': 3.9.2(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4546,7 +4810,7 @@ packages:
       '@react-stately/collections': 3.10.5(react@18.2.0)
       '@react-stately/utils': 3.10.1(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4558,7 +4822,7 @@ packages:
       '@react-stately/utils': 3.10.1(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
       '@react-types/slider': 3.7.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4575,7 +4839,7 @@ packages:
       '@react-types/grid': 3.2.4(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
       '@react-types/table': 3.9.3(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4587,7 +4851,7 @@ packages:
       '@react-stately/list': 3.10.3(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
       '@react-types/tabs': 3.3.5(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4598,7 +4862,7 @@ packages:
     dependencies:
       '@react-stately/utils': 3.10.1(react@18.2.0)
       '@react-types/checkbox': 3.7.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4609,7 +4873,7 @@ packages:
     dependencies:
       '@react-stately/overlays': 3.6.7(react@18.2.0)
       '@react-types/tooltip': 3.4.7(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4622,7 +4886,7 @@ packages:
       '@react-stately/selection': 3.14.3(react@18.2.0)
       '@react-stately/utils': 3.10.1(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4631,7 +4895,7 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
     dependencies:
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4640,7 +4904,7 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
     dependencies:
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -4651,7 +4915,7 @@ packages:
     dependencies:
       '@react-aria/utils': 3.24.1(react@18.2.0)
       '@react-types/shared': 3.23.1(react@18.2.0)
-      '@swc/helpers': 0.5.6
+      '@swc/helpers': 0.5.13
       react: 18.2.0
     dev: false
 
@@ -5002,7 +5266,7 @@ packages:
       read-pkg: 9.0.1
       registry-auth-token: 5.0.2
       semantic-release: 23.0.2(typescript@5.3.3)
-      semver: 7.6.0
+      semver: 7.6.3
       tempy: 3.1.0
     dev: true
 
@@ -5051,6 +5315,12 @@ packages:
     resolution: {integrity: sha512-5lxnyLEYFskErRPenYItLRSge5DjrJngYKdVjRSrWfza9G6KkgHEXi0vUZiyUeMU5JfXH1YnvXZzSp8ul88o2Q==}
     dependencies:
       legacy-swc-helpers: /@swc/helpers@0.4.14
+      tslib: 2.6.2
+    dev: false
+
+  /@swc/helpers@0.5.13:
+    resolution: {integrity: sha512-UoKGxQ3r5kYI9dALKJapMmuK+1zWM/H17Z1+iwnNmzcJRnfFuevZs375TA5rW31pu4BS4NoSy1fRsexDXfWn5w==}
+    dependencies:
       tslib: 2.6.2
     dev: false
 
@@ -5134,7 +5404,7 @@ packages:
       '@trpc/server': 11.0.0-next-beta.228
     dev: false
 
-  /@trpc/next@11.0.0-next-beta.228(@tanstack/react-query@5.29.2)(@trpc/client@11.0.0-next-beta.228)(@trpc/react-query@11.0.0-next-beta.228)(@trpc/server@11.0.0-next-beta.228)(next@14.2.5)(react-dom@18.2.0)(react@18.2.0):
+  /@trpc/next@11.0.0-next-beta.228(@tanstack/react-query@5.29.2)(@trpc/client@11.0.0-next-beta.228)(@trpc/react-query@11.0.0-next-beta.228)(@trpc/server@11.0.0-next-beta.228)(next@15.0.1)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-LAs46G8rdO0wqDLaodBFMtPqVz6sV1Yizvn8GgFSplSqeV5ofdGhvFU4p3ScoKRWgzQhzhrI3T7zVf10xZQCCA==}
     peerDependencies:
       '@tanstack/react-query': ^5.0.0
@@ -5154,7 +5424,7 @@ packages:
       '@trpc/client': 11.0.0-next-beta.228(@trpc/server@11.0.0-next-beta.228)
       '@trpc/react-query': 11.0.0-next-beta.228(@tanstack/react-query@5.29.2)(@trpc/client@11.0.0-next-beta.228)(@trpc/server@11.0.0-next-beta.228)(react-dom@18.2.0)(react@18.2.0)
       '@trpc/server': 11.0.0-next-beta.228
-      next: 14.2.5(react-dom@18.2.0)(react@18.2.0)
+      next: 15.0.1(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
@@ -5675,7 +5945,7 @@ packages:
       globby: 11.1.0
       is-glob: 4.0.3
       minimatch: 9.0.3
-      semver: 7.6.0
+      semver: 7.6.3
       ts-api-utils: 1.2.1(typescript@5.3.3)
       typescript: 5.3.3
     transitivePeerDependencies:
@@ -5697,7 +5967,7 @@ packages:
       globby: 11.1.0
       is-glob: 4.0.3
       minimatch: 9.0.3
-      semver: 7.6.0
+      semver: 7.6.3
       ts-api-utils: 1.2.1(typescript@5.3.3)
       typescript: 5.3.3
     transitivePeerDependencies:
@@ -5717,7 +5987,7 @@ packages:
       '@typescript-eslint/types': 7.0.2
       '@typescript-eslint/typescript-estree': 7.0.2(typescript@5.3.3)
       eslint: 8.57.0
-      semver: 7.6.0
+      semver: 7.6.3
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -5762,7 +6032,7 @@ packages:
       crypto-js: 4.2.0
     dev: false
 
-  /@vercel/speed-insights@1.0.10(next@14.2.5)(react@18.2.0):
+  /@vercel/speed-insights@1.0.10(next@15.0.1)(react@18.2.0):
     resolution: {integrity: sha512-4uzdKB0RW6Ff2FkzshzjZ+RlJfLPxgm/00i0XXgxfMPhwnnsk92YgtqsxT9OcPLdJUyVU1DqFlSWWjIQMPkh0g==}
     requiresBuild: true
     peerDependencies:
@@ -5786,7 +6056,7 @@ packages:
       vue-router:
         optional: true
     dependencies:
-      next: 14.2.5(react-dom@18.2.0)(react@18.2.0)
+      next: 15.0.1(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
     dev: false
 
@@ -6338,9 +6608,11 @@ packages:
 
   /color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
+    requiresBuild: true
 
   /color-string@1.9.1:
     resolution: {integrity: sha512-shrVawQFojnZv6xM40anx4CkoDP+fZsw/ZerEMsW/pyzsRbElpsL/DBVW7q3ExxwusdNXI3lXpuhEZkzs8p5Eg==}
+    requiresBuild: true
     dependencies:
       color-name: 1.1.4
       simple-swizzle: 0.2.2
@@ -6431,7 +6703,7 @@ packages:
       handlebars: 4.7.8
       json-stringify-safe: 5.0.1
       meow: 12.1.1
-      semver: 7.6.0
+      semver: 7.6.3
       split2: 4.2.0
     dev: true
 
@@ -6689,6 +6961,13 @@ packages:
     resolution: {integrity: sha512-UX6sGumvvqSaXgdKGUsgZWqcUyIXZ/vZTrlRT/iobiKhGL0zL4d3osHj3uqllWJK+i+sixDS/3COVEOFbupFyw==}
     engines: {node: '>=8'}
     dev: false
+
+  /detect-libc@2.0.3:
+    resolution: {integrity: sha512-bwy0MGW55bG41VqxxypOsdSdGqLwXPI/focwgTYCFMbdUiBAxLg9CFzG08sz2aqzknwiX7Hkl0bQENjg8iLByw==}
+    engines: {node: '>=8'}
+    requiresBuild: true
+    dev: false
+    optional: true
 
   /detect-node-es@1.1.0:
     resolution: {integrity: sha512-ypdmJU/TbBby2Dxibuv7ZLW3Bs1QEmM7nHjEANfohJLvE0XVujisn1qPJcZxg+qDucsr+bP6fLD1rPS3AhJ7EQ==}
@@ -7998,6 +8277,7 @@ packages:
 
   /is-arrayish@0.3.2:
     resolution: {integrity: sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==}
+    requiresBuild: true
     dev: false
 
   /is-async-function@2.0.0:
@@ -8715,14 +8995,39 @@ packages:
       uuid: 8.3.2
     dev: false
 
-  /next-themes@0.2.1(next@14.2.5)(react-dom@18.2.0)(react@18.2.0):
+  /next-auth@4.24.6(next@15.0.1)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-djQt3ZEaWEIxcsuh3HTW2uuzLfXMRjHH+ugAsichlQSbH4iA5MRcgMA2HvTNvsDTDLh44tyU72+/gWsxgTbAKg==}
+    peerDependencies:
+      next: ^12.2.5 || ^13 || ^14
+      nodemailer: ^6.6.5
+      react: ^17.0.2 || ^18
+      react-dom: ^17.0.2 || ^18
+    peerDependenciesMeta:
+      nodemailer:
+        optional: true
+    dependencies:
+      '@babel/runtime': 7.23.9
+      '@panva/hkdf': 1.1.1
+      cookie: 0.5.0
+      jose: 4.15.4
+      next: 15.0.1(react-dom@18.2.0)(react@18.2.0)
+      oauth: 0.9.15
+      openid-client: 5.6.4
+      preact: 10.19.6
+      preact-render-to-string: 5.2.6(preact@10.19.6)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      uuid: 8.3.2
+    dev: false
+
+  /next-themes@0.2.1(next@15.0.1)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-B+AKNfYNIzh0vqQQKqQItTS8evEouKD7H5Hj3kmuPERwddR2TxvDSFZuTj6T7Jfn1oyeUyJMydPl1Bkxkh0W7A==}
     peerDependencies:
       next: '*'
       react: '*'
       react-dom: '*'
     dependencies:
-      next: 14.2.5(react-dom@18.2.0)(react@18.2.0)
+      next: 15.0.1(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
@@ -8769,6 +9074,51 @@ packages:
       - babel-plugin-macros
     dev: false
 
+  /next@15.0.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-PSkFkr/w7UnFWm+EP8y/QpHrJXMqpZzAXpergB/EqLPOh4SGPJXv1wj4mslr2hUZBAS9pX7/9YLIdxTv6fwytw==}
+    engines: {node: '>=18.18.0'}
+    hasBin: true
+    peerDependencies:
+      '@opentelemetry/api': ^1.1.0
+      '@playwright/test': ^1.41.2
+      babel-plugin-react-compiler: '*'
+      react: ^18.2.0 || 19.0.0-rc-69d4b800-20241021
+      react-dom: ^18.2.0 || 19.0.0-rc-69d4b800-20241021
+      sass: ^1.3.0
+    peerDependenciesMeta:
+      '@opentelemetry/api':
+        optional: true
+      '@playwright/test':
+        optional: true
+      babel-plugin-react-compiler:
+        optional: true
+      sass:
+        optional: true
+    dependencies:
+      '@next/env': 15.0.1
+      '@swc/counter': 0.1.3
+      '@swc/helpers': 0.5.13
+      busboy: 1.6.0
+      caniuse-lite: 1.0.30001589
+      postcss: 8.4.31
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      styled-jsx: 5.1.6(react@18.2.0)
+    optionalDependencies:
+      '@next/swc-darwin-arm64': 15.0.1
+      '@next/swc-darwin-x64': 15.0.1
+      '@next/swc-linux-arm64-gnu': 15.0.1
+      '@next/swc-linux-arm64-musl': 15.0.1
+      '@next/swc-linux-x64-gnu': 15.0.1
+      '@next/swc-linux-x64-musl': 15.0.1
+      '@next/swc-win32-arm64-msvc': 15.0.1
+      '@next/swc-win32-x64-msvc': 15.0.1
+      sharp: 0.33.5
+    transitivePeerDependencies:
+      - '@babel/core'
+      - babel-plugin-macros
+    dev: false
+
   /node-emoji@2.1.3:
     resolution: {integrity: sha512-E2WEOVsgs7O16zsURJ/eH8BqhF029wGpEOnv7Urwdo2wmQanOACwJQh0devF9D9RhoZru0+9JXIS0dBXIAz+lA==}
     engines: {node: '>=18'}
@@ -8809,7 +9159,7 @@ packages:
     dependencies:
       hosted-git-info: 4.1.0
       is-core-module: 2.13.1
-      semver: 7.6.0
+      semver: 7.6.3
       validate-npm-package-license: 3.0.4
     dev: true
 
@@ -8819,7 +9169,7 @@ packages:
     dependencies:
       hosted-git-info: 7.0.1
       is-core-module: 2.13.1
-      semver: 7.6.0
+      semver: 7.6.3
       validate-npm-package-license: 3.0.4
     dev: true
 
@@ -10285,7 +10635,7 @@ packages:
     resolution: {integrity: sha512-0Ju4+6A8iOnpL/Thra7dZsSlOHYAHIeMxfhWQRI1/VLcT3WDBZKKtQt/QkBOsiIN9ZpuvHE6cGZ0x4glCMmfiA==}
     engines: {node: '>=12'}
     dependencies:
-      semver: 7.6.0
+      semver: 7.6.3
     dev: true
 
   /semver-regex@4.0.5:
@@ -10309,6 +10659,12 @@ packages:
     hasBin: true
     dependencies:
       lru-cache: 6.0.0
+
+  /semver@7.6.3:
+    resolution: {integrity: sha512-oVekP1cKtI+CTDvHWYFUcMtsK/00wmAEfyqKfNdARm8u1wNVhSgaX7A8d4UuIlUI5e84iEwOhs7ZPYRmzU9U6A==}
+    engines: {node: '>=10'}
+    hasBin: true
+    requiresBuild: true
 
   /server-only@0.0.1:
     resolution: {integrity: sha512-qepMx2JxAa5jjfzxG79yPPq+8BuFToHd1hm7kI+Z4zAq1ftQiP7HcxMhDDItrbtwVeLg/cY2JnKnrcFkmiswNA==}
@@ -10366,6 +10722,37 @@ packages:
       '@img/sharp-win32-x64': 0.33.2
     dev: false
 
+  /sharp@0.33.5:
+    resolution: {integrity: sha512-haPVm1EkS9pgvHrQ/F3Xy+hgcuMV0Wm9vfIBSiwZ05k+xgb0PkBQpGsAA/oWdDobNaZTH5ppvHtzCFbnSEwHVw==}
+    engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
+    requiresBuild: true
+    dependencies:
+      color: 4.2.3
+      detect-libc: 2.0.3
+      semver: 7.6.3
+    optionalDependencies:
+      '@img/sharp-darwin-arm64': 0.33.5
+      '@img/sharp-darwin-x64': 0.33.5
+      '@img/sharp-libvips-darwin-arm64': 1.0.4
+      '@img/sharp-libvips-darwin-x64': 1.0.4
+      '@img/sharp-libvips-linux-arm': 1.0.5
+      '@img/sharp-libvips-linux-arm64': 1.0.4
+      '@img/sharp-libvips-linux-s390x': 1.0.4
+      '@img/sharp-libvips-linux-x64': 1.0.4
+      '@img/sharp-libvips-linuxmusl-arm64': 1.0.4
+      '@img/sharp-libvips-linuxmusl-x64': 1.0.4
+      '@img/sharp-linux-arm': 0.33.5
+      '@img/sharp-linux-arm64': 0.33.5
+      '@img/sharp-linux-s390x': 0.33.5
+      '@img/sharp-linux-x64': 0.33.5
+      '@img/sharp-linuxmusl-arm64': 0.33.5
+      '@img/sharp-linuxmusl-x64': 0.33.5
+      '@img/sharp-wasm32': 0.33.5
+      '@img/sharp-win32-ia32': 0.33.5
+      '@img/sharp-win32-x64': 0.33.5
+    dev: false
+    optional: true
+
   /shebang-command@1.2.0:
     resolution: {integrity: sha512-EV3L1+UQWGor21OmnvojK36mhg+TyIKDh3iFBKBohr5xeXIhNBcx8oWdgkTEEQ+BEFFYdLRuqMfd5L84N1V5Vg==}
     engines: {node: '>=0.10.0'}
@@ -10417,6 +10804,7 @@ packages:
 
   /simple-swizzle@0.2.2:
     resolution: {integrity: sha512-JA//kQgZtbuY83m+xT+tXJkmJncGMTFT+C+g2h2R9uxkYIrE2yy9sgmcLhCnw57/WSD+Eh3J97FPEDFnbXnDUg==}
+    requiresBuild: true
     dependencies:
       is-arrayish: 0.3.2
     dev: false
@@ -10625,6 +11013,23 @@ packages:
       '@babel/core': '*'
       babel-plugin-macros: '*'
       react: '>= 16.8.0 || 17.x.x || ^18.0.0-0'
+    peerDependenciesMeta:
+      '@babel/core':
+        optional: true
+      babel-plugin-macros:
+        optional: true
+    dependencies:
+      client-only: 0.0.1
+      react: 18.2.0
+    dev: false
+
+  /styled-jsx@5.1.6(react@18.2.0):
+    resolution: {integrity: sha512-qSVyDTeMotdvQYoHWLNGwRFJHC+i+ZvdBRYosOFgC+Wg1vx4frN2/RG/NA7SYqqvKNLf39P2LSRA2pu6n0XYZA==}
+    engines: {node: '>= 12.0.0'}
+    peerDependencies:
+      '@babel/core': '*'
+      babel-plugin-macros: '*'
+      react: '>= 16.8.0 || 17.x.x || ^18.0.0-0 || ^19.0.0-0'
     peerDependenciesMeta:
       '@babel/core':
         optional: true
