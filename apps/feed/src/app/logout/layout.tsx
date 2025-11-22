@@ -20,9 +20,7 @@ export default function SignOutTemplate({
           {children}
 
           <Link href='/'>
-            <UIButton className='w-60'>
-              Go to Homepage
-            </UIButton>
+            <UIButton className='w-60'>Go to Homepage</UIButton>
           </Link>
         </div>
         <div className='relative h-72 w-72'>

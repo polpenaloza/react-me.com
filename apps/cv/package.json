@@ -28,7 +28,7 @@
   },
   "license": "MIT",
   "name": "@polpenaloza/cv",
-  "packageManager": "pnpm@8.10.5",
+  "packageManager": "pnpm@10.17.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/polpenaloza/react-me.com.git"

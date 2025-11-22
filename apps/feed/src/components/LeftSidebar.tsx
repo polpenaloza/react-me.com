@@ -41,7 +41,7 @@ export function LeftSidebar({ session }: { session: Session | null }) {
                   item.title.toLocaleLowerCase() === 'home'
                     ? '/'
                     : item.title.toLocaleLowerCase() === 'profile'
-                      ? `/user/${session?.user.id}` ?? '#'
+                      ? (`/user/${session?.user.id}` ?? '#')
                       : `/${item.title.toLowerCase()}`
                 }
                 key={item.title}

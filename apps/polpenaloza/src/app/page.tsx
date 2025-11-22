@@ -12,9 +12,7 @@ const Home = () => {
   return (
     <>
       <section className='flex h-full w-full flex-col items-center justify-center z-10'>
-        {darkMode ? (
-          'Dark Mode'
-        ) : 'Light Mode'}
+        {darkMode ? 'Dark Mode' : 'Light Mode'}
       </section>
     </>
   )

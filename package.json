@@ -25,7 +25,7 @@
     "yarn": "please-use-pnpm"
   },
   "name": "react-me.com",
-  "packageManager": "pnpm@9.6.0",
+  "packageManager": "pnpm@10.17.1",
   "private": false,
   "repository": {
     "type": "github",

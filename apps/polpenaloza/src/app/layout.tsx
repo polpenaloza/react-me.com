@@ -18,12 +18,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <head>
         <script defer async src='/oneko.js' type='text/javascript' />
       </head>
-      <body
-        className={clsx(
-          'min-h-screen font-inter antialiased',
-          fonts
-        )}
-      >
+      <body className={clsx('min-h-screen font-inter antialiased', fonts)}>
         <AppProviders>{children}</AppProviders>
         <SpeedInsights />
       </body>
