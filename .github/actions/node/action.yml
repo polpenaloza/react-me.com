@@ -5,9 +5,9 @@ description: "Setup a NodeJS environment and restore node modules cache"
 
 inputs:
   node-version:
-    description: "Node version to use, default to (20.x)"
+    description: "Node version to use, default to (22.x)"
     required: true
-    default: 20.8.1
+    default: 22.12.0
 
 runs:
   using: "composite"
