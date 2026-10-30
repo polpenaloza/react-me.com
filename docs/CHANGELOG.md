@@ -2,7 +2,7 @@
 
 ### Features
 
-- **repo:** onboard nextui ([#260](https://github.com/polpenaloza/react-me.com/issues/260)) ([62d247e](https://github.com/polpenaloza/react-me.com/commit/62d247ea22332352fba6983d87c230f5dfce15a2))
+- **repo:** onboard UI component library ([#260](https://github.com/polpenaloza/react-me.com/issues/260)) ([62d247e](https://github.com/polpenaloza/react-me.com/commit/62d247ea22332352fba6983d87c230f5dfce15a2))
 
 ## [1.12.1](https://github.com/polpenaloza/react-me.com/compare/v1.12.0...v1.12.1) (2024-01-23)
 

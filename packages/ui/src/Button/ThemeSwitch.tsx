@@ -1,5 +1,4 @@
-import { SwitchProps, useSwitch } from '@nextui-org/switch'
-import { VisuallyHidden } from '@react-aria/visually-hidden'
+import * as Switch from '@radix-ui/react-switch'
 import clsx from 'clsx'
 import { FC, useEffect, useState } from 'react'
 
@@ -8,13 +7,9 @@ import { IconSun } from '../Icon/Sun'
 
 export interface ThemeSwitchProps {
   className?: string
-  classNames?: SwitchProps['classNames']
 }
 
-export const ThemeSwitch: FC<ThemeSwitchProps> = ({
-  className,
-  classNames,
-}) => {
+export const ThemeSwitch: FC<ThemeSwitchProps> = ({ className }) => {
   const [isLight, setIsLight] = useState(false)
 
   useEffect(() => {
@@ -28,47 +23,17 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
     document.documentElement.classList.toggle('dark', !nextIsLight)
   }
 
-  const { Component, slots, getBaseProps, getInputProps, getWrapperProps } =
-    useSwitch({
-      isSelected: isLight,
-      'aria-label': `Switch to ${isLight ? 'dark' : 'light'} mode`,
-      onChange,
-    })
-
   return (
-    <Component
-      {...getBaseProps({
-        className: clsx(
-          'px-px transition-opacity hover:opacity-80 cursor-pointer',
-          className,
-          classNames?.base
-        ),
-      })}
+    <Switch.Root
+      aria-label={`Switch to ${isLight ? 'dark' : 'light'} mode`}
+      checked={isLight}
+      className={clsx(
+        'inline-flex cursor-pointer items-center justify-center rounded-lg p-1 text-slate-500 transition-opacity hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600',
+        className
+      )}
+      onCheckedChange={onChange}
     >
-      <VisuallyHidden>
-        <input {...getInputProps()} />
-      </VisuallyHidden>
-      <div
-        {...getWrapperProps()}
-        className={slots.wrapper({
-          class: clsx(
-            [
-              'h-auto w-auto',
-              'bg-transparent',
-              'rounded-lg',
-              'flex items-center justify-center',
-              'group-data-[selected=true]:bg-transparent',
-              '!text-default-500',
-              'pt-px',
-              'px-0',
-              'mx-0',
-            ],
-            classNames?.wrapper
-          ),
-        })}
-      >
-        {isLight ? <IconMoon size={22} /> : <IconSun size={22} />}
-      </div>
-    </Component>
+      {isLight ? <IconMoon size={22} /> : <IconSun size={22} />}
+    </Switch.Root>
   )
 }

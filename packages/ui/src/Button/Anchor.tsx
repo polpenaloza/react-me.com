@@ -1,13 +1,14 @@
-import { Link, LinkProps } from '@nextui-org/react'
-import { ReactNode } from 'react'
-export interface iButtonProps extends LinkProps {
-  children: ReactNode
+import { AnchorHTMLAttributes } from 'react'
+
+export interface AnchorButtonProps
+  extends AnchorHTMLAttributes<HTMLAnchorElement> {
+  children: React.ReactNode
 }
 
-export function AnchorButton({ children, ...otherProps }: iButtonProps) {
+export function AnchorButton({ children, ...otherProps }: AnchorButtonProps) {
   return (
-    <Link {...otherProps} isExternal>
-      <>{children}</>
-    </Link>
+    <a {...otherProps} target='_blank' rel='noopener noreferrer'>
+      {children}
+    </a>
   )
 }

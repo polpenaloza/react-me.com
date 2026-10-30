@@ -1,7 +1,6 @@
 {
   "author": "@polpenaloza (https://twitter.com/polpenaloza)",
   "dependencies": {
-    "@nextui-org/react": "^2.4.6",
     "@workspace/ui": "workspace:^",
     "animate.css": "^4.1.1",
     "framer-motion": "^11.3.19",

@@ -1,9 +1,3 @@
-import {
-  Navbar,
-  NavbarBrand,
-  NavbarContent,
-  NavbarItem,
-} from '@nextui-org/react'
 import BrandIcon from '@workspace/ui/src/Icon/Brand'
 import IconGithub from '@workspace/ui/src/Icon/Github'
 import IconLinkedin from '@workspace/ui/src/Icon/Linkedin'
@@ -15,49 +9,39 @@ export default function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className='footer items-center justify-center'>
-      <Navbar>
-        <NavbarBrand>
-          <BrandIcon iconSize={30} />
-        </NavbarBrand>
-        <NavbarContent className='hidden sm:flex gap-4' justify='center'>
-          <p>
-            {t('copyright')} &copy;{year} - {t('allRights')}
-          </p>
-        </NavbarContent>
-        <NavbarContent justify='end'>
-          <NavbarItem>
-            <a
-              target={'_blank'}
-              href='https://github.com/polpenaloza'
-              rel='noopener noreferrer'
-              title='polpenaloza'
-            >
-              <IconGithub iconSize={30} />
-            </a>
-          </NavbarItem>
-          <NavbarItem>
-            <a
-              target={'_blank'}
-              href='https://twitter.com/polpenaloza'
-              rel='noopener noreferrer'
-              title='@polpenaloza'
-            >
-              <IconTwitter iconSize={30} />
-            </a>
-          </NavbarItem>
-          <NavbarItem>
-            <a
-              target={'_blank'}
-              href='https://www.linkedin.com/in/polpenaloza/'
-              rel='noopener noreferrer'
-              title='polpenaloza'
-            >
-              <IconLinkedin iconSize={30} />
-            </a>
-          </NavbarItem>
-        </NavbarContent>
-      </Navbar>
+    <footer className='flex w-full flex-wrap items-center justify-between gap-4 border-t border-slate-200 px-6 py-4 dark:border-slate-800'>
+      <div>
+        <BrandIcon iconSize={30} />
+      </div>
+      <p className='hidden sm:block'>
+        {t('copyright')} &copy;{year} - {t('allRights')}
+      </p>
+      <div className='flex items-center gap-4'>
+        <a
+          target={'_blank'}
+          href='https://github.com/polpenaloza'
+          rel='noopener noreferrer'
+          title='polpenaloza'
+        >
+          <IconGithub iconSize={30} />
+        </a>
+        <a
+          target={'_blank'}
+          href='https://twitter.com/polpenaloza'
+          rel='noopener noreferrer'
+          title='@polpenaloza'
+        >
+          <IconTwitter iconSize={30} />
+        </a>
+        <a
+          target={'_blank'}
+          href='https://www.linkedin.com/in/polpenaloza/'
+          rel='noopener noreferrer'
+          title='polpenaloza'
+        >
+          <IconLinkedin iconSize={30} />
+        </a>
+      </div>
     </footer>
   )
 }

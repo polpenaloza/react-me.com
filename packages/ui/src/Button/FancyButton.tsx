@@ -1,8 +1,9 @@
-import { ButtonProps } from '@nextui-org/button'
+import { ButtonHTMLAttributes } from 'react'
 
 import { IconButton } from './IconButton'
 
-interface iParticlesButtonProps extends ButtonProps {
+interface iParticlesButtonProps
+  extends ButtonHTMLAttributes<HTMLButtonElement> {
   isDarkMode?: boolean
 }
 

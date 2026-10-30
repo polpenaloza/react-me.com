@@ -1,3 +1,5 @@
+import Footer from '@/components/Footer'
+import NavBar from '@/components/NavBar'
 import { AppProviders } from '@/context/app-providers'
 import {
   type iAppPersistState,
@@ -19,7 +21,13 @@ function Home() {
 export default function App() {
   return (
     <AppProviders>
-      <Home />
+      <div className='flex min-h-screen flex-col'>
+        <NavBar />
+        <main className='container mx-auto w-full max-w-7xl flex-grow px-6 pt-16'>
+          <Home />
+        </main>
+        <Footer />
+      </div>
     </AppProviders>
   )
 }
