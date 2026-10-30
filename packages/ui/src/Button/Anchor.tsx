@@ -1,7 +1,6 @@
 import { AnchorHTMLAttributes } from 'react'
 
-export interface AnchorButtonProps
-  extends AnchorHTMLAttributes<HTMLAnchorElement> {
+export interface AnchorButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   children: React.ReactNode
 }
 

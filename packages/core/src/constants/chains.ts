@@ -23,8 +23,8 @@ export const TEST_NETWORKS = [
 ]
 
 enum NETWORKS {
-  'mainnet' = MAINNET,
-  'testnet' = TESTNET,
+  mainnet = MAINNET,
+  testnet = TESTNET,
 }
 
 export function getNetworks(network?: string) {

@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import 'tailwindcss';
 @import '@workspace/ui/src/styles/main.css';
 @import 'animate.css';
+
+@source '../../../packages/ui/src';
+@custom-variant dark (&:where(.dark, .dark *));
 
 body {
   overscroll-behavior: none;

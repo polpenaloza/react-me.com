@@ -29,7 +29,7 @@ export function cryptoExchangeRate({
         return String(amount)
         break
     }
-  } catch (error) {
+  } catch {
     return '--'
   }
 }

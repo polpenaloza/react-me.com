@@ -1,5 +1,5 @@
+import { AnimatePresence, motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
-import TextTransition, { presets } from 'react-text-transition'
 
 export function RotateText({ phrases }: { phrases: string[] }) {
   const [index, setIndex] = useState(0)
@@ -7,14 +7,22 @@ export function RotateText({ phrases }: { phrases: string[] }) {
   useEffect(() => {
     const intervalId = setInterval(() => setIndex((index) => index + 1), 5000)
 
-    return () => clearTimeout(intervalId)
+    return () => clearInterval(intervalId)
   }, [])
 
   return (
-    <TextTransition springConfig={presets.wobbly}>
-      <div className='w-24 overflow-hidden text-ellipsis whitespace-nowrap text-xs sm:w-56 md:w-full'>
-        {phrases[index % phrases.length]}
-      </div>
-    </TextTransition>
+    <div className='w-24 overflow-hidden text-ellipsis whitespace-nowrap text-xs sm:w-56 md:w-full'>
+      <AnimatePresence mode='wait' initial={false}>
+        <motion.div
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: '-100%' }}
+          initial={{ opacity: 0, y: '100%' }}
+          key={index}
+          transition={{ damping: 20, stiffness: 300, type: 'spring' }}
+        >
+          {phrases[index % phrases.length]}
+        </motion.div>
+      </AnimatePresence>
+    </div>
   )
 }
