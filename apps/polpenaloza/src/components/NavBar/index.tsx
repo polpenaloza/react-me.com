@@ -25,9 +25,6 @@ export const NavBar = () => {
         <a className='hover:underline' href='/'>
           Home
         </a>
-        <a className='hover:underline' href='https://x.polpenaloza.com'>
-          X-Clone
-        </a>
         <ParticlesButton
           aria-label='Toggle color theme'
           className='text-slate-600 dark:text-slate-300'
