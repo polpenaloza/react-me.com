@@ -1,4 +1,4 @@
-import classNames from 'classnames/dedupe'
+import clsx from 'clsx'
 import { ReactNode } from 'react'
 
 export function Label({
@@ -18,14 +18,14 @@ export function Label({
 }) {
   return (
     <div
-      className={classNames([
+      className={clsx([
         'flex h-full flex-col justify-between',
         { 'w-full': fit, 'text-xs': size === 'sm', 'text-base': size === 'lg' },
         className,
       ])}
     >
       <span
-        className={classNames([
+        className={clsx([
           'flex w-full items-center font-normal uppercase text-[#394B59]',
           { 'pb-2': Boolean(children) },
           { 'h-auto text-xs': size === 'sm', 'h-10 text-base': size === 'lg' },

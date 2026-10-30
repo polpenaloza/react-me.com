@@ -1,9 +1,5 @@
-const config = {
-  plugins: {
-    // 'tailwindcss/nesting': {},
-    tailwindcss: {},
-    autoprefixer: {},
-  },
-}
+const tailwindcss = require('@tailwindcss/postcss')
 
-module.exports = config
+module.exports = {
+  plugins: [tailwindcss()],
+}

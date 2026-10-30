@@ -11,7 +11,7 @@ interface iKeyListener {
 }
 
 export function useClickListener({ callback, idCaller }: iKeyListener) {
-  const ref = useRef(null)
+  const ref = useRef<HTMLElement>(null!)
 
   const handleClickOutside = () => {
     log('clicked outside idCaller %s ', idCaller)

@@ -1,7 +1,8 @@
-import { iButtonProps } from '.'
+import { ButtonHTMLAttributes } from 'react'
+
 import { IconButton } from './IconButton'
 
-interface iParticlesButtonProps extends iButtonProps {
+interface iParticlesButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   isDarkMode?: boolean
 }
 
@@ -36,8 +37,8 @@ export function ParticlesButton({
     const particle = document.createElement('particle')
 
     document.body.appendChild(particle)
-    let width: string | number = Math.floor(Math.random() * 30 + 8)
-    let height: string | number = width
+    const width = Math.random() * 5 + 4
+    const height = width
     const destinationX = (Math.random() - 0.5) * 300
     const destinationY = (Math.random() - 0.5) * 300
     const rotation = Math.random() * 520
@@ -49,8 +50,6 @@ export function ParticlesButton({
     )}px ${color}`
     particle.style.background = color
     particle.style.borderRadius = '50%'
-    width = height = Math.random() * 5 + 4
-
     particle.style.width = `${width}px`
     particle.style.height = `${height}px`
     particle.style.position = 'fixed'

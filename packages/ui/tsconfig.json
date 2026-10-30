@@ -1,7 +1,4 @@
 {
-  "compilerOptions": {
-    "baseUrl": "."
-  },
   "extends": "@workspace/tsconfig/react-library.json",
   "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
   "exclude": ["dist", "build", "node_modules"]

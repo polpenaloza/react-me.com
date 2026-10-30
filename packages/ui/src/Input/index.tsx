@@ -1,4 +1,4 @@
-import classNames from 'classnames/dedupe'
+import clsx from 'clsx'
 import { InputHTMLAttributes, RefObject } from 'react'
 
 export type InputSize = 'sm' | 'md' | 'lg'
@@ -21,7 +21,7 @@ export function Input({
       ref={inputRef}
       autoComplete='off'
       autoCapitalize='off'
-      className={classNames([
+      className={clsx([
         'input input-bordered block w-full rounded-3xl border border-[#D8E1E8] p-2',
         'placeholder:text-[#738694]',
         'disabled:bg-gray-400',

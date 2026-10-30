@@ -2,7 +2,6 @@
   "author": "@polpenaloza (https://github.com/polpenaloza)",
   "files": [
     "base.json",
-    "nextjs.json",
     "react-library.json"
   ],
   "name": "@workspace/tsconfig",

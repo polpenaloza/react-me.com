@@ -5,5 +5,3 @@ packages:
   - 'packages/*'
   # exclude packages that are inside test directories
   - '!**/test/**'
-  - '!**/.next/**'
-  - '!out/**'

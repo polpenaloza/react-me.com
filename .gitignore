@@ -14,9 +14,7 @@ package-lock.json
 /test-results
 
 # builds
-.next/
 dist/
-out/
 build/
 .parcel-cache/
 
@@ -68,7 +66,5 @@ testem.log
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
-
 # turbo
 .turbo

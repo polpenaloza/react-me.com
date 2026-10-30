@@ -4,7 +4,6 @@ import { initReactI18next } from 'react-i18next'
 import englishTranslations from '../../public/locales/en/translation.json'
 import spanishTranslations from '../../public/locales/es/translation.json'
 
-// eslint-disable-next-line import/no-named-as-default-member
 i18n
   // pass the i18n instance to react-i18next.
   .use(initReactI18next)

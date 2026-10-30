@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "."
+    "types": ["node"]
   },
   "exclude": ["dist", "build", "node_modules"],
   "extends": "@workspace/tsconfig/base.json",

@@ -1,4 +1,4 @@
-import classNames from 'classnames/dedupe'
+import clsx from 'clsx'
 import { ReactNode } from 'react'
 
 export function LabelValue({
@@ -26,7 +26,7 @@ export function LabelValue({
     className?: string
   }) => (
     <div
-      className={classNames([
+      className={clsx([
         {
           'bg-secondary/20 h-full min-h-8 w-full animate-pulse rounded-full shadow-sm':
             loading,
@@ -41,7 +41,7 @@ export function LabelValue({
   /** @render */
   return (
     <div
-      className={classNames([
+      className={clsx([
         'flex flex-col',
         { 'text-sm': size === 'sm', 'text-xl': size === 'lg' },
         className,

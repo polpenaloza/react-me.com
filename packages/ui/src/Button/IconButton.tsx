@@ -1,45 +1,25 @@
-import classNames from 'classnames/dedupe'
+import clsx from 'clsx'
 import { ButtonHTMLAttributes } from 'react'
 
-import { iBaseButtonProps, useButton } from './useButton'
-
-interface iIconButtonProps
-  extends iBaseButtonProps,
-    ButtonHTMLAttributes<HTMLButtonElement> {
+interface IconButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode
 }
 
 export function IconButton({
   children,
   className,
-  fullLength = false,
-  loading,
-  variant = 'default',
-  size = 'md',
-  circle = true,
+  type = 'button',
   ...otherProps
-}: iIconButtonProps) {
-  const cssClass = useButton({
-    circle,
-    className,
-    fullLength,
-    variant,
-    size,
-    ...otherProps,
-  })
-
+}: IconButtonProps) {
   return (
     <button
       {...otherProps}
-      className={classNames([
-        cssClass,
-        {
-          'btn-circle': circle,
-          'rounded-[0.15rem]': !circle,
-        },
-      ])}
+      className={clsx(
+        'inline-flex items-center justify-center rounded-full p-2 text-red-500 transition-colors hover:bg-red-500/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-500',
+        className
+      )}
+      type={type}
     >
-      {loading ? <span className='loading loading-spinner'></span> : null}
       {children}
     </button>
   )

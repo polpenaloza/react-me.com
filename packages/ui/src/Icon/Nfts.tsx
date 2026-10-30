@@ -1,5 +1,5 @@
 import { mdiLayersTriple } from '@mdi/js'
-import classNames from 'classnames/dedupe'
+import clsx from 'clsx'
 
 import { BaseIcon, iBaseIconProps } from './_BaseIcon'
 
@@ -9,7 +9,7 @@ export function IconNfts(props: Omit<iBaseIconProps, 'path'>) {
   return (
     <BaseIcon
       {...props}
-      className={classNames(['rotate-90 transform', className])}
+      className={clsx(['rotate-90 transform', className])}
       aria-label='icon nfts'
       path={mdiLayersTriple}
     />

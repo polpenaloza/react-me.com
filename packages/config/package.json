@@ -1,9 +1,7 @@
 {
   "author": "@polpenaloza (https://github.com/polpenaloza)",
   "files": [
-    "next.config",
-    "postcss.config",
-    "tailwind.config"
+    "postcss.config"
   ],
   "license": "MIT",
   "name": "@workspace/config",
@@ -11,5 +9,9 @@
     "access": "restricted",
     "url": "git://github.com/polpenaloza/react-me.com.git"
   },
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
 }

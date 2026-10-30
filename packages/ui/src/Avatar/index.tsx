@@ -1,4 +1,4 @@
-import classNames from 'classnames/dedupe'
+import clsx from 'clsx'
 import { ReactNode } from 'react'
 
 interface AvatarProps {
@@ -13,7 +13,7 @@ export function Avatar({ name, children, size }: AvatarProps) {
   const avatarSize = size ?? 'h-10 w-10'
 
   return (
-    <div className={classNames(['relative', avatarSize])}>
+    <div className={clsx(['relative', avatarSize])}>
       <div className='bg-purple group table h-full w-full cursor-pointer overflow-hidden rounded-full text-center shadow-inner ring-2 ring-gray-300'>
         <span className='hidden align-middle font-bold text-white group-hover:table-cell'>
           {first?.charAt(0)}
@@ -21,7 +21,7 @@ export function Avatar({ name, children, size }: AvatarProps) {
         </span>
         {children ?? (
           <div
-            className={classNames([
+            className={clsx([
               'bg-gray-10 relative overflow-hidden rounded-full',
               avatarSize,
             ])}

@@ -1,4 +1,4 @@
-import classNames from 'classnames/dedupe'
+import clsx from 'clsx'
 import { type ReactNode, useEffect, useRef } from 'react'
 
 import { ErrorApi } from '../Error/Api'
@@ -54,7 +54,7 @@ export function Scrollbars({
 
   return (
     <div
-      className={classNames([
+      className={clsx([
         'scrollbar-thin scrollbar-thumb-primary scrollbar-track-gray-200 relative h-full w-full',
         className,
       ])}

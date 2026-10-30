@@ -1,31 +1,12 @@
-import { AnchorHTMLAttributes, ReactNode } from 'react'
+import { AnchorHTMLAttributes } from 'react'
 
-import { iBaseButtonProps, useButton } from './useButton'
-export interface iButtonProps
-  extends iBaseButtonProps,
-    AnchorHTMLAttributes<HTMLAnchorElement> {
-  children: ReactNode
+export interface AnchorButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
+  children: React.ReactNode
 }
 
-export function AnchorButton({
-  children,
-  className = '',
-  fullLength = false,
-  variant = 'default',
-  size = 'md',
-  loading,
-  ...otherProps
-}: iButtonProps) {
-  const classNames = useButton({
-    className,
-    fullLength,
-    variant,
-    size,
-  })
-
+export function AnchorButton({ children, ...otherProps }: AnchorButtonProps) {
   return (
-    <a {...otherProps} className={classNames}>
-      {loading ? <span className='loading loading-spinner'></span> : null}
+    <a {...otherProps} target='_blank' rel='noopener noreferrer'>
       {children}
     </a>
   )

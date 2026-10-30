@@ -25,7 +25,7 @@ export interface iAppPersistState {
 
   // user state
   user: iUserState
-  // eslint-disable-next-line no-unused-vars
+
   setUser(state: iUserState): void
 }
 

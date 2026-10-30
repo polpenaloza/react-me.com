@@ -1,47 +1,38 @@
 {
   "author": "@polpenaloza (https://twitter.com/polpenaloza)",
   "dependencies": {
-    "@nextui-org/react": "^2.2.9",
-    "@workspace/server": "workspace:^",
     "@workspace/ui": "workspace:^",
     "animate.css": "^4.1.1",
-    "framer-motion": "^11.0.6",
-    "next": "^14.2.5",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "framer-motion": "^14.9.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
   },
   "devDependencies": {
-    "@types/debug": "^4.1.12",
-    "@types/node": "^20.11.20",
-    "@types/react": "^18.2.79",
-    "@types/react-dom": "^18.2.19",
+    "@types/debug": "^4.1.13",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
     "@workspace/config": "workspace:^",
     "@workspace/eslint": "workspace:^",
     "@workspace/tsconfig": "workspace:^",
-    "autoprefixer": "^10.4.17",
-    "postcss": "^8.4.35",
-    "postcss-flexbugs-fixes": "^5.0.2",
-    "postcss-import": "^16.0.1",
-    "postcss-preset-env": "^9.4.0",
-    "tailwind-scrollbar": "^3.1.0",
-    "tailwindcss": "^3.4.0",
-    "typescript": "5.3.3"
+    "tailwindcss": "^4.3.3",
+    "typescript": "6.0.3",
+    "vite": "^8.3.5"
   },
   "license": "MIT",
   "name": "@polpenaloza/cv",
-  "packageManager": "pnpm@8.10.5",
+  "packageManager": "pnpm@10.17.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/polpenaloza/react-me.com.git"
   },
   "scripts": {
-    "build": "next build",
-    "build:cv": "next build",
-    "dev:cv": "next dev",
-    "export:cv": "next export",
+    "build": "vite build",
+    "dev:cv": "vite --host 0.0.0.0",
     "format": "prettier --write .",
-    "lint": "next lint --fix",
-    "start:cv": "next start"
+    "lint": "eslint 'src/**/*.{tsx,ts,js,jsx}' --fix --cache",
+    "start": "vite preview --host 0.0.0.0"
   },
   "type": "module",
   "version": "0.1.0"

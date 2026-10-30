@@ -1,7 +1,7 @@
-import { BrandIcon } from '@workspace/ui/src/Icon/BrandIcon'
-import { GithubIcon } from '@workspace/ui/src/Icon/GithubIcon'
-import { LinkedinIcon } from '@workspace/ui/src/Icon/LinkedinIcon'
-import { TwitterIcon } from '@workspace/ui/src/Icon/TwitterIcon'
+import BrandIcon from '@workspace/ui/src/Icon/Brand'
+import IconGithub from '@workspace/ui/src/Icon/Github'
+import IconLinkedin from '@workspace/ui/src/Icon/Linkedin'
+import IconTwitter from '@workspace/ui/src/Icon/Twitter'
 import { useTranslation } from 'react-i18next'
 
 export default function Footer() {
@@ -9,21 +9,21 @@ export default function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className='footer bg-base-100 text-base-content mt-auto items-center justify-center p-4 sm:justify-normal'>
-      <div className='grid-flow-col items-center'>
+    <footer className='flex w-full flex-wrap items-center justify-between gap-4 border-t border-slate-200 px-6 py-4 dark:border-slate-800'>
+      <div>
         <BrandIcon iconSize={30} />
-        <p>
-          {t('copyright')} &copy;{year} - {t('allRights')}
-        </p>
       </div>
-      <div className='grid-flow-col gap-4 place-self-center md:place-self-center md:justify-self-end'>
+      <p className='hidden sm:block'>
+        {t('copyright')} &copy;{year} - {t('allRights')}
+      </p>
+      <div className='flex items-center gap-4'>
         <a
           target={'_blank'}
           href='https://github.com/polpenaloza'
           rel='noopener noreferrer'
           title='polpenaloza'
         >
-          <GithubIcon iconSize={30} />
+          <IconGithub iconSize={30} />
         </a>
         <a
           target={'_blank'}
@@ -31,7 +31,7 @@ export default function Footer() {
           rel='noopener noreferrer'
           title='@polpenaloza'
         >
-          <TwitterIcon iconSize={30} />
+          <IconTwitter iconSize={30} />
         </a>
         <a
           target={'_blank'}
@@ -39,7 +39,7 @@ export default function Footer() {
           rel='noopener noreferrer'
           title='polpenaloza'
         >
-          <LinkedinIcon iconSize={30} />
+          <IconLinkedin iconSize={30} />
         </a>
       </div>
     </footer>

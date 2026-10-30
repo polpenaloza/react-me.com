@@ -1,32 +1,25 @@
-import { ButtonHTMLAttributes, ReactNode } from 'react'
+import clsx from 'clsx'
+import { ButtonHTMLAttributes } from 'react'
 
-import { iBaseButtonProps, useButton } from './useButton'
-export interface iButtonProps
-  extends iBaseButtonProps,
-    ButtonHTMLAttributes<HTMLButtonElement> {
-  children: ReactNode
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  children: React.ReactNode
 }
 
-export function Button({
+export function UIButton({
   children,
   className,
-  fullLength = false,
-  variant = 'default',
-  size = 'md',
-  loading,
+  type = 'button',
   ...otherProps
-}: iButtonProps) {
-  const classNames = useButton({
-    className,
-    fullLength,
-    variant,
-    size,
-    ...otherProps,
-  })
-
+}: ButtonProps) {
   return (
-    <button {...otherProps} className={classNames} type='button'>
-      {loading ? <span className='loading loading-spinner'></span> : null}
+    <button
+      {...otherProps}
+      className={clsx(
+        'inline-flex items-center justify-center rounded-md px-3 py-2 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 disabled:cursor-not-allowed disabled:opacity-50',
+        className
+      )}
+      type={type}
+    >
       {children}
     </button>
   )
