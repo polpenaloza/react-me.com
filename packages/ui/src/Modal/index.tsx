@@ -1,17 +1,13 @@
-'use client '
-
 import {
   Modal,
   ModalBody,
   ModalContent,
-  ModalFooter,
   ModalHeader,
   useDisclosure,
 } from '@nextui-org/modal'
 import { NextUIProvider } from '@nextui-org/react'
-import { IconButton } from '../Button/IconButton'
 
-import { IconCancel } from '../Icon/Cancel'
+import { IconButton } from '../Button/IconButton'
 import { IconEdit } from '../Icon/Edit'
 
 interface DialogProps {
@@ -40,15 +36,10 @@ export function CustomDialog({ title, children, open }: DialogProps) {
         }}
       >
         <ModalContent>
-          {(onClose) => (
+          {() => (
             <>
               <ModalHeader className='flex flex-col gap-1'>{title}</ModalHeader>
               <ModalBody>{children}</ModalBody>
-              {/* <ModalFooter>
-                <button onClick={onClose}>
-                  <IconCancel />
-                </button>
-              </ModalFooter> */}
             </>
           )}
         </ModalContent>

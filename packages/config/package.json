@@ -1,7 +1,6 @@
 {
   "author": "@polpenaloza (https://github.com/polpenaloza)",
   "files": [
-    "next.config",
     "postcss.config",
     "tailwind.config"
   ],

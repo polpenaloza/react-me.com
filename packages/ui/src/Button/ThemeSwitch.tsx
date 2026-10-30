@@ -1,13 +1,10 @@
-'use client'
-
 import { SwitchProps, useSwitch } from '@nextui-org/switch'
-import { useIsSSR } from '@react-aria/ssr'
 import { VisuallyHidden } from '@react-aria/visually-hidden'
 import clsx from 'clsx'
-import { useTheme } from 'next-themes'
-import { FC } from 'react'
-import { IconSun } from '../Icon/Sun'
+import { FC, useEffect, useState } from 'react'
+
 import { IconMoon } from '../Icon/Moon'
+import { IconSun } from '../Icon/Sun'
 
 export interface ThemeSwitchProps {
   className?: string
@@ -18,25 +15,25 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
   className,
   classNames,
 }) => {
-  const { theme, setTheme } = useTheme()
-  const isSSR = useIsSSR()
+  const [isLight, setIsLight] = useState(false)
+
+  useEffect(() => {
+    setIsLight(!document.documentElement.classList.contains('dark'))
+  }, [])
 
   const onChange = () => {
-    theme === 'light' ? setTheme('dark') : setTheme('light')
+    const nextIsLight = !isLight
+
+    setIsLight(nextIsLight)
+    document.documentElement.classList.toggle('dark', !nextIsLight)
   }
 
-  const {
-    Component,
-    slots,
-    isSelected,
-    getBaseProps,
-    getInputProps,
-    getWrapperProps,
-  } = useSwitch({
-    isSelected: theme === 'light' || isSSR,
-    'aria-label': `Switch to ${theme === 'light' || isSSR ? 'dark' : 'light'} mode`,
-    onChange,
-  })
+  const { Component, slots, getBaseProps, getInputProps, getWrapperProps } =
+    useSwitch({
+      isSelected: isLight,
+      'aria-label': `Switch to ${isLight ? 'dark' : 'light'} mode`,
+      onChange,
+    })
 
   return (
     <Component
@@ -70,7 +67,7 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
           ),
         })}
       >
-        {!isSelected || isSSR ? <IconSun size={22} /> : <IconMoon size={22} />}
+        {isLight ? <IconMoon size={22} /> : <IconSun size={22} />}
       </div>
     </Component>
   )

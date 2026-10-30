@@ -4,13 +4,12 @@
     "paths": {
       "@/*": ["src/*"]
     },
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "noEmit": true,
+    "types": ["vite/client"]
   },
   "exclude": ["dist", "build", "node_modules"],
-  "extends": "@workspace/tsconfig/nextjs.json",
-  "include": ["**/*.ts", "**/*.tsx", "**/*.js", ".next/types/**/*.ts"]
+  "extends": "@workspace/tsconfig/react-library.json",
+  "include": ["src", "vite.config.ts"]
 }

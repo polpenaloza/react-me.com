@@ -1,31 +1,42 @@
-import {
-  Navbar as NextUINavbar,
-  NavbarContent,
-  NavbarMenu,
-  NavbarMenuToggle,
-  NavbarBrand,
-  NavbarItem,
-  NavbarMenuItem,
-} from '@nextui-org/navbar'
 import { Button } from '@nextui-org/button'
+import { Input } from '@nextui-org/input'
 import { Kbd } from '@nextui-org/kbd'
 import { Link } from '@nextui-org/link'
-import { Input } from '@nextui-org/input'
+import {
+  Navbar as NextUINavbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  NavbarMenu,
+  NavbarMenuItem,
+  NavbarMenuToggle,
+} from '@nextui-org/navbar'
 import { link as linkStyles } from '@nextui-org/theme'
 import clsx from 'clsx'
 
 import { ThemeSwitch } from '../Button/ThemeSwitch'
-import { IconTwitter } from '../Icon/Twitter'
-import { IconGithub } from '../Icon/Github'
 import { IconDiscord } from '../Icon/Discord'
 import { IconDotsHexagon } from '../Icon/DotsHexagon'
+import { IconGithub } from '../Icon/Github'
 import { IconSearch } from '../Icon/Search'
+import { IconTwitter } from '../Icon/Twitter'
+
+interface SiteConfig {
+  navItems: { href: string; label: string }[]
+  navMenuItems: { label: string }[]
+  links: {
+    twitter: string
+    discord: string
+    github: string
+    sponsor: string
+  }
+}
 
 export const Navbar = ({
   siteConfig,
   logo,
 }: {
-  siteConfig: any
+  siteConfig: SiteConfig
   logo: React.ReactNode
 }) => {
   const searchInput = (

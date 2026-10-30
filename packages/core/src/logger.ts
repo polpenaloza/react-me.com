@@ -1,7 +1,7 @@
 import debug from 'debug'
 
 const coreLog = debug('core')
-const isEnabled = process.env.DEBUG || process.env.NEXT_PUBLIC_DEBUG
+const isEnabled = process.env.DEBUG
 
 if (!isEnabled) {
   coreLog.enabled = false

@@ -1,7 +1,5 @@
 .cache
-.next
 .turbo
-next/
 build/
 dist/
 node_modules/

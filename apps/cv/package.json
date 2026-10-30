@@ -2,11 +2,9 @@
   "author": "@polpenaloza (https://twitter.com/polpenaloza)",
   "dependencies": {
     "@nextui-org/react": "^2.4.6",
-    "@workspace/server": "workspace:^",
     "@workspace/ui": "workspace:^",
     "animate.css": "^4.1.1",
     "framer-motion": "^11.3.19",
-    "next": "^14.2.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
@@ -24,7 +22,9 @@
     "postcss-import": "^16.1.0",
     "postcss-preset-env": "^9.6.0",
     "tailwindcss": "^3.4.7",
-    "typescript": "5.5.4"
+    "typescript": "5.5.4",
+    "@vitejs/plugin-react": "^4.7.0",
+    "vite": "^6.3.5"
   },
   "license": "MIT",
   "name": "@polpenaloza/cv",
@@ -34,13 +34,11 @@
     "url": "https://github.com/polpenaloza/react-me.com.git"
   },
   "scripts": {
-    "build": "next build",
-    "build:cv": "next build",
-    "dev:cv": "next dev",
-    "export:cv": "next export",
+    "build": "vite build",
+    "dev:cv": "vite --host 0.0.0.0",
     "format": "prettier --write .",
-    "lint": "next lint --fix",
-    "start:cv": "next start"
+    "lint": "eslint 'src/**/*.{tsx,ts,js,jsx}' --fix --cache",
+    "start": "vite preview --host 0.0.0.0"
   },
   "type": "module",
   "version": "0.1.0"

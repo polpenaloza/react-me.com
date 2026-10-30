@@ -33,25 +33,19 @@
   },
   "scripts": {
     "build": "turbo run build --no-daemon",
-    "clean": "pnpm clean:dist && pnpm clean:eslint && pnpm clean:next && pnpm clean:out && pnpm clean:turbo && pnpm clean:node",
+    "clean": "pnpm clean:dist && pnpm clean:eslint && pnpm clean:turbo && pnpm clean:node",
     "clean:dist": "npm exec --workspaces -- npx rimraf dist",
     "clean:eslint": "npm exec --workspaces -- npx rimraf .eslintcache",
-    "clean:next": "npm exec --workspaces -- npx rimraf .next",
     "clean:node": "npm exec --workspaces -- npx rimraf node_modules",
-    "clean:out": "npm exec --workspaces -- npx rimraf out",
     "clean:turbo": "npm exec --workspaces -- npx rimraf .turbo",
-    "db:generate": "turbo run db:generate --parallel --no-daemon",
-    "db:migrate": "turbo run db:migrate --parallel --no-daemon",
-    "dev:feed": "turbo run dev:feed --parallel --no-daemon",
+    "dev:cv": "turbo run dev:cv --parallel --no-daemon",
     "dev:me": "turbo run dev:me --parallel --no-daemon",
-    "export": "turbo run export",
     "format": "prettier . --write",
     "lint": "turbo run lint",
     "maintenance": "pnpm clean && pnpm install ",
     "nuke": "pnpm clean && rm pnpm-lock.yaml",
-    "postinstall": "pnpm db:generate",
     "prepare": "husky install",
-    "start": "turbo run start --parallel --no-daemon"
+    "start": "pnpm --filter @polpenaloza/me start"
   },
   "version": "1.0.0",
   "workspaces": [

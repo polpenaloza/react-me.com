@@ -1,9 +1,7 @@
 module.exports = {
   extends: [
-    'next',
     'turbo',
     'prettier',
-    'next/core-web-vitals',
     'plugin:jsx-a11y/recommended',
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
@@ -11,7 +9,6 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint', 'simple-import-sort', 'prettier'],
   rules: {
-    '@next/next/no-html-link-for-pages': 'off',
     '@typescript-eslint/no-unused-vars': [
       2,
       {

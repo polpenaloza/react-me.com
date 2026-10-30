@@ -1,12 +1,12 @@
-'use client'
-
 import './i18next.config'
 
 import { ErrorBoundary } from '@workspace/ui/src/ErrorBoundary'
-import { ReactNode } from 'react'
+import React, { type ReactNode, useEffect } from 'react'
 import { I18nextProvider, useTranslation } from 'react-i18next'
+
+import { iAppPersistState, useAppPersistStore } from '@/core/store/persistState'
+
 import { NextUIReactProvider } from './NextUI'
-import React from 'react'
 
 type AppProvidersProps = {
   children: ReactNode
@@ -14,6 +14,13 @@ type AppProvidersProps = {
 
 export function AppProviders({ children }: AppProvidersProps) {
   const { i18n } = useTranslation()
+  const darkMode = useAppPersistStore(
+    (state: iAppPersistState) => state.darkMode
+  )
+
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', darkMode)
+  }, [darkMode])
 
   return (
     <React.StrictMode>

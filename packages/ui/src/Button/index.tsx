@@ -1,6 +1,5 @@
-import { ReactNode } from 'react'
-
 import { Button, ButtonProps } from '@nextui-org/button'
+import { ReactNode } from 'react'
 interface iButtonProps extends ButtonProps {
   children: ReactNode
 }

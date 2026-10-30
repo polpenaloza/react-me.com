@@ -5,10 +5,8 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    'next',
     'turbo',
     'prettier',
-    'next/core-web-vitals',
     'plugin:jsx-a11y/recommended',
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',

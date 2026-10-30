@@ -1,6 +1,5 @@
-import clsx from 'clsx'
-
 import { Button, ButtonProps } from '@nextui-org/button'
+import clsx from 'clsx'
 
 interface iIconButtonProps extends ButtonProps {
   children: React.ReactNode

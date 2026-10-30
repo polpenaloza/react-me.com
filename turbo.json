@@ -1,66 +1,22 @@
 {
   "$schema": "https://turborepo.org/schema.json",
-  "globalDependencies": [".env", "tsconfig.json"],
-  "globalEnv": [
-    "DATABASE_URL",
-    "DEBUG",
-    "ENABLE_MIXPANEL_DEBUG",
-    "GOOGLE_CLIENT_ID",
-    "GOOGLE_CLIENT_SECRET",
-    "GITHUB_CLIENT_ID",
-    "GITHUB_CLIENT_SECRET",
-    "IGNORE_TYPECHECK",
-    "MIXPANEL_TOKEN",
-    "NEXT_PUBLIC_DEBUG",
-    "NEXT_PUBLIC_DEV",
-    "NEXT_PUBLIC_EMAIL_CONTACT",
-    "NEXT_PUBLIC_FEATURES_ENABLED",
-    "NEXT_PUBLIC_HOSTING_URL",
-    "NEXT_PUBLIC_OPENAI_API_KEY",
-    "NEXT_PUBLIC_SERVER_URL",
-    "NEXT_PUBLIC_SIGNIN_MESSAGE",
-    "NEXT_PUBLIC_UNOPTIMIZE_IMAGE",
-    "NEXTAUTH_SECRET",
-    "NEXTAUTH_URL",
-    "NODE_ENV",
-    "PORT",
-    "SHADOW_DATABASE_URL",
-    "SKIP_ENV_VALIDATION",
-    "UPSTASH_REDIS_REST_TOKEN",
-    "UPSTASH_REDIS_REST_URL",
-    "VERCEL_URL",
-    "VERCEL"
-  ],
+  "globalDependencies": ["tsconfig.json"],
+  "globalEnv": ["DEBUG", "NODE_ENV"],
   "tasks": {
     "build": {
       "env": [],
-      "outputs": ["dist/**", ".next/**"]
+      "outputs": ["dist/**"]
     },
-    "dev:feed": {
+    "dev:cv": {
       "cache": false,
-      "dependsOn": ["^db:generate"],
       "env": []
     },
     "dev:me": {
       "cache": false,
-      "dependsOn": ["^db:generate"],
-      "env": []
-    },
-    "db:generate": {
-      "cache": false,
-      "env": []
-    },
-    "db:migrate": {
-      "cache": false,
-      "dependsOn": ["^db:generate"],
       "env": []
     },
     "lint": {
       "cache": true,
-      "env": []
-    },
-    "postinstall": {
-      "cache": false,
       "env": []
     }
   }
