@@ -1,3 +1,17 @@
+# [1.14.0](https://github.com/polpenaloza/react-me.com/compare/v1.13.0...v1.14.0) (2026-10-31)
+
+
+### Bug Fixes
+
+* **deps:** patch vulnerable transitive deps ([#351](https://github.com/polpenaloza/react-me.com/issues/351)) ([f1ee7f1](https://github.com/polpenaloza/react-me.com/commit/f1ee7f164b12df6505c234f7be06ba664737f1c4))
+* **deps:** unblock release audit ([#354](https://github.com/polpenaloza/react-me.com/issues/354)) ([964527c](https://github.com/polpenaloza/react-me.com/commit/964527cd5242105b0b1aeb108183db68be7955ad))
+* **release:** use node 24 ([#353](https://github.com/polpenaloza/react-me.com/issues/353)) ([8504c28](https://github.com/polpenaloza/react-me.com/commit/8504c288d08cfd4162ff64fb1ae4e9f6dd424797))
+
+
+### Features
+
+* **me:** remove X-Clone link ([#352](https://github.com/polpenaloza/react-me.com/issues/352)) ([34670bb](https://github.com/polpenaloza/react-me.com/commit/34670bb72e9783c0bee9cdd58a76955292cef496))
+
 # [1.13.0](https://github.com/polpenaloza/react-me.com/compare/v1.12.1...v1.13.0) (2024-02-24)
 
 ### Features
