@@ -5,7 +5,7 @@
     "dayjs": "^1.11.23",
     "debug": "^4.4.3",
     "sugar": "^2.0.6",
-    "viem": "^2.57.13"
+    "viem": "^2.57.14"
   },
   "devDependencies": {
     "@types/debug": "^4.1.13",
